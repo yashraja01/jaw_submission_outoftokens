@@ -30,6 +30,7 @@ ABBREV = [
     (r"\bmuni\b", "municipal"),
     (r"\but\s+pr\b", "uttar pradesh"),
     (r"\bmah\b", "maharashtra"),
+    (r"\bneda\b", "national expressway development authority"),
     (r"\bguj\b", "gujarat"),
     (r"\braj\b", "rajasthan"),
     (r"\bjhk?d\b", "jharkhand"),
@@ -145,7 +146,7 @@ class Facts:
         return best if score >= (0.6 if manager else 0.8) else None
 
     # ------------------------------------------------------------------ clients
-    def resolve_client(self, q, mask_work=None):
+    def resolve_client(self, q, mask_work=None, must_have_categories=None):
         """When the question cites an explicit Pkg-N, that work's name is masked first: its words
         describe the work, not the client ('STP — West Bengal Pkg-73' must not select the Public
         Works Department, Govt of West Bengal)."""
@@ -155,7 +156,7 @@ class Facts:
                 if t in STOP or t.isdigit() or t == "pkg":
                     continue
                 nq = re.sub(rf"\b{re.escape(t)}\b", " ", nq, count=1)
-        best, score = None, 0.0
+        best, score, scores = None, 0.0, {}
         for k, sig in self._client_sig.items():
             if not sig["core"]:
                 continue
@@ -172,9 +173,21 @@ class Facts:
                 # Only a tiebreak. A dominant state bonus made "Gujarat Municipal Corporation" beat
                 # "Trishakti Power Generation Corporation" whenever a Gujarat work was mentioned.
                 s += 0.3 if sig["state"] in nq else -0.5
+            scores[k] = s
             if s > score:
                 best, score = self.clients[k], s
-        return best if score >= 0.55 else None
+        if score >= 0.55:
+            return best
+        if must_have_categories:
+            # "the Public Works Department account" omits the state, so all five score alike.
+            # The categories the question names break the tie: only one of them has works in both.
+            near = [self.clients[k] for k, s in scores.items() if s >= 0.45]
+            fit = [c for c in near
+                   if all(any(w["category"] == cat for w in c["works"])
+                          for cat in must_have_categories)]
+            if len(fit) == 1:
+                return fit[0]
+        return None
 
     def client_of_work(self, w):
         return self.clients.get(w["client_key"]) if w else None
@@ -249,11 +262,38 @@ class Facts:
                     continue
                 nq = re.sub(rf"\b{re.escape(t)}\b", " " * len(t), nq, count=1)
         for c in self.categories:
-            # "bridges and flyovers" is written for the label "bridges flyovers"
-            pat = r"\b" + r"\s+(?:and\s+)?".join(re.escape(t) for t in c.split()) + r"\b"
-            if re.search(pat, nq):
+            if re.search(self._cat_pattern(c), nq):
                 return c
         return None
+
+    @staticmethod
+    def _cat_pattern(c):
+        # "bridges and flyovers" is written for the label "bridges flyovers"
+        return r"\b" + r"\s+(?:and\s+)?".join(re.escape(t) for t in c.split()) + r"\b"
+
+    def resolve_category_pair(self, q, client=None):
+        """Both categories of an 'A versus B' question, in the order they are written."""
+        nq = norm_q(q)
+        if client:
+            for t in norm_q(client["name"]).split():
+                if t in STOP:
+                    continue
+                nq = re.sub(rf"\b{re.escape(t)}\b", " " * len(t), nq, count=1)
+        found = []
+        for c in sorted(self.categories, key=len, reverse=True):
+            for m in re.finditer(self._cat_pattern(c), nq):
+                if not any(m.start() < e and m.end() > s for s, e, _ in found):
+                    found.append((m.start(), m.end(), c))
+        # elision: "roads highways and maintenance" also names "roads maintenance"
+        for s, e, c in list(found):
+            head = c.split()[0]
+            for other in self.categories:
+                if other == c or other.split()[0] != head or any(o == other for _, _, o in found):
+                    continue
+                m = re.search(rf"\b{re.escape(other.split()[-1])}\b", nq[e:e + 40])
+                if m:
+                    found.append((e + m.start(), e + m.end(), other))
+        return [c for _, _, c in sorted(found)]
 
     def credential_issue_date(self, q):
         nq = norm_q(q)

@@ -55,6 +55,13 @@ def shape_fallbacks(facts):
     out["awarded_vs_invoiced"] = med([
         abs(tot(c["works"]) - facts.inv_by_client.get(c["key"], {}).get("invoiced", Decimal(0)))
         for c in clients])
+    out["receivables_balance"] = med([b["invoiced"] - b["received"]
+                                      for b in facts.inv_by_client.values()])
+    out["category_pair_diff"] = med([
+        abs(sum(w["value"] for w in c["works"] if w["category"] == a)
+            - sum(w["value"] for w in c["works"] if w["category"] == b))
+        for c in clients for a in {w["category"] for w in c["works"]}
+        for b in {w["category"] for w in c["works"]} if a < b])
     out["top_n_clients"] = med([tot(m["works"]) for m in managers])
     out["temporal_chain"] = med([tot(m["works"]) / 2 for m in managers])
     out["collection_pct"] = med([
@@ -84,7 +91,7 @@ def solve(questions, facts):
     fb = shape_fallbacks(facts)
     answers, log = {}, []
     for q in questions:
-        shape = plan.classify(q)
+        shape = plan.classify(q, facts)
         params = plan.parameters(q, shape, facts)
         value, why = execute.run(shape, params, facts)
         source = "computed"

@@ -69,6 +69,14 @@ BILLED = (r"\binvoic|\bbilled\b|\bbills\b|bill so far|submitted claims|claims we
           r"cash flow|\brealis|\brealiz|commitments and our bills|against the claims")
 MEANMED = (r"(mean|average|avg)[^.?]{0,60}\bmedian\b|\bmedian\b[^.?]{0,60}(mean|average|avg)|"
            r"mean-median|avg minus median")
+# "still owe / unpaid / pending / cleared payments" -> invoiced minus received.
+AWARDLANG = (r"awarded|award value|contract value|contract totals|sanctioned|secured|committed|"
+             r"they assigned|they've assigned|approved contract|total scope")
+RECEIVABLE = (r"still owe|owes us|\bunpaid\b|still pending|\bpending\b|remaining balance|"
+              r"balance still|net balance|still due|currently due|total amount still outstanding|"
+              r"outstanding across|cleared payment|payments we've actually cleared|"
+              r"remains on the invoice|adjusted balance|still on our books|payment system|"
+              r"total remaining balance|still sitting")
 
 RULES = [
     ("date_span",            "days",    r"."),
@@ -95,6 +103,11 @@ RULES = [
     ("work_count",           "count",   r"."),
 
     ("mean_minus_median",    "money",   MEANMED),
+    # two category labels named -> "difference in total value between A and B" for one client
+    ("category_pair_diff",   "money",   r"."),
+    # what the client still owes: invoiced - received. Distinct from awarded_vs_invoiced, which
+    # compares the awarded contract value against invoices rather than invoices against receipts.
+    ("receivables_balance",  "money",   RECEIVABLE),
     ("grading_filter",       "money",   GRADES),
     ("year_delta",           "money",   r"(19|20)\d\d\D{1,30}(19|20)\d\d"),
     # before awarded_vs_invoiced: "outstanding contract value we still need to secure ... to clear
@@ -143,20 +156,25 @@ def _years(text):
 # Some shapes are only valid if their parameter is actually present. Without this, filler like
 # "before the bid cutoff" routes a temporal_chain into threshold_aggregate.
 PREDICATES = {
-    "threshold_aggregate": lambda s, raw: find_amount(norm_amt(raw)) is not None,
-    "gap_to_threshold": lambda s, raw: find_amount(norm_amt(raw)) is not None,
-    "year_delta": lambda s, raw: len(_years(raw)) >= 2,
+    "threshold_aggregate": lambda s, raw, f: find_amount(norm_amt(raw)) is not None,
+    "gap_to_threshold": lambda s, raw, f: find_amount(norm_amt(raw)) is not None,
+    "year_delta": lambda s, raw, f: len(_years(raw)) >= 2,
+    # only when two distinct category labels are actually named
+    "category_pair_diff": lambda s, raw, f: f is not None and len(
+        f.resolve_category_pair(raw, f.resolve_client(raw))) >= 2,
+    # "outstanding balance against the total contract value" is an award comparison, not a receipt one
+    "receivables_balance": lambda s, raw, f: not re.search(AWARDLANG, raw),
 }
 
 
-def classify(q):
+def classify(q, facts=None):
     t, s = q["answer_type"], norm_q(q["question"])
     raw = re.sub(r"\s+", " ", q["question"]).lower()
     for shape, at, pat in RULES:
         if at != t or not (re.search(pat, s) or re.search(pat, raw)):
             continue
         pred = PREDICATES.get(shape)
-        if pred and not pred(s, raw):
+        if pred and not pred(s, raw, facts):
             continue
         return shape
     return "hop_aggregate"
@@ -188,6 +206,14 @@ def parameters(q, shape, facts):
 
     if shape in ("exclusion_aggregate",):
         p["category"] = facts.resolve_category(text, client=p["client"])
+    if shape == "category_pair_diff":
+        p["categories"] = facts.resolve_category_pair(text, client=p["client"])
+        if p["client"] is None:
+            # a client named without its state ("the Public Works Department account") is broken
+            # by the categories: only one candidate has works in both
+            cats = facts.resolve_category_pair(text)
+            p["client"] = facts.resolve_client(text, must_have_categories=cats)
+            p["categories"] = facts.resolve_category_pair(text, client=p["client"])
     if shape in ("threshold_aggregate", "gap_to_threshold"):
         p["amount"] = find_amount(norm_amt(text))
     if shape == "year_delta":

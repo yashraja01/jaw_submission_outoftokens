@@ -34,6 +34,38 @@ def avg_work_size(p, f):
     return R(sum(w["value"] for w in ws) / len(ws)), f"{p['client']['name']}: mean of {len(ws)}"
 
 
+def category_pair_diff(p, f):
+    """|total(category A) - total(category B)| for one client.
+
+    Absolute, not signed: where this generator wants a signed answer it says so explicitly
+    ("negative if avg dips" on mean_minus_median). These questions say nothing of the kind.
+    """
+    ws = _cw(p)
+    if not ws:
+        return None, "client unresolved"
+    cats = p.get("categories") or []
+    if len(cats) < 2:
+        return None, f"needed two categories, found {cats}"
+    a = sum(w["value"] for w in ws if w["category"] == cats[0])
+    b = sum(w["value"] for w in ws if w["category"] == cats[1])
+    if a == 0 and b == 0:
+        return None, f"no works in either of {cats}"
+    return R(abs(a - b)), (f"{p['client']['name']}: |{cats[0]} {int(a):,} - "
+                           f"{cats[1]} {int(b):,}|")
+
+
+def receivables_balance(p, f):
+    """What the client still owes: invoiced - received, over the ageing book."""
+    if not p["client"]:
+        return None, "client unresolved"
+    b = f.inv_by_client.get(p["client"]["key"])
+    if not b:
+        return None, f"{p['client']['name']}: no invoices on file"
+    return R(b["invoiced"] - b["received"]), (
+        f"{p['client']['name']}: invoiced {int(b['invoiced']):,} - "
+        f"received {int(b['received']):,}")
+
+
 def mean_minus_median(p, f):
     """Signed: 'negative if avg dips'. The scorer handles negative golds; do not clamp."""
     ws = _cw(p)
@@ -258,6 +290,7 @@ def work_count(p, f):
 HANDLERS = {
     "hop_aggregate": hop_aggregate, "avg_work_size": avg_work_size,
     "mean_minus_median": mean_minus_median,
+    "category_pair_diff": category_pair_diff, "receivables_balance": receivables_balance,
     "exclusion_aggregate": exclusion_aggregate, "threshold_aggregate": threshold_aggregate,
     "gap_to_threshold": gap_to_threshold, "rank_value": rank_value, "role_split": role_split,
     "grading_filter": grading_filter, "year_delta": year_delta,

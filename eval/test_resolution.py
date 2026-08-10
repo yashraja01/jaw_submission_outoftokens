@@ -47,6 +47,12 @@ CASES = {
     # bare distinctive token, legal name omitted
     "HV-IC-0386": "Trishakti Power Generation Corporation",
     "HV-IC-0220": "Peninsular Petroleum Corporation",
+    "HV-IC-0463": "National Expressway Development Authority",   # "the NEDA file" (acronym)
+}
+
+# client named without its state — disambiguated by the categories the question asks about
+CATEGORY_TIEBREAK = {
+    "HV-IC-0464": ("Public Works Department, Govt of Maharashtra", ["irrigation", "roads highways"]),
 }
 
 
@@ -65,6 +71,13 @@ def main():
         if not got or got["name"] != want:
             bad.append((qid, got["name"] if got else None, want))
     n = sum(1 for q in CASES if q in qs)
+    for qid, (want, cats) in CATEGORY_TIEBREAK.items():
+        if qid not in qs:
+            continue
+        n += 1
+        got = f.resolve_client(qs[qid], must_have_categories=cats)
+        if not got or got["name"] != want:
+            bad.append((qid, got["name"] if got else None, want))
     for qid, got, want in bad:
         print(f"  FAIL {qid}: got {got!r}, want {want!r}")
     print(f"client resolution: {n - len(bad)}/{n} cases pass")

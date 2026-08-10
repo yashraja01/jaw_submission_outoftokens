@@ -1,6 +1,50 @@
 # Build log
 
-## Phase 2 — regenerated for `hidden_set_v1.3` (248 questions)
+## Phase 3 — `hidden_set_v1.4` (333 questions) — CURRENT
+
+Upstream `a60e791` **extended** the set: 248 → **333**. All 248 kept unchanged, **85 new questions**,
+all `money`, described as "harder receivables and category questions". Two genuinely new shapes:
+
+| New shape | n | Computation |
+|---|--:|---|
+| `category_pair_diff` | 61 | `abs(total(category A) − total(category B))` for one client |
+| `receivables_balance` | 24 | `invoiced − received` for one client (the ageing book) |
+
+Neither existed before. `receivables_balance` is **not** `awarded_vs_invoiced`: it compares invoices
+against receipts, where the older shape compares the awarded contract value against invoices. The
+two are separated by a guard — a question mentioning award language ("outstanding balance against
+the total *contract value*") stays with the older shape. After the split the older shape still holds
+exactly its original 25 questions, and every other shape count is unchanged.
+
+**Sign convention for `category_pair_diff`: absolute.** 22 of 59 resolvable pairs have the
+first-named category smaller, so the choice is material. Taken as absolute because this generator
+states explicitly when it wants a signed answer — `mean_minus_median` questions all say "negative if
+avg dips" — and these say nothing of the kind. Recorded as a judgement call.
+
+`receivables_balance` is left **signed**: `Σ(Outstanding)` in the workbook equals invoiced − received
+for all 25 clients exactly, and one client (Maharashtra Municipal) has receipts exceeding invoices,
+so HV-IC-0412 is legitimately −13,279,236. That is what the shipped data says.
+
+### Fixes needed for the new questions
+
+- **"the NEDA file"** — client acronym, added to the abbreviation table.
+- **"the Public Works Department account"** with no state — all five PWD clients score identically.
+  Broken by the categories the question names: only one has works in both (`resolve_client(...,
+  must_have_categories=...)`). Both pinned in `eval/test_resolution.py`, now 23 cases.
+
+### Final state (v1.4)
+
+333/333 computed · 0 fallbacks · samples **21/21 = 100%** · all three README golds exact ·
+validator PASS · client-resolution suite **23/23** · hard-check violations 0 ·
+clean end-to-end dry run from a deleted `build/`.
+
+Every flagged distribution outlier was hand-verified: `HV-IC-0404` (₹7,822 — a client with
+₹7.82 M invoiced and ₹7.81 M received), `HV-IC-0428` (₹8.5 M — a genuinely close category pair),
+`HV-IC-0412` (the negative balance above), `HV-IC-0276` (a genuine negative mean − median).
+
+---
+
+## Phase 2 — `hidden_set_v1.3` (248 questions)
 
 The earlier 371-question set (`hidden_set_v1.0`, score 88.671) is void. Upstream `4041a3d` cut the
 set in three steps — 371 → 344 → 320 → **248** — and the scorer now skips `scored: false` rows.
