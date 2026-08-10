@@ -1,0 +1,445 @@
+ Kalinga National Bank                                                                            Statement of Account · Current Account
+
+                ACCOUNT STATEMENT — FY 2022–23
+
+  A/c: 00417 2210 9944 · National Infrastructure Corp. Ltd.                                                                  IFSC: KNBX0004417
+
+
+   Date              Particulars                                         Withdrawal       Deposit         Balance
+
+   2022-04-01       Opening balance b/f                                                                        941,141,144
+
+   2022-04-02        Receipt against invoice (rcpt #103)                                          27,246,080       968,387,224
+
+   2022-04-03        Receipt against invoice (rcpt #351)                                          45,556,772        1,013,943,996
+
+   2022-04-06        Receipt against invoice (rcpt #312)                                          62,507,089        1,076,451,085
+
+   2022-04-07      TDS deposited (202203)                                 2,185,277                           1,074,265,808
+
+   2022-04-11        Receipt against invoice (rcpt #113)                                          40,944,316        1,115,210,124
+
+   2022-04-11       Vendor payment #75                                    14,872,988                          1,100,337,136
+
+   2022-04-17        Receipt against invoice (rcpt #298)                                          64,300,767        1,164,637,903
+
+   2022-04-20       Vendor payment #27                                    48,083,887                          1,116,554,016
+
+   2022-04-21       Vendor payment #325                                   33,356,138                          1,083,197,878
+
+   2022-04-22        Receipt against invoice (rcpt #327)                                          63,631,240        1,146,829,118
+
+   2022-04-23       Vendor payment #271                                   56,735,953                          1,090,093,165
+
+   2022-04-28        Receipt against invoice (rcpt #314)                                          62,507,089        1,152,600,254
+
+   2022-04-28       Monthly salaries & site overheads (202204)                81,616,844                          1,070,983,410
+
+   2022-04-30       Vendor payment #328                                   9,818,025                           1,061,165,385
+
+   2022-05-01        Receipt against invoice (rcpt #397)                                          4,461,631         1,065,627,016
+
+   2022-05-06        Receipt against invoice (rcpt #26)                                           15,702,599        1,081,329,615
+
+   2022-05-06       Vendor payment #16                                    43,905,552                          1,037,424,063
+
+   2022-05-06       Vendor payment #62                                    25,253,151                          1,012,170,912
+
+   2022-05-07        Receipt against invoice (rcpt #329)                                          63,631,240        1,075,802,152
+
+   2022-05-07      TDS deposited (202204)                                 2,808,049                           1,072,994,103
+
+   2022-05-10        Receipt against invoice (rcpt #50)                                            11,297,394        1,084,291,497
+
+   2022-05-12        Receipt against invoice (rcpt #130)                                          22,333,258        1,106,624,755
+
+   2022-05-15       Vendor payment #50                                    12,139,745                          1,094,485,010
+
+   2022-05-17        Receipt against invoice (rcpt #401)                                          6,841,488         1,101,326,498
+
+   2022-05-27        Receipt against invoice (rcpt #31)                                           45,445,081        1,146,771,579
+
+   2022-05-28       Monthly salaries & site overheads (202205)                81,616,844                          1,065,154,735
+
+   2022-05-31        Receipt against invoice (rcpt #73)                                           26,079,176        1,091,233,911
+
+
+
+
+
+DOC-BANK-2022                                                                                                               Page 1 of 7
+
+   2022-06-04        Receipt against invoice (rcpt #127)                                          14,763,237        1,105,997,148
+
+   2022-06-06        Receipt against invoice (rcpt #328)                                          63,631,240        1,169,628,388
+
+   2022-06-07      TDS deposited (202205)                                 1,401,696                           1,168,226,692
+
+   2022-06-19        Receipt against invoice (rcpt #339)                                          74,852,454        1,243,079,146
+
+   2022-06-19       Vendor payment #42                                     2,133,240                           1,240,945,906
+
+   2022-06-21       Vendor payment #45                                     11,640,346                          1,229,305,560
+
+   2022-06-22       Vendor payment #112                                   31,409,483                          1,197,896,077
+
+   2022-06-23        Receipt against invoice (rcpt #299)                                          64,300,767        1,262,196,844
+
+   2022-06-24        Receipt against invoice (rcpt #114)                                          40,944,316        1,303,141,160
+
+   2022-06-26       Vendor payment #310                                   12,681,395                          1,290,459,765
+
+   2022-06-27        Receipt against invoice (rcpt #131)                                          22,333,258        1,312,793,023
+
+   2022-06-28       Monthly salaries & site overheads (202206)                81,616,844                          1,231,176,179
+
+   2022-07-03        Receipt against invoice (rcpt #88)                                            11,756,544        1,242,932,723
+
+   2022-07-04        Receipt against invoice (rcpt #310)                                          35,597,690        1,278,530,413
+
+   2022-07-05       Vendor payment #307                                   51,639,723                          1,226,890,690
+
+   2022-07-07        Receipt against invoice (rcpt #107)                                          15,896,010        1,242,786,700
+
+   2022-07-07      TDS deposited (202206)                                997,661                             1,241,789,039
+
+   2022-07-08       Vendor payment #37                                     28,114,631                          1,213,674,408
+
+   2022-07-10        Receipt against invoice (rcpt #340)                                          74,852,454        1,288,526,862
+
+   2022-07-14       Vendor payment #19                                    55,189,204                          1,233,337,658
+
+   2022-07-19        Receipt against invoice (rcpt #64)                                           49,491,841        1,282,829,499
+
+   2022-07-23       Vendor payment #49                                    23,433,926                          1,259,395,573
+
+   2022-07-24        Receipt against invoice (rcpt #120)                                          17,614,545        1,277,010,118
+
+   2022-07-24        Receipt against invoice (rcpt #330)                                          63,631,240        1,340,641,358
+
+   2022-07-24       Vendor payment #313                                   28,729,004                          1,311,912,354
+
+   2022-07-27       Vendor payment #319                                   17,498,078                          1,294,414,276
+
+   2022-07-28       Monthly salaries & site overheads (202207)                81,616,844                          1,212,797,432
+
+   2022-07-31        Receipt against invoice (rcpt #123)                                          31,870,335        1,244,667,767
+
+   2022-08-06       Vendor payment #22                                    30,216,723                          1,214,451,044
+
+   2022-08-07      TDS deposited (202207)                                 3,527,664                           1,210,923,380
+
+   2022-08-08        Receipt against invoice (rcpt #402)                                          6,841,488         1,217,764,868
+
+   2022-08-08       Vendor payment #109                                   38,037,834                          1,179,727,034
+
+   2022-08-09        Receipt against invoice (rcpt #101)                                          44,093,023        1,223,820,057
+
+
+
+
+
+DOC-BANK-2022                                                                                                               Page 2 of 7
+
+   2022-08-09        Receipt against invoice (rcpt #132)                                          22,333,258        1,246,153,315
+
+   2022-08-09       Vendor payment #133                                   1,813,722                           1,244,339,593
+
+   2022-08-10        Receipt against invoice (rcpt #96)                                           29,070,912        1,273,410,505
+
+   2022-08-10       Vendor payment #23                                    31,754,799                          1,241,655,706
+
+   2022-08-12       Vendor payment #38                                    41,610,338                          1,200,045,368
+
+   2022-08-15       Vendor payment #103                                   27,065,252                          1,172,980,116
+
+   2022-08-15       Vendor payment #282                                   47,967,578                          1,125,012,538
+
+   2022-08-16        Receipt against invoice (rcpt #352)                                          45,556,772        1,170,569,310
+
+   2022-08-19       Vendor payment #116                                    9,345,396                           1,161,223,914
+
+   2022-08-20        Receipt against invoice (rcpt #60)                                           31,072,578        1,192,296,492
+
+   2022-08-22       Vendor payment #340                                   36,611,460                          1,155,685,032
+
+   2022-08-26        Receipt against invoice (rcpt #353)                                          45,556,772        1,201,241,804
+
+   2022-08-28       Monthly salaries & site overheads (202208)                81,616,844                          1,119,624,960
+
+   2022-08-29        Receipt against invoice (rcpt #129)                                          7,381,618         1,127,006,578
+
+   2022-08-30        Receipt against invoice (rcpt #128)                                          14,763,237        1,141,769,815
+
+   2022-09-02        Receipt against invoice (rcpt #331)                                          63,631,240        1,205,401,055
+
+   2022-09-02       Vendor payment #105                                   49,367,302                          1,156,033,753
+
+   2022-09-04       Vendor payment #330                                   16,577,526                          1,139,456,227
+
+   2022-09-05        Receipt against invoice (rcpt #360)                                          27,643,193        1,167,099,420
+
+   2022-09-07      TDS deposited (202208)                                 4,559,015                           1,162,540,405
+
+   2022-09-08        Receipt against invoice (rcpt #315)                                          62,507,089        1,225,047,494
+
+   2022-09-11        Receipt against invoice (rcpt #316)                                          62,507,089        1,287,554,583
+
+   2022-09-12       Vendor payment #320                                   37,460,451                          1,250,094,132
+
+   2022-09-17        Receipt against invoice (rcpt #137)                                          13,349,817        1,263,443,949
+
+   2022-09-19        Receipt against invoice (rcpt #104)                                          27,246,080        1,290,690,029
+
+   2022-09-20        Receipt against invoice (rcpt #341)                                          37,426,226        1,328,116,255
+
+   2022-09-20       Vendor payment #110                                    7,381,841                           1,320,734,414
+
+   2022-09-21       Vendor payment #119                                    6,284,137                           1,314,450,277
+
+   2022-09-22        Receipt against invoice (rcpt #317)                                          62,507,089        1,376,957,366
+
+   2022-09-22       Vendor payment #63                                    30,998,958                          1,345,958,408
+
+   2022-09-25        Receipt against invoice (rcpt #54)                                           20,472,860        1,366,431,268
+
+   2022-09-26        Receipt against invoice (rcpt #111)                                          46,399,014        1,412,830,282
+
+   2022-09-26        Receipt against invoice (rcpt #300)                                          64,300,767        1,477,131,049
+
+
+
+
+
+DOC-BANK-2022                                                                                                               Page 3 of 7
+
+   2022-09-28       Monthly salaries & site overheads (202209)                81,616,844                          1,395,514,205
+
+   2022-09-29        Receipt against invoice (rcpt #288)                                          54,704,163        1,450,218,368
+
+   2022-09-30       Vendor payment #322                                   55,035,744                          1,395,182,624
+
+   2022-10-01        Plant & machinery additions FY2022                      88,600,000                          1,306,582,624
+
+   2022-10-01        Receipt against invoice (rcpt #74)                                           26,079,176        1,332,661,800
+
+   2022-10-01        Receipt against invoice (rcpt #289)                                          27,352,081        1,360,013,881
+
+   2022-10-02       Vendor payment #134                                   21,674,254                          1,338,339,627
+
+   2022-10-07       Vendor payment #339                                   53,428,977                          1,284,910,650
+
+   2022-10-07      TDS deposited (202209)                                 3,501,824                           1,281,408,826
+
+   2022-10-08       Vendor payment #335                                   28,545,167                          1,252,863,659
+
+   2022-10-10       Vendor payment #290                                   28,650,264                          1,224,213,395
+
+   2022-10-14        Receipt against invoice (rcpt #342)                                          74,852,454        1,299,065,849
+
+   2022-10-16        Receipt against invoice (rcpt #361)                                          55,286,386        1,354,352,235
+
+   2022-10-19        Receipt against invoice (rcpt #333)                                          63,631,240        1,417,983,475
+
+   2022-10-21       Vendor payment #329                                   36,880,983                          1,381,102,492
+
+   2022-10-23        Receipt against invoice (rcpt #124)                                          31,870,335        1,412,972,827
+
+   2022-10-23       Vendor payment #106                                   21,217,259                          1,391,755,568
+
+   2022-10-24       Vendor payment #333                                   44,013,686                          1,347,741,882
+
+   2022-10-25        Receipt against invoice (rcpt #409)                                          9,501,067         1,357,242,949
+
+   2022-10-26        Receipt against invoice (rcpt #141)                                           11,324,268        1,368,567,217
+
+   2022-10-26       Vendor payment #317                                   16,863,108                          1,351,704,109
+
+   2022-10-28       Monthly salaries & site overheads (202210)                81,616,844                          1,270,087,265
+
+   2022-10-30        Receipt against invoice (rcpt #332)                                          31,815,619        1,301,902,884
+
+   2022-11-02        Receipt against invoice (rcpt #133)                                          22,333,258        1,324,236,142
+
+   2022-11-07      TDS deposited (202210)                                 4,332,303                           1,319,903,839
+
+   2022-11-08        Receipt against invoice (rcpt #408)                                          9,501,067         1,329,404,906
+
+   2022-11-10        Receipt against invoice (rcpt #354)                                          45,556,772        1,374,961,678
+
+   2022-11-13       Vendor payment #334                                   23,331,854                          1,351,629,824
+
+   2022-11-15        Receipt against invoice (rcpt #102)                                          44,093,023        1,395,722,847
+
+   2022-11-17        Receipt against invoice (rcpt #334)                                          63,631,240        1,459,354,087
+
+   2022-11-20       Vendor payment #332                                   33,555,053                          1,425,799,034
+
+   2022-11-23        Receipt against invoice (rcpt #161)                                          56,172,523        1,481,971,557
+
+   2022-11-24       Vendor payment #64                                    31,350,503                          1,450,621,054
+
+
+
+
+
+DOC-BANK-2022                                                                                                               Page 4 of 7
+
+   2022-11-25        Receipt against invoice (rcpt #134)                                          22,333,258        1,472,954,312
+
+   2022-11-28        Monthly salaries & site overheads (202211)                81,616,844                          1,391,337,468
+
+   2022-11-30       Vendor payment #287                                   47,732,109                          1,343,605,359
+
+   2022-12-02        Receipt against invoice (rcpt #115)                                          40,944,316        1,384,549,675
+
+   2022-12-03       Vendor payment #124                                   31,376,753                          1,353,172,922
+
+   2022-12-07        Receipt against invoice (rcpt #153)                                          26,003,715        1,379,176,637
+
+   2022-12-07      TDS deposited (202211)                                 2,344,300                           1,376,832,337
+
+   2022-12-11        Receipt against invoice (rcpt #121)                                          17,614,545        1,394,446,882
+
+   2022-12-14        Receipt against invoice (rcpt #138)                                          6,674,908         1,401,121,790
+
+   2022-12-15       Vendor payment #268                                   52,540,155                          1,348,581,635
+
+   2022-12-16        Receipt against invoice (rcpt #343)                                          74,852,454        1,423,434,089
+
+   2022-12-19        Receipt against invoice (rcpt #318)                                          62,507,089        1,485,941,178
+
+   2022-12-28       Monthly salaries & site overheads (202212)                81,616,844                          1,404,324,334
+
+   2022-12-29       Vendor payment #131                                   16,691,764                          1,387,632,570
+
+   2023-01-01       Vendor payment #82                                    35,019,200                          1,352,613,370
+
+   2023-01-02       Vendor payment #118                                    1,677,142                           1,350,936,228
+
+   2023-01-03        Receipt against invoice (rcpt #108)                                          31,792,019        1,382,728,247
+
+   2023-01-03       Vendor payment #123                                   15,888,241                          1,366,840,006
+
+   2023-01-07       Vendor payment #121                                   41,447,092                          1,325,392,914
+
+   2023-01-07      TDS deposited (202212)                                 1,734,631                           1,323,658,283
+
+   2023-01-08       Vendor payment #40                                    35,629,357                          1,288,028,926
+
+   2023-01-10        Receipt against invoice (rcpt #406)                                          9,062,500         1,297,091,426
+
+   2023-01-12        Receipt against invoice (rcpt #70)                                            11,822,370        1,308,913,796
+
+   2023-01-13       Vendor payment #342                                   35,493,279                          1,273,420,517
+
+   2023-01-14       Vendor payment #276                                   22,999,103                          1,250,421,414
+
+   2023-01-15        Receipt against invoice (rcpt #55)                                           40,945,720        1,291,367,134
+
+   2023-01-18        Receipt against invoice (rcpt #125)                                          31,870,335        1,323,237,469
+
+   2023-01-20       Vendor payment #316                                   46,237,437                          1,277,000,032
+
+   2023-01-21        Receipt against invoice (rcpt #147)                                          43,964,367        1,320,964,399
+
+   2023-01-21        Receipt against invoice (rcpt #410)                                          9,501,067         1,330,465,466
+
+   2023-01-25        Receipt against invoice (rcpt #395)                                          3,660,846         1,334,126,312
+
+   2023-01-27       Vendor payment #289                                   26,405,653                          1,307,720,659
+
+   2023-01-28       Monthly salaries & site overheads (202201)                81,616,844                          1,226,103,815
+
+
+
+
+
+DOC-BANK-2022                                                                                                               Page 5 of 7
+
+   2023-01-29        Receipt against invoice (rcpt #169)                                          28,195,045        1,254,298,860
+
+   2023-01-29       Vendor payment #343                                   17,517,172                          1,236,781,688
+
+   2023-02-03        Receipt against invoice (rcpt #335)                                          63,631,240        1,300,412,928
+
+   2023-02-03       Vendor payment #308                                   5,626,726                           1,294,786,202
+
+   2023-02-06       Vendor payment #55                                    57,607,854                          1,237,178,348
+
+   2023-02-06       Vendor payment #311                                    9,992,348                           1,227,186,000
+
+   2023-02-07        Receipt against invoice (rcpt #355)                                          45,556,772        1,272,742,772
+
+   2023-02-07      TDS deposited (202301)                                 4,798,509                           1,267,944,263
+
+   2023-02-08       Vendor payment #93                                    19,589,421                          1,248,354,842
+
+   2023-02-08       Vendor payment #331                                   42,613,878                          1,205,740,964
+
+   2023-02-15        Receipt against invoice (rcpt #116)                                          40,944,316        1,246,685,280
+
+   2023-02-18        Receipt against invoice (rcpt #344)                                          74,852,454        1,321,537,734
+
+   2023-02-18       Vendor payment #284                                   56,940,995                          1,264,596,739
+
+   2023-02-20       Vendor payment #132                                   33,986,856                          1,230,609,883
+
+   2023-02-28       Monthly salaries & site overheads (202202)                81,616,844                          1,148,993,039
+
+   2023-03-01        Receipt against invoice (rcpt #398)                                          4,461,631         1,153,454,670
+
+   2023-03-04        Receipt against invoice (rcpt #301)                                          64,300,767        1,217,755,437
+
+   2023-03-04       Vendor payment #150                                   20,130,249                          1,197,625,188
+
+   2023-03-06        Receipt against invoice (rcpt #403)                                          8,219,903         1,205,845,091
+
+   2023-03-07        Receipt against invoice (rcpt #363)                                          27,643,193        1,233,488,284
+
+   2023-03-07      TDS deposited (202302)                                 3,902,722                           1,229,585,562
+
+   2023-03-09        Receipt against invoice (rcpt #142)                                           11,324,268        1,240,909,830
+
+   2023-03-10       Vendor payment #120                                   54,006,302                          1,186,903,528
+
+   2023-03-12       Vendor payment #318                                   35,515,535                          1,151,387,993
+
+   2023-03-13        Receipt against invoice (rcpt #156)                                          13,764,789        1,165,152,782
+
+   2023-03-15        Receipt against invoice (rcpt #319)                                          62,507,089        1,227,659,871
+
+   2023-03-18        Receipt against invoice (rcpt #336)                                          63,631,240        1,291,291,111
+
+   2023-03-18        Receipt against invoice (rcpt #362)                                          55,286,386        1,346,577,497
+
+   2023-03-18       Vendor payment #279                                   9,506,757                           1,337,070,740
+
+   2023-03-19        Receipt against invoice (rcpt #154)                                          26,003,715        1,363,074,455
+
+   2023-03-24        Receipt against invoice (rcpt #345)                                          74,852,454        1,437,926,909
+
+   2023-03-28        Receipt against invoice (rcpt #135)                                          22,333,258        1,460,260,167
+
+   2023-03-28       Monthly salaries & site overheads (202203)                81,616,855                          1,378,643,312
+
+
+
+
+
+DOC-BANK-2022                                                                                                               Page 6 of 7
+
+   2023-03-31        Receipt against invoice (rcpt #75)                                           26,079,176        1,404,722,488
+
+   2023-03-31       Vendor payment #146                                   33,884,046                          1,370,838,442
+
+   Closing balance                                                                                              1,370,838,442
+
+
+  Computer-generated statement; does not require signature. Entries are subject to realisation. Please report discrepancies within 30 days.
+
+
+
+
+
+DOC-BANK-2022                                                                                                               Page 7 of 7
