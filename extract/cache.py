@@ -8,6 +8,9 @@ import csv, json, pathlib, sys
 
 import fitz
 
+if hasattr(sys.stdout, "reconfigure"):   # Windows consoles default to cp1252
+    sys.stdout.reconfigure(encoding="utf-8")
+
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 DS = ROOT / "dataset"
 OUT = ROOT / "build"

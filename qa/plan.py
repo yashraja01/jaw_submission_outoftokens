@@ -177,7 +177,9 @@ def parameters(q, shape, facts):
         # engineer actually led, not the first corpus-wide name match
         work = facts.resolve_work(text, manager=p["manager"]) or work
     p["work"] = work
-    p["client"] = facts.resolve_client(text) or facts.client_of_work(work)
+    explicit = re.search(r"\b(?:pkg|package)\s*\d+", nq) is not None
+    p["client"] = (facts.resolve_client(text, mask_work=work if explicit else None)
+                   or facts.client_of_work(work))
     if p["client"] is None and p["manager"]:
         # "the client linked to X's portfolio", "X's principal account", "her top client"
         p["client"] = facts.primary_client_of(p["manager"])
@@ -199,9 +201,12 @@ def parameters(q, shape, facts):
         p["grading"] = {"marked good": "good", "graded good": "good",
                         "came back as good": "good"}.get(g, g)
     if shape == "awarded_vs_invoiced":
-        # two sub-variants: awarded vs invoiced, and awarded vs actually collected
+        # Default is invoiced. Switch to received only on explicit collection language:
+        # unanchored "collect" matches "re-collect-ion", and "claims"/"claimed" means invoiced
+        # throughout this corpus ("submitted claims", "formally claimed").
         p["against"] = ("received" if re.search(
-            r"collect|received|receipt|cash flow|realis|realiz", nq) else "invoiced")
+            r"\b(collected|received|receipts?|realised|realized|cash received)\b", nq)
+            else "invoiced")
     if shape == "date_span":
         p["issued"] = facts.credential_issue_date(text)
         m = re.search(r"\b(20\d\d)-(\d\d)-(\d\d)\b", text)

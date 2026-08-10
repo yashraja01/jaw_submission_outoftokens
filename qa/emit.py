@@ -30,9 +30,11 @@ def coerce(value, atype):
     if atype == "percent":
         return f"{min(100.0, max(0.0, round(f, 2))):.2f}"
     if atype == "money":
-        # signed: the mean_minus_median shape is explicitly "negative if avg dips"
+        # Signed, and zero is a legitimate answer: a single-work client has mean == median, so
+        # mean_minus_median is exactly 0. The scorer requires an exact 0 when gold is 0, so
+        # rejecting it here (and substituting the placeholder) turned a 1.0 into a 0.
         n = _int(f)
-        return str(n) if 0 < abs(n) <= 55_303_999_999 else None
+        return str(n) if abs(n) <= 55_303_999_999 else None
     if atype == "count":
         n = _int(f)
         return str(n) if n >= 0 else None
@@ -47,11 +49,15 @@ def write(answers, path=ROOT / "submission.csv", log=None):
     order = [r["question_id"] for r in csv.DictReader(open(DS / "sample_submission.csv"))]
     atype = {q["qid"]: q["answer_type"] for q in qs}
 
-    rows, filled = [], 0
+    rows, filled, substituted = [], 0, []
     for qid in order:
         t = atype[qid]
         s = coerce(answers.get(qid), t)
         if s is None:
+            # the solver produced a value the format rejected — always worth surfacing, it once
+            # silently replaced three legitimate zeros with the placeholder
+            if answers.get(qid) is not None:
+                substituted.append((qid, answers[qid]))
             s = coerce(FALLBACK[t], t)
         else:
             filled += 1
@@ -64,9 +70,9 @@ def write(answers, path=ROOT / "submission.csv", log=None):
 
     if log is not None:
         json.dump(log, open(ROOT / "build" / "derivations.json", "w"), indent=1, default=str)
-    return filled, len(rows)
+    return filled, len(rows), substituted
 
 
 if __name__ == "__main__":
-    n, tot = write({})
+    n, tot, _ = write({})
     print(f"skeleton written: {n} solved, {tot} rows")

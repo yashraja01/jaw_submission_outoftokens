@@ -36,18 +36,6 @@
   "question": "Regarding the Ring Road \u2014 West Bengal Pkg-128 assignment under PMP, with Amit Iyer as the assigned contact, could you please confirm the collection figure out o"
  },
  {
-  "qid": "HV-IC-0005",
-  "shape": "business_units",
-  "answer_type": "count",
-  "value": 4,
-  "source": "computed",
-  "derivation": "National Expressway Development Authority: 4 units across 9 works",
-  "client": "National Expressway Development Authority",
-  "manager": "Meera Chatterjee",
-  "work": null,
-  "question": "Please advise how many distinct internal business units have completed projects for the client linked to Meera Chatterjee\u2019s portfolio?"
- },
- {
   "qid": "HV-IC-0006",
   "shape": "awarded_vs_invoiced",
   "answer_type": "money",
@@ -58,30 +46,6 @@
   "manager": null,
   "work": null,
   "question": "Lakshya Engineering & Construction is under audit, so what is the exact gap between the total value of work awarded and the amount we have actually invoiced?"
- },
- {
-  "qid": "HV-IC-0007",
-  "shape": "role_split",
-  "answer_type": "money",
-  "value": 1239000000,
-  "source": "computed",
-  "derivation": "Public Health Engineering Dept, Odisha: 5 as Prime",
-  "client": "Public Health Engineering Dept, Odisha",
-  "manager": null,
-  "work": null,
-  "question": "Hey, I'm still finding my way around our Public Health Engineering Dept Odisha portfolio\u2014could you point me to where I'd find the combined value of all our prim"
- },
- {
-  "qid": "HV-IC-0008",
-  "shape": "business_units",
-  "answer_type": "count",
-  "value": 4,
-  "source": "computed",
-  "derivation": "Mega Infrastructure Authority: 4 units across 7 works",
-  "client": "Mega Infrastructure Authority",
-  "manager": "Tanvir Menon",
-  "work": null,
-  "question": "If I anchor this to Tanvir Menon\u2019s client roster, how many separate internal business units actually delivered the projects?"
  },
  {
   "qid": "HV-IC-0009",
@@ -108,30 +72,6 @@
   "question": "I\u2019m still getting my head around how we track these, but for the PMP assignment Tanvir Menon is handling on the Flyover \u2014 Delhi Pkg-99, what percentage out of 1"
  },
  {
-  "qid": "HV-IC-0011",
-  "shape": "largest_client_share",
-  "answer_type": "percent",
-  "value": 31.55,
-  "source": "computed",
-  "derivation": "Meera Roy: Arunodaya Infrastructure share of value across 6 clients",
-  "client": "Arunodaya Infrastructure",
-  "manager": "Meera Roy",
-  "work": null,
-  "question": "meera, what pct of her total deliveries went to her top client?"
- },
- {
-  "qid": "HV-IC-0012",
-  "shape": "pair_overlap",
-  "answer_type": "count",
-  "value": 9,
-  "source": "computed",
-  "derivation": "Suvarna Projects Limited: 9 completed works",
-  "client": "Suvarna Projects Limited",
-  "manager": "Sanjay Joshi",
-  "work": null,
-  "question": "Regarding Pooja Sen and Sanjay Joshi\u2019s Suvarna Projects Limited assignments, how many completed projects have both engineers delivered?"
- },
- {
   "qid": "HV-IC-0014",
   "shape": "date_span",
   "answer_type": "days",
@@ -142,30 +82,6 @@
   "manager": "Pooja Bose",
   "work": "Water Treatment Plant \u2014 Madhya Pradesh Pkg-23",
   "question": "I\u2019m pretty sure Pooja Bose\u2019s PMP for the Madhya Pradesh water plant was issued back in March 2021, but do you know how many days actually elapsed before that pr"
- },
- {
-  "qid": "HV-IC-0015",
-  "shape": "role_split",
-  "answer_type": "money",
-  "value": 7138700000,
-  "source": "computed",
-  "derivation": "Trishakti Power Generation Corporation: 11 as Prime",
-  "client": "Trishakti Power Generation Corporation",
-  "manager": null,
-  "work": null,
-  "question": "Starting from Trishakti Power Generation Corporation as Prime, cross-checking against the ledger, what figure covers our output?"
- },
- {
-  "qid": "HV-IC-0016",
-  "shape": "pair_overlap",
-  "answer_type": "count",
-  "value": 6,
-  "source": "computed",
-  "derivation": "Irrigation & Waterways Dept, Govt of Rajasthan: 6 completed works",
-  "client": "Irrigation & Waterways Dept, Govt of Rajasthan",
-  "manager": "Amit Mukherjee",
-  "work": "Lift Irrigation \u2014 Rajasthan Pkg-41",
-  "question": "I\u2019m fairly certain Priya Patel and Amit Mukherjee both covered the Irrigation & Waterways Dept, Govt of Rajasthan portfolio, but I want to verify my memory\u2014did "
  },
  {
   "qid": "HV-IC-0017",
@@ -192,18 +108,6 @@
   "question": "I\u2019m still finding my way around the bid desk, but could you quickly tell me the combined value of all the West Bengal irrigation and waterways projects that mee"
  },
  {
-  "qid": "HV-IC-0019",
-  "shape": "top_n_clients",
-  "answer_type": "money",
-  "value": 2293500000,
-  "source": "computed",
-  "derivation": "Priya Patel: top 2 of 3 clients (National Special Projects Office, National Expressway Development Authority)",
-  "client": "National Special Projects Office",
-  "manager": "Priya Patel",
-  "work": null,
-  "question": "Priya, could you confirm the verified delivered value for your two largest client relationships?"
- },
- {
   "qid": "HV-IC-0020",
   "shape": "distinct_category",
   "answer_type": "count",
@@ -226,18 +130,6 @@
   "manager": null,
   "work": null,
   "question": "What is the net difference in the value of work completed for Meridian Constructors & Co. between 2020 and 2022?"
- },
- {
-  "qid": "HV-IC-0022",
-  "shape": "pair_overlap",
-  "answer_type": "count",
-  "value": 19,
-  "source": "computed",
-  "derivation": "Trishakti Power Generation Corporation: 19 completed works",
-  "client": "Trishakti Power Generation Corporation",
-  "manager": "Lakshmi Ghosh",
-  "work": null,
-  "question": "I\u2019m reviewing the Trishakti Power Generation Corporation account and the initial tally feels off\u2014could you verify the exact count of finished projects Farhan Ro"
  },
  {
   "qid": "HV-IC-0023",
@@ -312,18 +204,6 @@
   "question": "Regarding Sunita Joshi\u2019s PMP credential (PMI-200039) and her assignment on the Ring Road \u2014 Uttar Pradesh Pkg-107 project for the National Expressway Development"
  },
  {
-  "qid": "HV-IC-0029",
-  "shape": "largest_client_share",
-  "answer_type": "percent",
-  "value": 40.74,
-  "source": "computed",
-  "derivation": "Meera Banerjee: Mahanadi Steel Corporation share of value across 6 clients",
-  "client": "Mahanadi Steel Corporation",
-  "manager": "Meera Banerjee",
-  "work": null,
-  "question": "Meera Banerjee, quick question while I\u2019m sorting through her file \u2014 still getting my bearings here, how do I figure out what percentage of her total deliveries "
- },
- {
   "qid": "HV-IC-0030",
   "shape": "avg_work_size",
   "answer_type": "money",
@@ -370,30 +250,6 @@
   "manager": "Tanvir Menon",
   "work": "Water Treatment Plant \u2014 Rajasthan Pkg-58",
   "question": "Could you walk me through how to calculate the rupee difference between the mean and the median contract value for all the completed works under the client for "
- },
- {
-  "qid": "HV-IC-0034",
-  "shape": "largest_client_share",
-  "answer_type": "percent",
-  "value": 93.68,
-  "source": "computed",
-  "derivation": "Chandan Banerjee: Trishakti Power Generation Corporation share of value across 2 clients",
-  "client": "Trishakti Power Generation Corporation",
-  "manager": "Chandan Banerjee",
-  "work": null,
-  "question": "Chandan Banerjee\u2019s file shows a few different metrics, but I\u2019m pretty sure the headline figure isn\u2019t what we actually need for the bid, so how do I calculate th"
- },
- {
-  "qid": "HV-IC-0035",
-  "shape": "role_split",
-  "answer_type": "money",
-  "value": 1239000000,
-  "source": "computed",
-  "derivation": "Public Health Engineering Dept, Odisha: 5 as Prime",
-  "client": "Public Health Engineering Dept, Odisha",
-  "manager": null,
-  "work": null,
-  "question": "What\u2019s the combined contract value for all our Prime assignments with Public Health Engineering Dept, Odisha right now\u2014the bid submission is closing in an hour "
  },
  {
   "qid": "HV-IC-0036",
@@ -516,18 +372,6 @@
   "question": "Lakshya Engineering & Construction, what is the exact difference in value between our largest completed project and the second-largest?"
  },
  {
-  "qid": "HV-IC-0047",
-  "shape": "pair_overlap",
-  "answer_type": "count",
-  "value": 3,
-  "source": "computed",
-  "derivation": "Maharashtra Municipal Corporation: 3 completed works",
-  "client": "Maharashtra Municipal Corporation",
-  "manager": "Lakshmi Ghosh",
-  "work": null,
-  "question": "Lakshmi Ghosh and Sanjay Joshi both covered the Maharashtra Municipal Corporation account, but what\u2019s the combined count of finished projects they delivered the"
- },
- {
   "qid": "HV-IC-0048",
   "shape": "temporal_chain",
   "answer_type": "money",
@@ -591,10 +435,10 @@
   "qid": "HV-IC-0054",
   "shape": "hop_aggregate",
   "answer_type": "money",
-  "value": 3296200000,
+  "value": 8563200000,
   "source": "computed",
-  "derivation": "Mahanadi Steel Corporation: sum of 12 works",
-  "client": "Mahanadi Steel Corporation",
+  "derivation": "Trishakti Power Generation Corporation: sum of 19 works",
+  "client": "Trishakti Power Generation Corporation",
   "manager": "Lakshmi Ghosh",
   "work": "Steel Truss Bridge \u2014 Gujarat Pkg-112",
   "question": "lakshmi ghosh\u2019s pmp on the gujarat steel truss bridge, what\u2019s the total value of all completed trishakti work?"
@@ -624,30 +468,6 @@
   "question": "When finalizing the audit-ready submission for the National Expressway Development Authority, what is the combined value of all completed assignments Priya Pate"
  },
  {
-  "qid": "HV-IC-0057",
-  "shape": "top_n_clients",
-  "answer_type": "money",
-  "value": 3930300000,
-  "source": "computed",
-  "derivation": "Tanvir Menon: top 2 of 5 clients (Mega Infrastructure Authority, Subarnarekha Valley Corporation)",
-  "client": "Mega Infrastructure Authority",
-  "manager": "Tanvir Menon",
-  "work": null,
-  "question": "Tanvir, I\u2019m still getting my bearings on how we track the bid metrics, but could you let me know what the delivered value comes to when you add his two largest "
- },
- {
-  "qid": "HV-IC-0058",
-  "shape": "grading_filter",
-  "answer_type": "money",
-  "value": 1715900000,
-  "source": "computed",
-  "derivation": "Arunodaya Infrastructure: 5 graded satisfactory",
-  "client": "Arunodaya Infrastructure",
-  "manager": null,
-  "work": null,
-  "question": "Just to clear my head, I thought the Arunodaya Infrastructure assignments that came back as Satisfactory total around 4.2 crores, but I can\u2019t quite pin down the"
- },
- {
   "qid": "HV-IC-0059",
   "shape": "date_span",
   "answer_type": "days",
@@ -658,18 +478,6 @@
   "manager": "Rahul Menon",
   "work": "Material Handling Plant \u2014 Uttar Pradesh Pkg-89",
   "question": "PMP issued 2021-03-10; Rahul Menon; Material Handling Plant \u2014 Uttar Pradesh Pkg-89, cross-checking against the timeline, what is the count from that issue to th"
- },
- {
-  "qid": "HV-IC-0060",
-  "shape": "pair_overlap",
-  "answer_type": "count",
-  "value": 4,
-  "source": "computed",
-  "derivation": "Jal Nigam, Uttar Pradesh: 4 completed works",
-  "client": "Jal Nigam, Uttar Pradesh",
-  "manager": "Tanvir Malhotra",
-  "work": "Drainage Works \u2014 Uttar Pradesh Pkg-144",
-  "question": "Regarding Meera Roy\u2019s initial engagement with Jal Nigam, Uttar Pradesh, could you confirm the total number of completed works we hold for that client, specifica"
  },
  {
   "qid": "HV-IC-0061",
@@ -684,18 +492,6 @@
   "question": "Subarnarekha Valley Corporation shows works we have awarded, so what is the amount after we cross-check against the invoice amount?"
  },
  {
-  "qid": "HV-IC-0062",
-  "shape": "awarded_vs_invoiced",
-  "answer_type": "money",
-  "value": 213836582,
-  "source": "computed",
-  "derivation": "Lakshya Engineering & Construction: awarded 1,944,300,000 vs invoiced 1,730,463,418",
-  "client": "Lakshya Engineering & Construction",
-  "manager": null,
-  "work": null,
-  "question": "I\u2019m fairly certain we clocked a specific sum on the Lakshya Engineering & Construction account while acting as Prime, but I\u2019m half-remembering the exact figure\u2014"
- },
- {
   "qid": "HV-IC-0063",
   "shape": "distinct_category",
   "answer_type": "count",
@@ -706,90 +502,6 @@
   "manager": "Manoj Verma",
   "work": null,
   "question": "pmp; manoj verma, how many work categories has he actually wrapped up?"
- },
- {
-  "qid": "HV-IC-0064",
-  "shape": "role_split",
-  "answer_type": "money",
-  "value": 704500000,
-  "source": "computed",
-  "derivation": "Arunodaya Infrastructure: 3 as Prime",
-  "client": "Arunodaya Infrastructure",
-  "manager": null,
-  "work": null,
-  "question": "Hey, I\u2019m still getting my bearings here\u2014when I pull up Arunodaya Infrastructure as Prime, where do I usually find the combined value of everything we\u2019ve deliver"
- },
- {
-  "qid": "HV-IC-0065",
-  "shape": "top_n_clients",
-  "answer_type": "money",
-  "value": 950400000,
-  "source": "computed",
-  "derivation": "Meera Banerjee: top 2 of 6 clients (Mahanadi Steel Corporation, Tamil Nadu Municipal Corporation)",
-  "client": "Mahanadi Steel Corporation",
-  "manager": "Meera Banerjee",
-  "work": null,
-  "question": "Meera Banerjee\u2019s account breakdown is still a bit of a learning curve for me, but could you let me know what the delivered value comes to for her top two accoun"
- },
- {
-  "qid": "HV-IC-0066",
-  "shape": "grading_filter",
-  "answer_type": "money",
-  "value": 1715900000,
-  "source": "computed",
-  "derivation": "Arunodaya Infrastructure: 5 graded satisfactory",
-  "client": "Arunodaya Infrastructure",
-  "manager": null,
-  "work": null,
-  "question": "When the auditor requests the defensible figure for the Arunodaya Infrastructure assignments that the client marked Satisfactory on their completion sign-off, w"
- },
- {
-  "qid": "HV-IC-0067",
-  "shape": "top_n_clients",
-  "answer_type": "money",
-  "value": 1921100000,
-  "source": "computed",
-  "derivation": "Sunita Joshi: top 2 of 4 clients (National Expressway Development Authority, Suvarna Projects Limited)",
-  "client": "National Expressway Development Authority",
-  "manager": "Sunita Joshi",
-  "work": null,
-  "question": "sunita, what\u2019s the total delivered value for your top two clients?"
- },
- {
-  "qid": "HV-IC-0068",
-  "shape": "largest_client_share",
-  "answer_type": "percent",
-  "value": 64.3,
-  "source": "computed",
-  "derivation": "Rahul Das: Mahanadi Steel Corporation share of value across 3 clients",
-  "client": "Mahanadi Steel Corporation",
-  "manager": "Rahul Das",
-  "work": null,
-  "question": "Rahul Das, how do I calculate the percentage of his total deliveries that went to his single biggest client as a number out of 100 for the bid deadline from his"
- },
- {
-  "qid": "HV-IC-0069",
-  "shape": "role_split",
-  "answer_type": "money",
-  "value": 557400000,
-  "source": "computed",
-  "derivation": "National Expressway Development Authority: 3 as JV Partner",
-  "client": "National Expressway Development Authority",
-  "manager": null,
-  "work": null,
-  "question": "National Expressway Development Authority as JV Partner, what\u2019s the full value of everything we delivered there\u2014the bid submission closes in an hour and I need "
- },
- {
-  "qid": "HV-IC-0070",
-  "shape": "role_split",
-  "answer_type": "money",
-  "value": 634500000,
-  "source": "computed",
-  "derivation": "Maharashtra Municipal Corporation: 2 as Prime",
-  "client": "Maharashtra Municipal Corporation",
-  "manager": null,
-  "work": null,
-  "question": "Maharashtra Municipal Corporation as Prime\u2014where do I usually find the full monetary value of everything we\u2019ve actually completed for them, since I\u2019m still lear"
  },
  {
   "qid": "HV-IC-0071",
@@ -807,10 +519,10 @@
   "qid": "HV-IC-0072",
   "shape": "mean_minus_median",
   "answer_type": "money",
-  "value": 0,
+  "value": 40288889,
   "source": "computed",
-  "derivation": "Public Works Department, Govt of West Bengal: mean 400,000,000 - median 400,000,000 over 1 works",
-  "client": "Public Works Department, Govt of West Bengal",
+  "derivation": "Suvarna Projects Limited: mean 260,188,888 - median 219,900,000 over 9 works",
+  "client": "Suvarna Projects Limited",
   "manager": "Sanjay Joshi",
   "work": "STP \u2014 West Bengal Pkg-73",
   "question": "I\u2019m still finding my footing on the bid desk, so when I pull up Sanjay Joshi\u2019s PMP for the West Bengal Pkg-73 STP, how do I calculate the rupee difference betwe"
@@ -819,10 +531,10 @@
   "qid": "HV-IC-0073",
   "shape": "collection_pct",
   "answer_type": "percent",
-  "value": 82.38,
+  "value": 78.18,
   "source": "computed",
-  "derivation": "Lakshya Engineering & Construction: 1,425,618,023/1,730,463,418",
-  "client": "Lakshya Engineering & Construction",
+  "derivation": "Arunodaya Infrastructure: 927,367,871/1,186,226,960",
+  "client": "Arunodaya Infrastructure",
   "manager": "Farhan Khan",
   "work": "Highway Construction \u2014 Rajasthan Pkg-77",
   "question": "What percentage out of 100 collected aligns with the billed amounts for the Farhan Khan PMP on Highway Construction \u2014 Rajasthan Pkg-77 versus the invoiced total"
@@ -840,18 +552,6 @@
   "question": "PMP; Rohit Singh, please advise on the count of separate work categories he has concluded."
  },
  {
-  "qid": "HV-IC-0075",
-  "shape": "largest_client_share",
-  "answer_type": "percent",
-  "value": 56.18,
-  "source": "computed",
-  "derivation": "Lakshmi Ghosh: Trishakti Power Generation Corporation share of value across 5 clients",
-  "client": "Trishakti Power Generation Corporation",
-  "manager": "Lakshmi Ghosh",
-  "work": null,
-  "question": "Lakshmi Ghosh, could you please confirm the percentage of her total delivered assignments that were directed to her largest client, stated as a whole number out"
- },
- {
   "qid": "HV-IC-0076",
   "shape": "date_span",
   "answer_type": "days",
@@ -862,30 +562,6 @@
   "manager": "Rahul Das",
   "work": "Rigid Pavement \u2014 Madhya Pradesh Pkg-49",
   "question": "rahul das mp pkg-49 rigid pavement pmp issued march 10 2021, days to completion?"
- },
- {
-  "qid": "HV-IC-0078",
-  "shape": "collection_pct",
-  "answer_type": "percent",
-  "value": 99.78,
-  "source": "computed",
-  "derivation": "Trishakti Power Generation Corporation: 1,559,915,846/1,563,423,500",
-  "client": "Trishakti Power Generation Corporation",
-  "manager": "Farhan Rao",
-  "work": null,
-  "question": "Farhan Rao\u2019s account, quick check while I\u2019m going through his deliveries \u2014 I\u2019m pretty sure his largest client took up the majority of his total, but can you jus"
- },
- {
-  "qid": "HV-IC-0079",
-  "shape": "role_split",
-  "answer_type": "money",
-  "value": 1599300000,
-  "source": "computed",
-  "derivation": "Mahanadi Steel Corporation: 4 as JV Partner",
-  "client": "Mahanadi Steel Corporation",
-  "manager": null,
-  "work": null,
-  "question": "Could you please confirm the aggregate monetary value of all completed engagements we delivered for Mahanadi Steel Corporation while operating as their joint ve"
  },
  {
   "qid": "HV-IC-0080",
@@ -924,30 +600,6 @@
   "question": "neha\u2019s pmp bituminous overlay odisha pkg-35, what\u2019s the average size across all our finished work for that client?"
  },
  {
-  "qid": "HV-IC-0083",
-  "shape": "pair_overlap",
-  "answer_type": "count",
-  "value": 9,
-  "source": "computed",
-  "derivation": "National Expressway Development Authority: 9 completed works",
-  "client": "National Expressway Development Authority",
-  "manager": "Meera Chatterjee",
-  "work": null,
-  "question": "I\u2019m pretty sure Meera Chatterjee and Gautam Joshi both covered the National Expressway Development Authority account under their PMP credentials, but I want to "
- },
- {
-  "qid": "HV-IC-0084",
-  "shape": "pair_overlap",
-  "answer_type": "count",
-  "value": 9,
-  "source": "computed",
-  "derivation": "National Expressway Development Authority: 9 completed works",
-  "client": "National Expressway Development Authority",
-  "manager": "Sunita Joshi",
-  "work": null,
-  "question": "Rajesh Rao and Sunita Joshi both covered the National Expressway Development Authority account, but what\u2019s the combined tally of closed engagements they both ha"
- },
- {
   "qid": "HV-IC-0085",
   "shape": "year_delta",
   "answer_type": "money",
@@ -972,18 +624,6 @@
   "question": "Tanvir Malhotra\u2019s PMP for the Jharkhand Pkg-78 flyover shows a quick read that doesn\u2019t track, so once you actually pull the client\u2019s completed works and run the"
  },
  {
-  "qid": "HV-IC-0087",
-  "shape": "business_units",
-  "answer_type": "count",
-  "value": 6,
-  "source": "computed",
-  "derivation": "Trishakti Power Generation Corporation: 6 units across 19 works",
-  "client": "Trishakti Power Generation Corporation",
-  "manager": "Lakshmi Ghosh",
-  "work": null,
-  "question": "lakshmi, how many distinct internal business units actually delivered for her main client?"
- },
- {
   "qid": "HV-IC-0088",
   "shape": "mean_minus_median",
   "answer_type": "money",
@@ -994,18 +634,6 @@
   "manager": "Kavita Reddy",
   "work": "Process Piping Package \u2014 Delhi Pkg-75",
   "question": "Kavita Reddy\u2019s PMP for the Process Piping Package \u2014 Delhi Pkg-75 is in my hand, but I\u2019m still figuring out the bid desk workflow, so how do I actually calculate"
- },
- {
-  "qid": "HV-IC-0089",
-  "shape": "largest_client_share",
-  "answer_type": "percent",
-  "value": 59.19,
-  "source": "computed",
-  "derivation": "Priti Pillai: Mega Infrastructure Authority share of value across 4 clients",
-  "client": "Mega Infrastructure Authority",
-  "manager": "Priti Pillai",
-  "work": null,
-  "question": "Priti Pillai, I reviewed the initial readout for your account and the headline figure looks too clean to be accurate for the bid, so how do I actually calculate"
  },
  {
   "qid": "HV-IC-0090",
@@ -1056,18 +684,6 @@
   "question": "I\u2019m still getting my head around how we track client history, but when I pull up Deepa Chatterjee\u2019s PMP file for Hospital Block \u2014 West Bengal Pkg-18, I only see"
  },
  {
-  "qid": "HV-IC-0094",
-  "shape": "exclusion_aggregate",
-  "answer_type": "money",
-  "value": 7138700000,
-  "source": "computed",
-  "derivation": "Trishakti Power Generation Corporation: Prime only (no category)",
-  "client": "Trishakti Power Generation Corporation",
-  "manager": null,
-  "work": null,
-  "question": "I\u2019m looking at the Trishakti Power Generation Corporation entry as Prime and the figure staring back at me seems way too high\u2014what\u2019s the actual delivered value "
- },
- {
   "qid": "HV-IC-0095",
   "shape": "referenced_share",
   "answer_type": "percent",
@@ -1095,10 +711,10 @@
   "qid": "HV-IC-0097",
   "shape": "collection_pct",
   "answer_type": "percent",
-  "value": 82.38,
+  "value": 78.13,
   "source": "computed",
-  "derivation": "Lakshya Engineering & Construction: 1,425,618,023/1,730,463,418",
-  "client": "Lakshya Engineering & Construction",
+  "derivation": "Subarnarekha Valley Corporation: 1,097,957,926/1,405,329,804",
+  "client": "Subarnarekha Valley Corporation",
   "manager": "Neha Chopra",
   "work": "Highway Construction \u2014 Maharashtra Pkg-91",
   "question": "Neha Chopra PMP Highway Construction \u2014 Maharashtra Pkg-91 billing versus collection, what is the collection percentage out of 100 against the billing total?"
@@ -1140,42 +756,6 @@
   "question": "Regarding Meera Chatterjee\u2019s PMP for the Rigid Pavement \u2014 Jharkhand Pkg-56, could you please calculate the rupee difference between the mean and median contract"
  },
  {
-  "qid": "HV-IC-0101",
-  "shape": "role_split",
-  "answer_type": "money",
-  "value": 883600000,
-  "source": "computed",
-  "derivation": "Jal Nigam, Jharkhand: 2 as JV Partner",
-  "client": "Jal Nigam, Jharkhand",
-  "manager": null,
-  "work": null,
-  "question": "I\u2019m still wrapping my head around how we track these JV assignments\u2014while I\u2019m flipping through this, could you quickly point me to the complete monetary value w"
- },
- {
-  "qid": "HV-IC-0102",
-  "shape": "top_n_clients",
-  "answer_type": "money",
-  "value": 703100000,
-  "source": "computed",
-  "derivation": "Rajesh Rao: top 2 of 3 clients (Maharashtra Municipal Corporation, National Expressway Development Authority)",
-  "client": "Maharashtra Municipal Corporation",
-  "manager": "Rajesh Rao",
-  "work": null,
-  "question": "Rajesh Rao\u2019s file is on my desk, but I\u2019m still getting my head around how we track these figures\u2014what\u2019s the combined delivered value for his two biggest client "
- },
- {
-  "qid": "HV-IC-0103",
-  "shape": "top_n_clients",
-  "answer_type": "money",
-  "value": 3930300000,
-  "source": "computed",
-  "derivation": "Tanvir Menon: top 2 of 5 clients (Mega Infrastructure Authority, Subarnarekha Valley Corporation)",
-  "client": "Mega Infrastructure Authority",
-  "manager": "Tanvir Menon",
-  "work": null,
-  "question": "I\u2019m trying to verify if my memory is right on Tanvir Menon\u2019s account breakdown\u2014could you just confirm whether the delivered value for his largest two client rel"
- },
- {
   "qid": "HV-IC-0104",
   "shape": "rank_value",
   "answer_type": "money",
@@ -1198,54 +778,6 @@
   "manager": null,
   "work": null,
   "question": "Trishakti Power Generation Corporation has a few bids hitting the twenty-five crore mark, but I need the combined value of those clearing that threshold before "
- },
- {
-  "qid": "HV-IC-0106",
-  "shape": "business_units",
-  "answer_type": "count",
-  "value": 4,
-  "source": "computed",
-  "derivation": "Suvarna Projects Limited: 4 units across 9 works",
-  "client": "Suvarna Projects Limited",
-  "manager": "Pooja Sen",
-  "work": null,
-  "question": "Cross-checking against Pooja Sen\u2019s client account, how many business units delivered the assignments?"
- },
- {
-  "qid": "HV-IC-0107",
-  "shape": "work_count",
-  "answer_type": "count",
-  "value": 3,
-  "source": "computed",
-  "derivation": "3 works",
-  "client": "Irrigation & Waterways Dept, Govt of West Bengal",
-  "manager": "Kavita Reddy",
-  "work": "Lift Irrigation \u2014 West Bengal Pkg-13",
-  "question": "Kavita Reddy and Rahul Menon covered the Irrigation & Waterways Dept, Govt of West Bengal account under PMP credentials, but what is the count of completed enga"
- },
- {
-  "qid": "HV-IC-0108",
-  "shape": "business_units",
-  "answer_type": "count",
-  "value": 4,
-  "source": "computed",
-  "derivation": "Subarnarekha Valley Corporation: 4 units across 9 works",
-  "client": "Subarnarekha Valley Corporation",
-  "manager": "Amit Iyer",
-  "work": null,
-  "question": "I\u2019m pretty sure Amit Iyer\u2019s client account only involved a couple of our internal teams, but am I misremembering exactly how many distinct internal business uni"
- },
- {
-  "qid": "HV-IC-0109",
-  "shape": "role_split",
-  "answer_type": "money",
-  "value": 7138700000,
-  "source": "computed",
-  "derivation": "Trishakti Power Generation Corporation: 11 as Prime",
-  "client": "Trishakti Power Generation Corporation",
-  "manager": null,
-  "work": null,
-  "question": "Trishakti Power Generation Corporation as Prime\u2014what\u2019s the final delivered amount for that scope, since I need to lock the commercial section before the cutoff?"
  },
  {
   "qid": "HV-IC-0110",
@@ -1284,18 +816,6 @@
   "question": "I need to lock down the exact difference in completed work value for the Public Health Engineering Dept, Odisha between 2023 and 2024\u2014what\u2019s the precise figure?"
  },
  {
-  "qid": "HV-IC-0113",
-  "shape": "business_units",
-  "answer_type": "count",
-  "value": 6,
-  "source": "computed",
-  "derivation": "Trishakti Power Generation Corporation: 6 units across 19 works",
-  "client": "Trishakti Power Generation Corporation",
-  "manager": "Chandan Banerjee",
-  "work": null,
-  "question": "chandan, for that power client, how many business units handled the delivery?"
- },
- {
   "qid": "HV-IC-0114",
   "shape": "distinct_category",
   "answer_type": "count",
@@ -1318,18 +838,6 @@
   "manager": "Meera Banerjee",
   "work": "Pumping Station \u2014 Tamil Nadu Pkg-16",
   "question": "I suspect that number on Meera Banerjee\u2019s PMP for the Pumping Station \u2014 Tamil Nadu Pkg-16 only covers this specific site, so what\u2019s the properly-derived average"
- },
- {
-  "qid": "HV-IC-0117",
-  "shape": "largest_client_share",
-  "answer_type": "percent",
-  "value": 51.58,
-  "source": "computed",
-  "derivation": "Rohit Singh: Peninsular Petroleum Corporation share of value across 3 clients",
-  "client": "Peninsular Petroleum Corporation",
-  "manager": "Rohit Singh",
-  "work": null,
-  "question": "rohit singh, what percentage of his deliveries went to his top client as a whole number out of 100?"
  },
  {
   "qid": "HV-IC-0118",
@@ -1428,18 +936,6 @@
   "question": "Suvarna Projects Limited; excluding water supply \u2014 what\u2019s the final tally for the rest before we lock the bid?"
  },
  {
-  "qid": "HV-IC-0126",
-  "shape": "pair_overlap",
-  "answer_type": "count",
-  "value": 12,
-  "source": "computed",
-  "derivation": "Mahanadi Steel Corporation: 12 completed works",
-  "client": "Mahanadi Steel Corporation",
-  "manager": "Suresh Chopra",
-  "work": null,
-  "question": "Pooja Bose and Suresh Chopra, both PMPs, need the total count of closed engagements for Mahanadi Steel Corporation they've both handled to finalize the bid\u2014what"
- },
- {
   "qid": "HV-IC-0127",
   "shape": "gap_to_threshold",
   "answer_type": "money",
@@ -1450,18 +946,6 @@
   "manager": "Divya Singh",
   "work": "Lift Irrigation \u2014 West Bengal Pkg-13",
   "question": "I\u2019m up against a submission deadline for the Irrigation & Waterways Dept, Govt of West Bengal, so what\u2019s the outstanding contract value we still need to secure "
- },
- {
-  "qid": "HV-IC-0128",
-  "shape": "pair_overlap",
-  "answer_type": "count",
-  "value": 7,
-  "source": "computed",
-  "derivation": "Mega Infrastructure Authority: 7 completed works",
-  "client": "Mega Infrastructure Authority",
-  "manager": "Meera Roy",
-  "work": null,
-  "question": "meera and uma covered mega infrastructure authority under their pmp and six sigma, what\u2019s the figure we hold?"
  },
  {
   "qid": "HV-IC-0129",
@@ -1500,30 +984,6 @@
   "question": "Maharashtra Municipal Corporation; excluding industrial epc \u2014 what is the net contract value for the remaining scope ahead of our submission deadline?"
  },
  {
-  "qid": "HV-IC-0132",
-  "shape": "pair_overlap",
-  "answer_type": "count",
-  "value": 6,
-  "source": "computed",
-  "derivation": "Irrigation & Waterways Dept, Govt of Rajasthan: 6 completed works",
-  "client": "Irrigation & Waterways Dept, Govt of Rajasthan",
-  "manager": "Meera Banerjee",
-  "work": "Lift Irrigation \u2014 Rajasthan Pkg-41",
-  "question": "Tanvir Menon and Meera Banerjee both logged PMP-certified assignments for the Irrigation & Waterways Dept, Govt of Rajasthan, but what\u2019s the exact count of comp"
- },
- {
-  "qid": "HV-IC-0133",
-  "shape": "top_n_clients",
-  "answer_type": "money",
-  "value": 1209200000,
-  "source": "computed",
-  "derivation": "Divya Singh: top 2 of 3 clients (Lakshya Engineering & Construction, Suvarna Projects Limited)",
-  "client": "Lakshya Engineering & Construction",
-  "manager": "Divya Singh",
-  "work": null,
-  "question": "I\u2019m fairly certain Divya Singh\u2019s delivered value for her two biggest relationships sits at a particular figure, but I\u2019m fuzzy on the exact split\u2014could you just "
- },
- {
   "qid": "HV-IC-0134",
   "shape": "avg_work_size",
   "answer_type": "money",
@@ -1554,22 +1014,10 @@
   "value": 86,
   "source": "computed",
   "derivation": "Lift Irrigation \u2014 West Bengal Pkg-13: 2021-03-10 -> 2021-06-04",
-  "client": "Irrigation & Waterways Dept, Govt of West Bengal",
+  "client": "Suvarna Projects Limited",
   "manager": "Divya Singh",
   "work": "Lift Irrigation \u2014 West Bengal Pkg-13",
   "question": "Divya Singh\u2019s March 10th 2021 PMP for the West Bengal Pkg-13 lift irrigation package\u2014what\u2019s the count from that issue date to the final completion mark?"
- },
- {
-  "qid": "HV-IC-0137",
-  "shape": "grading_filter",
-  "answer_type": "money",
-  "value": 1715900000,
-  "source": "computed",
-  "derivation": "Arunodaya Infrastructure: 5 graded satisfactory",
-  "client": "Arunodaya Infrastructure",
-  "manager": null,
-  "work": null,
-  "question": "what\u2019s the total sum for arunodaya infrastructure works the client marked satisfactory?"
  },
  {
   "qid": "HV-IC-0138",
@@ -1608,42 +1056,6 @@
   "question": "Mahanadi Steel Corporation; excluding bridges flyovers \u2014 what figure aligns with the cross-check against the ledger?"
  },
  {
-  "qid": "HV-IC-0141",
-  "shape": "business_units",
-  "answer_type": "count",
-  "value": 5,
-  "source": "computed",
-  "derivation": "Mahanadi Steel Corporation: 5 units across 12 works",
-  "client": "Mahanadi Steel Corporation",
-  "manager": "Pooja Bose",
-  "work": null,
-  "question": "Pooja Bose, could you please confirm the precise count of separate internal divisions that handled the assignments for her principal client?"
- },
- {
-  "qid": "HV-IC-0142",
-  "shape": "largest_client_share",
-  "answer_type": "percent",
-  "value": 29.15,
-  "source": "computed",
-  "derivation": "Sanjay Joshi: Public Works Department, Govt of Maharashtra share of value across 6 clients",
-  "client": "Public Works Department, Govt of Maharashtra",
-  "manager": "Sanjay Joshi",
-  "work": null,
-  "question": "Sanjay Joshi, I\u2019m racing the submission deadline and need the exact percentage of everything he has delivered that went to his single largest client, stated as "
- },
- {
-  "qid": "HV-IC-0143",
-  "shape": "pair_overlap",
-  "answer_type": "count",
-  "value": 3,
-  "source": "computed",
-  "derivation": "Public Works Department, Govt of Gujarat: 3 completed works",
-  "client": "Public Works Department, Govt of Gujarat",
-  "manager": "Farhan Roy",
-  "work": "Drainage Works \u2014 Gujarat Pkg-135",
-  "question": "farhan and naveen covered gujarat pw, what\u2019s the total count of completed works we hold for them?"
- },
- {
   "qid": "HV-IC-0144",
   "shape": "date_span",
   "answer_type": "days",
@@ -1654,18 +1066,6 @@
   "manager": "Naveen Roy",
   "work": "Handpump Installation \u2014 Uttar Pradesh Pkg-134",
   "question": "I\u2019m prepping the audit response, so what is the exact span from the March 10, 2021 PMP issuance for Naveen Roy\u2019s Handpump Installation \u2014 Uttar Pradesh Pkg-134 t"
- },
- {
-  "qid": "HV-IC-0145",
-  "shape": "top_n_clients",
-  "answer_type": "money",
-  "value": 938600000,
-  "source": "computed",
-  "derivation": "Pooja Bose: top 2 of 2 clients (Mahanadi Steel Corporation, Lakshya Engineering & Construction)",
-  "client": "Mahanadi Steel Corporation",
-  "manager": "Pooja Bose",
-  "work": null,
-  "question": "Pooja Bose\u2019s breakdown is still a bit hazy on my end\u2014am I right in recalling that her delivered value for the two largest client relationships actually adds up "
  },
  {
   "qid": "HV-IC-0146",
@@ -1728,18 +1128,6 @@
   "question": "Could you please sum the values of all completed assignments Pooja Sen has delivered to Trishakti Power Generation Corporation under her Six Sigma Black Belt cr"
  },
  {
-  "qid": "HV-IC-0154",
-  "shape": "pair_overlap",
-  "answer_type": "count",
-  "value": 12,
-  "source": "computed",
-  "derivation": "Mahanadi Steel Corporation: 12 completed works",
-  "client": "Mahanadi Steel Corporation",
-  "manager": "Pooja Bose",
-  "work": null,
-  "question": "Pooja Bose and Amit Iyer both handled Mahanadi Steel Corporation under their PMP and Six Sigma Black Belt credentials\u2014what\u2019s the combined tally of closed delive"
- },
- {
   "qid": "HV-IC-0155",
   "shape": "year_delta",
   "answer_type": "money",
@@ -1764,18 +1152,6 @@
   "question": "Trishakti Power Generation Corporation bids are being reconciled against the forty crore threshold, what is the sum?"
  },
  {
-  "qid": "HV-IC-0157",
-  "shape": "top_n_clients",
-  "answer_type": "money",
-  "value": 2293500000,
-  "source": "computed",
-  "derivation": "Priya Patel: top 2 of 3 clients (National Special Projects Office, National Expressway Development Authority)",
-  "client": "National Special Projects Office",
-  "manager": "Priya Patel",
-  "work": null,
-  "question": "I'm still getting used to how we roll these up\u2014could you just tell me what Priya's top two client relationships add up to in terms of delivered value?"
- },
- {
   "qid": "HV-IC-0158",
   "shape": "date_span",
   "answer_type": "days",
@@ -1798,18 +1174,6 @@
   "manager": null,
   "work": null,
   "question": "Trishakti Power Generation Corporation; excluding expressways \u2014 what value matches the cross-check against the portfolio?"
- },
- {
-  "qid": "HV-IC-0160",
-  "shape": "top_n_clients",
-  "answer_type": "money",
-  "value": 1276500000,
-  "source": "computed",
-  "derivation": "Rahul Menon: top 2 of 7 clients (Irrigation & Waterways Dept, Govt of West Bengal, Public Works Department, Govt of Maharashtra)",
-  "client": "Irrigation & Waterways Dept, Govt of West Bengal",
-  "manager": "Rahul Menon",
-  "work": null,
-  "question": "Rahul, I know the system flags a straightforward total for his top accounts, but that number feels off\u2014could you just confirm what the actual sum is for his top"
  },
  {
   "qid": "HV-IC-0161",
@@ -1860,18 +1224,6 @@
   "question": "gautam joshi\u2019s jharkhand pkg-61 material handling plant pmp from mar 10 2021\u2014what\u2019s the count to final completion?"
  },
  {
-  "qid": "HV-IC-0166",
-  "shape": "top_n_clients",
-  "answer_type": "money",
-  "value": 1395400000,
-  "source": "computed",
-  "derivation": "Rahul Das: top 2 of 3 clients (Mahanadi Steel Corporation, National Special Projects Office)",
-  "client": "Mahanadi Steel Corporation",
-  "manager": "Rahul Das",
-  "work": null,
-  "question": "Rahul Das, I\u2019m cross-checking against the rollup and need the delivered value sum for his two client relationships?"
- },
- {
   "qid": "HV-IC-0167",
   "shape": "mean_minus_median",
   "answer_type": "money",
@@ -1884,42 +1236,6 @@
   "question": "Suresh Das\u2019s Six Sigma Black Belt for the Road Widening \u2014 Odisha Pkg-98 points to a specific client, so what\u2019s the rupee difference between the average and medi"
  },
  {
-  "qid": "HV-IC-0168",
-  "shape": "business_units",
-  "answer_type": "count",
-  "value": 4,
-  "source": "computed",
-  "derivation": "Arunodaya Infrastructure: 4 units across 7 works",
-  "client": "Arunodaya Infrastructure",
-  "manager": "Meera Roy",
-  "work": null,
-  "question": "I\u2019m still learning how we track these, but when you pull up Meera Roy\u2019s file, how many different internal business units actually delivered for her principal cl"
- },
- {
-  "qid": "HV-IC-0169",
-  "shape": "business_units",
-  "answer_type": "count",
-  "value": 4,
-  "source": "computed",
-  "derivation": "Arunodaya Infrastructure: 4 units across 7 works",
-  "client": "Arunodaya Infrastructure",
-  "manager": "Meera Roy",
-  "work": null,
-  "question": "Meera Roy\u2019s principal account \u2014 how many distinct internal business units supported it, and can you confirm the count before the bid drops?"
- },
- {
-  "qid": "HV-IC-0171",
-  "shape": "business_units",
-  "answer_type": "count",
-  "value": 4,
-  "source": "computed",
-  "derivation": "Arunodaya Infrastructure: 4 units across 7 works",
-  "client": "Arunodaya Infrastructure",
-  "manager": "Neha Chopra",
-  "work": null,
-  "question": "Neha Chopra\u2019s principal account \u2014 please confirm the exact count of internal business units that actually delivered on their engagements."
- },
- {
   "qid": "HV-IC-0172",
   "shape": "rank_value",
   "answer_type": "money",
@@ -1930,18 +1246,6 @@
   "manager": null,
   "work": null,
   "question": "National Expressway Development Authority, what is the exact surplus value separating our highest-value finished contract from the next one down?"
- },
- {
-  "qid": "HV-IC-0173",
-  "shape": "largest_client_share",
-  "answer_type": "percent",
-  "value": 50.88,
-  "source": "computed",
-  "derivation": "Amit Iyer: Subarnarekha Valley Corporation share of value across 5 clients",
-  "client": "Subarnarekha Valley Corporation",
-  "manager": "Amit Iyer",
-  "work": null,
-  "question": "Amit Iyer's total deliveries are going into the bid package, but what is the exact percentage out of a hundred that went to his single largest client before we "
  },
  {
   "qid": "HV-IC-0175",
@@ -1990,18 +1294,6 @@
   "manager": "Sanjay Joshi",
   "work": null,
   "question": "sanjay joshi's pmp: what's the rupee mean-median gap for his client's works, negative if mean is lower?"
- },
- {
-  "qid": "HV-IC-0179",
-  "shape": "pair_overlap",
-  "answer_type": "count",
-  "value": 8,
-  "source": "computed",
-  "derivation": "Public Health Engineering Dept, Odisha: 8 completed works",
-  "client": "Public Health Engineering Dept, Odisha",
-  "manager": "Imran Joshi",
-  "work": null,
-  "question": "I\u2019m looking at the preliminary tally for Imran and Rajesh\u2019s Odisha Public Health Engineering portfolio, but that number\u2019s clearly just their individual project "
  },
  {
   "qid": "HV-IC-0180",
@@ -2076,18 +1368,6 @@
   "question": "That first total I saw for Lakshmi Ghosh\u2019s PMP issued 2021-03-10 clearly includes earlier completions, so what\u2019s the actual combined value of just the works she"
  },
  {
-  "qid": "HV-IC-0187",
-  "shape": "role_split",
-  "answer_type": "money",
-  "value": 1977800000,
-  "source": "computed",
-  "derivation": "Meridian Constructors & Co.: 5 as Prime",
-  "client": "Meridian Constructors & Co.",
-  "manager": null,
-  "work": null,
-  "question": "Could you please confirm the overall commercial value for all deliverables we executed under our Prime capacity for Meridian Constructors & Co.?"
- },
- {
   "qid": "HV-IC-0188",
   "shape": "avg_work_size",
   "answer_type": "money",
@@ -2110,18 +1390,6 @@
   "manager": "Meera Roy",
   "work": "Sewerage Network \u2014 Odisha Pkg-17",
   "question": "Meera Roy's PMP for the Sewerage Network \u2014 Odisha Pkg-17 \u2014 I'm locking the bid submission and need it for the deadline, so what percentage of everything billed "
- },
- {
-  "qid": "HV-IC-0190",
-  "shape": "pair_overlap",
-  "answer_type": "count",
-  "value": 6,
-  "source": "computed",
-  "derivation": "Public Works Department, Govt of Maharashtra: 6 completed works",
-  "client": "Public Works Department, Govt of Maharashtra",
-  "manager": "Neha Chopra",
-  "work": null,
-  "question": "I\u2019m pretty sure we\u2019ve got four completed works logged for both Neha and Imran under the Maharashtra PWD, but is that the exact number we\u2019re holding?"
  },
  {
   "qid": "HV-IC-0191",
@@ -2151,10 +1419,10 @@
   "qid": "HV-IC-0193",
   "shape": "mean_minus_median",
   "answer_type": "money",
-  "value": 0,
+  "value": 116057143,
   "source": "computed",
-  "derivation": "Public Works Department, Govt of West Bengal: mean 400,000,000 - median 400,000,000 over 1 works",
-  "client": "Public Works Department, Govt of West Bengal",
+  "derivation": "Lakshya Engineering & Construction: mean 277,757,142 - median 161,700,000 over 7 works",
+  "client": "Lakshya Engineering & Construction",
   "manager": "Neha Chopra",
   "work": "WTP Augmentation \u2014 West Bengal Pkg-30",
   "question": "Neha Chopra\u2019s PMP for the WTP Augmentation \u2014 West Bengal Pkg-30 is on my desk, but the number currently attached to her client\u2019s completed jobs feels off, so co"
@@ -2163,10 +1431,10 @@
   "qid": "HV-IC-0194",
   "shape": "mean_minus_median",
   "answer_type": "money",
-  "value": 0,
+  "value": 61833333,
   "source": "computed",
-  "derivation": "Public Works Department, Govt of Tamil Nadu: mean 260,900,000 - median 260,900,000 over 1 works",
-  "client": "Public Works Department, Govt of Tamil Nadu",
+  "derivation": "Mahanadi Steel Corporation: mean 274,683,333 - median 212,850,000 over 12 works",
+  "client": "Mahanadi Steel Corporation",
   "manager": "Pooja Bose",
   "work": "Process Piping Package \u2014 Tamil Nadu Pkg-54",
   "question": "Pooja Bose\u2019s PMP for the Process Piping Package \u2014 Tamil Nadu Pkg-54 is hitting the cutoff, so what\u2019s the rupee difference showing how much larger the average co"
@@ -2220,18 +1488,6 @@
   "question": "Arunodaya Infrastructure is pulling up a number that doesn\u2019t seem right, so could you actually work out the true gap between the full value of their awards and "
  },
  {
-  "qid": "HV-IC-0199",
-  "shape": "top_n_clients",
-  "answer_type": "money",
-  "value": 1135800000,
-  "source": "computed",
-  "derivation": "Asha Nair: top 2 of 4 clients (Jal Nigam, Jharkhand, Central Works & Buildings Bureau)",
-  "client": "Jal Nigam, Jharkhand",
-  "manager": "Asha Nair",
-  "work": null,
-  "question": "Asha Nair, I\u2019m still learning how we compile her proposals\u2014could you help me figure out what her two biggest client relationships come to when you combine their"
- },
- {
   "qid": "HV-IC-0200",
   "shape": "date_span",
   "answer_type": "days",
@@ -2244,18 +1500,6 @@
   "question": "how many days from lakshmi's mar 10 pmp for the mp pkg-42 widening to handover?"
  },
  {
-  "qid": "HV-IC-0201",
-  "shape": "top_n_clients",
-  "answer_type": "money",
-  "value": 584600000,
-  "source": "computed",
-  "derivation": "Gautam Joshi: top 2 of 3 clients (National Expressway Development Authority, Subarnarekha Valley Corporation)",
-  "client": "National Expressway Development Authority",
-  "manager": "Gautam Joshi",
-  "work": null,
-  "question": "Gautam Joshi, what\u2019s the precise delivered value sum for your two largest client relationships that I should cite to satisfy the auditor\u2019s breakdown?"
- },
- {
   "qid": "HV-IC-0202",
   "shape": "threshold_aggregate",
   "answer_type": "money",
@@ -2266,42 +1510,6 @@
   "manager": null,
   "work": null,
   "question": "Public Health Engineering Dept, Odisha has several assignments in our pipeline, and could you please calculate the combined value of those meeting or exceeding "
- },
- {
-  "qid": "HV-IC-0203",
-  "shape": "business_units",
-  "answer_type": "count",
-  "value": 6,
-  "source": "computed",
-  "derivation": "Trishakti Power Generation Corporation: 6 units across 19 works",
-  "client": "Trishakti Power Generation Corporation",
-  "manager": "Kavita Reddy",
-  "work": null,
-  "question": "Kavita Reddy\u2019s principal account \u2014 I\u2019m fairly certain the tally circulating right now is inflated, so could you actually verify how many separate internal units"
- },
- {
-  "qid": "HV-IC-0204",
-  "shape": "largest_client_share",
-  "answer_type": "percent",
-  "value": 60.31,
-  "source": "computed",
-  "derivation": "Suresh Chopra: Mahanadi Steel Corporation share of value across 2 clients",
-  "client": "Mahanadi Steel Corporation",
-  "manager": "Suresh Chopra",
-  "work": null,
-  "question": "Suresh Chopra, what is the exact whole-number percentage out of a hundred that his single largest client accounts for across all his delivered work?"
- },
- {
-  "qid": "HV-IC-0205",
-  "shape": "role_split",
-  "answer_type": "money",
-  "value": 1515400000,
-  "source": "computed",
-  "derivation": "Arunodaya Infrastructure: 4 as JV Partner",
-  "client": "Arunodaya Infrastructure",
-  "manager": null,
-  "work": null,
-  "question": "arunodaya infrastructure as jv partner\u2014what\u2019s the actual delivered value?"
  },
  {
   "qid": "HV-IC-0206",
@@ -2328,18 +1536,6 @@
   "question": "Regarding Meera Roy\u2019s PMP issued on March 10, 2021, what is the precise combined value of the assignments she directed that wrapped up after that date?"
  },
  {
-  "qid": "HV-IC-0208",
-  "shape": "top_n_clients",
-  "answer_type": "money",
-  "value": 1857000000,
-  "source": "computed",
-  "derivation": "Naveen Roy: top 2 of 5 clients (National Special Projects Office, Trishakti Power Generation Corporation)",
-  "client": "National Special Projects Office",
-  "manager": "Naveen Roy",
-  "work": null,
-  "question": "I\u2019m pretty sure Naveen Roy\u2019s two biggest client relationships come to a specific delivered value, but I want to check if my recollection is right\u2014could you just"
- },
- {
   "qid": "HV-IC-0209",
   "shape": "avg_work_size",
   "answer_type": "money",
@@ -2350,18 +1546,6 @@
   "manager": "Amit Iyer",
   "work": "Rigid Pavement \u2014 Madhya Pradesh Pkg-7",
   "question": "Amit Iyer\u2019s Six Sigma Black Belt certification for the Rigid Pavement \u2014 Madhya Pradesh Pkg-7 job is on my desk, but the number currently circulating feels like "
- },
- {
-  "qid": "HV-IC-0210",
-  "shape": "business_units",
-  "answer_type": "count",
-  "value": 2,
-  "source": "computed",
-  "derivation": "Jal Nigam, Gujarat: 2 units across 2 works",
-  "client": "Jal Nigam, Gujarat",
-  "manager": "Farhan Roy",
-  "work": null,
-  "question": "Farhan Roy\u2019s assignments \u2014 cross-checking against the delivery log, how many internal business units fulfilled those engagements?"
  },
  {
   "qid": "HV-IC-0211",
@@ -2386,18 +1570,6 @@
   "manager": null,
   "work": null,
   "question": "mega infra authority contract value seems high, can you pull the delta between secured work and submitted claims?"
- },
- {
-  "qid": "HV-IC-0213",
-  "shape": "pair_overlap",
-  "answer_type": "count",
-  "value": 19,
-  "source": "computed",
-  "derivation": "Trishakti Power Generation Corporation: 19 completed works",
-  "client": "Trishakti Power Generation Corporation",
-  "manager": "Tanvir Malhotra",
-  "work": null,
-  "question": "Tanvir Menon and Tanvir Malhotra both served Trishakti Power Generation Corporation\u2014what\u2019s the verified count of completed assignments we hold that were deliver"
  },
  {
   "qid": "HV-IC-0214",
@@ -2448,30 +1620,6 @@
   "question": "Meridian Constructors & Co., please confirm how much our largest work exceeds the second-largest."
  },
  {
-  "qid": "HV-IC-0218",
-  "shape": "role_split",
-  "answer_type": "money",
-  "value": 1711300000,
-  "source": "computed",
-  "derivation": "Suvarna Projects Limited: 6 as Prime",
-  "client": "Suvarna Projects Limited",
-  "manager": null,
-  "work": null,
-  "question": "Suvarna Projects Limited as Prime\u2014what\u2019s the exact figure we actually booked under that capacity, since I need to hold the line on the auditable number?"
- },
- {
-  "qid": "HV-IC-0219",
-  "shape": "largest_client_share",
-  "answer_type": "percent",
-  "value": 38.66,
-  "source": "computed",
-  "derivation": "Neha Chopra: Arunodaya Infrastructure share of value across 6 clients",
-  "client": "Arunodaya Infrastructure",
-  "manager": "Neha Chopra",
-  "work": null,
-  "question": "neha chopra, what whole number out of 100 is her top client\u2019s cut of all her deliveries?"
- },
- {
   "qid": "HV-IC-0220",
   "shape": "threshold_aggregate",
   "answer_type": "money",
@@ -2482,18 +1630,6 @@
   "manager": null,
   "work": null,
   "question": "peninsular petroleum bids, what\u2019s the sum for anything hitting fifteen crore or more?"
- },
- {
-  "qid": "HV-IC-0221",
-  "shape": "pair_overlap",
-  "answer_type": "count",
-  "value": 19,
-  "source": "computed",
-  "derivation": "Trishakti Power Generation Corporation: 19 completed works",
-  "client": "Trishakti Power Generation Corporation",
-  "manager": "Amit Mukherjee",
-  "work": null,
-  "question": "Submission\u2019s due in twenty minutes\u2014Amit Mukherjee and Naveen Roy both covered Trishakti Power Generation Corporation under their PMP credentials, but what\u2019s the"
  },
  {
   "qid": "HV-IC-0222",
@@ -2592,30 +1728,6 @@
   "question": "Cross-checking Pooja Sen\u2019s Six Sigma Black Belt (6S-500157) against the Hydro Tunnel \u2014 West Bengal Pkg-105 scope, I need to verify the exact aggregate for the a"
  },
  {
-  "qid": "HV-IC-0230",
-  "shape": "top_n_clients",
-  "answer_type": "money",
-  "value": 1260900000,
-  "source": "computed",
-  "derivation": "Amit Iyer: top 2 of 5 clients (Subarnarekha Valley Corporation, Public Works Department, Govt of West Bengal)",
-  "client": "Subarnarekha Valley Corporation",
-  "manager": "Amit Iyer",
-  "work": null,
-  "question": "Amit Iyer, I\u2019m just pulling his file now and want to make sure I\u2019m reading the totals right\u2014could you tell me what the combined delivered value is for his two l"
- },
- {
-  "qid": "HV-IC-0231",
-  "shape": "pair_overlap",
-  "answer_type": "count",
-  "value": 7,
-  "source": "computed",
-  "derivation": "Lakshya Engineering & Construction: 7 completed works",
-  "client": "Lakshya Engineering & Construction",
-  "manager": "Divya Singh",
-  "work": null,
-  "question": "I\u2019m finalizing the audit response for Lakshya Engineering & Construction and need the defensible overlap figure for the completed assignments Neha Chopra and Di"
- },
- {
   "qid": "HV-IC-0232",
   "shape": "rank_value",
   "answer_type": "money",
@@ -2676,42 +1788,6 @@
   "question": "Tamil Nadu Municipal Corporation is coming up in my head and I have a half-remembered sense of how much our top finished contract there beats the second one, bu"
  },
  {
-  "qid": "HV-IC-0237",
-  "shape": "business_units",
-  "answer_type": "count",
-  "value": 3,
-  "source": "computed",
-  "derivation": "Irrigation & Waterways Dept, Govt of West Bengal: 3 units across 3 works",
-  "client": "Irrigation & Waterways Dept, Govt of West Bengal",
-  "manager": "Rahul Menon",
-  "work": null,
-  "question": "Rahul Menon\u2019s main client \u2014 I\u2019m fairly certain it was just a small group of internal teams that handled their projects, but could you double-check whether my re"
- },
- {
-  "qid": "HV-IC-0238",
-  "shape": "largest_client_share",
-  "answer_type": "percent",
-  "value": 39.89,
-  "source": "computed",
-  "derivation": "Imran Joshi: Public Works Department, Govt of Maharashtra share of value across 4 clients",
-  "client": "Public Works Department, Govt of Maharashtra",
-  "manager": "Imran Joshi",
-  "work": null,
-  "question": "Imran Joshi, I saw the rough split circulating but that\u2019s clearly not the calculated figure we need, so what percentage out of a hundred of his overall delivery"
- },
- {
-  "qid": "HV-IC-0239",
-  "shape": "role_split",
-  "answer_type": "money",
-  "value": 1150300000,
-  "source": "computed",
-  "derivation": "Irrigation & Waterways Dept, Govt of West Bengal: 2 as JV Partner",
-  "client": "Irrigation & Waterways Dept, Govt of West Bengal",
-  "manager": "Divya Singh",
-  "work": "Lift Irrigation \u2014 West Bengal Pkg-13",
-  "question": "Could you please confirm the recognized value for all completed deliverables booked under the West Bengal Irrigation & Waterways Department JV?"
- },
- {
   "qid": "HV-IC-0240",
   "shape": "avg_work_size",
   "answer_type": "money",
@@ -2760,42 +1836,6 @@
   "question": "pritis pmp hit mar 10 2021 for the west bengal hospital block, how many days to wrap up?"
  },
  {
-  "qid": "HV-IC-0245",
-  "shape": "business_units",
-  "answer_type": "count",
-  "value": 4,
-  "source": "computed",
-  "derivation": "Arunodaya Infrastructure: 4 units across 7 works",
-  "client": "Arunodaya Infrastructure",
-  "manager": "Meera Roy",
-  "work": null,
-  "question": "Meera Roy\u2019s primary client \u2014 could you please confirm the exact number of internal business units that have executed delivery obligations for them?"
- },
- {
-  "qid": "HV-IC-0246",
-  "shape": "business_units",
-  "answer_type": "count",
-  "value": 4,
-  "source": "computed",
-  "derivation": "Mega Infrastructure Authority: 4 units across 7 works",
-  "client": "Mega Infrastructure Authority",
-  "manager": "Tanvir Menon",
-  "work": null,
-  "question": "Tanvir Menon\u2019s current portfolio is locked for submission in ninety minutes, so could you confirm the exact count of distinct internal business units that have "
- },
- {
-  "qid": "HV-IC-0247",
-  "shape": "business_units",
-  "answer_type": "count",
-  "value": 4,
-  "source": "computed",
-  "derivation": "Arunodaya Infrastructure: 4 units across 7 works",
-  "client": "Arunodaya Infrastructure",
-  "manager": "Neha Chopra",
-  "work": null,
-  "question": "Neha Chopra\u2019s main account shows a different number on the surface, but could you verify the actual count of internal business units that have delivered for the"
- },
- {
   "qid": "HV-IC-0248",
   "shape": "rank_value",
   "answer_type": "money",
@@ -2820,42 +1860,6 @@
   "question": "I'm still getting my bearings with the Tamil Nadu Municipal Corporation portfolio\u2014could you point me to the 2013 and 2018 completed work totals so I can see how"
  },
  {
-  "qid": "HV-IC-0250",
-  "shape": "largest_client_share",
-  "answer_type": "percent",
-  "value": 51.82,
-  "source": "computed",
-  "derivation": "Uma Sen: Central Works & Buildings Bureau share of value across 3 clients",
-  "client": "Central Works & Buildings Bureau",
-  "manager": "Uma Sen",
-  "work": null,
-  "question": "Uma Sen, what is the percentage out of 100 that represents the proportion of her total project output directed to her primary account?"
- },
- {
-  "qid": "HV-IC-0251",
-  "shape": "largest_client_share",
-  "answer_type": "percent",
-  "value": 56.11,
-  "source": "computed",
-  "derivation": "Sunita Joshi: National Expressway Development Authority share of value across 4 clients",
-  "client": "National Expressway Development Authority",
-  "manager": "Sunita Joshi",
-  "work": null,
-  "question": "sunita, what percentage out of 100 went to her top client across all her work?"
- },
- {
-  "qid": "HV-IC-0252",
-  "shape": "top_n_clients",
-  "answer_type": "money",
-  "value": 879200000,
-  "source": "computed",
-  "derivation": "Rohit Singh: top 2 of 3 clients (Peninsular Petroleum Corporation, Jal Nigam, Gujarat)",
-  "client": "Peninsular Petroleum Corporation",
-  "manager": "Rohit Singh",
-  "work": null,
-  "question": "I\u2019m not convinced that initial figure holds up\u2014could you walk me through how you actually derived the combined delivered value for Rohit Singh\u2019s top two account"
- },
- {
   "qid": "HV-IC-0253",
   "shape": "referenced_share",
   "answer_type": "percent",
@@ -2866,18 +1870,6 @@
   "manager": null,
   "work": null,
   "question": "Hey, I\u2019m still getting my bearings with the bid workflow \u2014 for the Maharashtra PWD projects, what\u2019s the whole number out of a hundred that represents the portio"
- },
- {
-  "qid": "HV-IC-0254",
-  "shape": "pair_overlap",
-  "answer_type": "count",
-  "value": 9,
-  "source": "computed",
-  "derivation": "Suvarna Projects Limited: 9 completed works",
-  "client": "Suvarna Projects Limited",
-  "manager": "Deepa Chatterjee",
-  "work": null,
-  "question": "deepa chatterjee and sunita joshi both covered suvarna projects limited\u2014how many completed projects do we hold for that overlap?"
  },
  {
   "qid": "HV-IC-0255",
@@ -2940,30 +1932,6 @@
   "question": "I\u2019m reviewing Farhan Roy\u2019s PMP credential for the Stormwater Drainage \u2014 Gujarat Pkg-80 scope with Trishakti Power Generation Corporation, but I\u2019m fairly certain"
  },
  {
-  "qid": "HV-IC-0261",
-  "shape": "largest_client_share",
-  "answer_type": "percent",
-  "value": 60.65,
-  "source": "computed",
-  "derivation": "Amit Mukherjee: Irrigation & Waterways Dept, Govt of Rajasthan share of value across 4 clients",
-  "client": "Irrigation & Waterways Dept, Govt of Rajasthan",
-  "manager": "Amit Mukherjee",
-  "work": null,
-  "question": "Amit Mukherjee, what percentage out of 100 of his total delivered scope actually went to his largest account?"
- },
- {
-  "qid": "HV-IC-0262",
-  "shape": "largest_client_share",
-  "answer_type": "percent",
-  "value": 80.95,
-  "source": "computed",
-  "derivation": "Priya Patel: National Special Projects Office share of value across 3 clients",
-  "client": "National Special Projects Office",
-  "manager": "Priya Patel",
-  "work": null,
-  "question": "Priya Patel, I\u2019m still learning how we usually calculate these splits, but when we look at her full portfolio, what percentage out of a hundred of her total ass"
- },
- {
   "qid": "HV-IC-0263",
   "shape": "absence",
   "answer_type": "count",
@@ -2988,18 +1956,6 @@
   "question": "Mahanadi Steel Corporation has a handful of assignments on our board that I\u2019m trying to verify, but I can\u2019t quite recall the exact count\u2014could you confirm if th"
  },
  {
-  "qid": "HV-IC-0265",
-  "shape": "business_units",
-  "answer_type": "count",
-  "value": 4,
-  "source": "computed",
-  "derivation": "Arunodaya Infrastructure: 4 units across 7 works",
-  "client": "Arunodaya Infrastructure",
-  "manager": "Meera Roy",
-  "work": null,
-  "question": "Meera Roy\u2019s account is under review, so could you confirm the defensible count of separate internal business units that have actually fulfilled delivery commitm"
- },
- {
   "qid": "HV-IC-0266",
   "shape": "awarded_vs_invoiced",
   "answer_type": "money",
@@ -3010,18 +1966,6 @@
   "manager": null,
   "work": null,
   "question": "tamil nadu municipal corporation totals look off, can you work out missing amount between commitments and our bills?"
- },
- {
-  "qid": "HV-IC-0267",
-  "shape": "role_split",
-  "answer_type": "money",
-  "value": 1711300000,
-  "source": "computed",
-  "derivation": "Suvarna Projects Limited: 6 as Prime",
-  "client": "Suvarna Projects Limited",
-  "manager": null,
-  "work": null,
-  "question": "Suvarna Projects Limited as Prime, what value do I cross-check against the payment log?"
  },
  {
   "qid": "HV-IC-0268",
@@ -3063,25 +2007,13 @@
   "qid": "HV-IC-0271",
   "shape": "mean_minus_median",
   "answer_type": "money",
-  "value": 61833333,
+  "value": 240294737,
   "source": "computed",
-  "derivation": "Mahanadi Steel Corporation: mean 274,683,333 - median 212,850,000 over 12 works",
-  "client": "Mahanadi Steel Corporation",
+  "derivation": "Trishakti Power Generation Corporation: mean 450,694,736 - median 210,400,000 over 19 works",
+  "client": "Trishakti Power Generation Corporation",
   "manager": "Lakshmi Ghosh",
   "work": "Steel Truss Bridge \u2014 Gujarat Pkg-112",
   "question": "I\u2019m pretty sure Lakshmi Ghosh\u2019s PMP for the Steel Truss Bridge \u2014 Gujarat Pkg-112 ties into a client portfolio where the mean contract value sits roughly fifteen"
- },
- {
-  "qid": "HV-IC-0272",
-  "shape": "largest_client_share",
-  "answer_type": "percent",
-  "value": 62.57,
-  "source": "computed",
-  "derivation": "Suresh Desai: Meridian Constructors & Co. share of value across 5 clients",
-  "client": "Meridian Constructors & Co.",
-  "manager": "Suresh Desai",
-  "work": null,
-  "question": "Suresh Desai, what percentage out of a hundred of his total deliverables was allocated to his foremost client?"
  },
  {
   "qid": "HV-IC-0273",
@@ -3096,30 +2028,6 @@
   "question": "When I\u2019m prepping the National Expressway Development Authority breakdown and need to exclude the industrial epc segment, what\u2019s the auditable figure I should s"
  },
  {
-  "qid": "HV-IC-0274",
-  "shape": "top_n_clients",
-  "answer_type": "money",
-  "value": 2359600000,
-  "source": "computed",
-  "derivation": "Chandan Banerjee: top 2 of 2 clients (Trishakti Power Generation Corporation, Lakshya Engineering & Construction)",
-  "client": "Trishakti Power Generation Corporation",
-  "manager": "Chandan Banerjee",
-  "work": null,
-  "question": "Chandan, that initial figure doesn't look right\u2014could you actually work out the delivered value for his top two relationships and tell me what they total?"
- },
- {
-  "qid": "HV-IC-0275",
-  "shape": "role_split",
-  "answer_type": "money",
-  "value": 4098100000,
-  "source": "computed",
-  "derivation": "Mega Infrastructure Authority: 7 as Prime",
-  "client": "Mega Infrastructure Authority",
-  "manager": null,
-  "work": null,
-  "question": "Quick question while I\u2019m sorting through the Mega Infrastructure Authority file\u2014I\u2019m still learning how we roll up Prime capacity, so how do I calculate the full"
- },
- {
   "qid": "HV-IC-0276",
   "shape": "mean_minus_median",
   "answer_type": "money",
@@ -3130,18 +2038,6 @@
   "manager": "Meera Roy",
   "work": null,
   "question": "Asked by someone reconciling records. PMP; Meera Roy. Cross-checking against the client portfolio, what is the rupee difference between the average and median c"
- },
- {
-  "qid": "HV-IC-0277",
-  "shape": "business_units",
-  "answer_type": "count",
-  "value": 3,
-  "source": "computed",
-  "derivation": "Maharashtra Municipal Corporation: 3 units across 3 works",
-  "client": "Maharashtra Municipal Corporation",
-  "manager": "Rajesh Rao",
-  "work": null,
-  "question": "I\u2019m fairly certain Rajesh Rao\u2019s account only involves his direct team, but I might be misremembering\u2014could you quickly confirm how many distinct internal busine"
  },
  {
   "qid": "HV-IC-0278",
@@ -3180,18 +2076,6 @@
   "question": "I\u2019m half-remembering that the total for Rajesh Rao\u2019s completed work with the Public Health Engineering Dept, Odisha is just the School Building \u2014 Odisha Pkg-136"
  },
  {
-  "qid": "HV-IC-0281",
-  "shape": "pair_overlap",
-  "answer_type": "count",
-  "value": 8,
-  "source": "computed",
-  "derivation": "Public Health Engineering Dept, Odisha: 8 completed works",
-  "client": "Public Health Engineering Dept, Odisha",
-  "manager": "Naveen Roy",
-  "work": null,
-  "question": "Quick question while I\u2019m grabbing this file\u2014I\u2019m still new to the bid desk, but since both Meera Roy and Naveen Roy handled the Public Health Engineering Dept, O"
- },
- {
   "qid": "HV-IC-0282",
   "shape": "year_delta",
   "answer_type": "money",
@@ -3202,18 +2086,6 @@
   "manager": null,
   "work": null,
   "question": "Mahanadi Steel Corporation, 2022 and 2025\u2014I\u2019m cross-checking the surface figure and it doesn\u2019t quite add up. What\u2019s the actual net shift in completed work value"
- },
- {
-  "qid": "HV-IC-0283",
-  "shape": "role_split",
-  "answer_type": "money",
-  "value": 1951800000,
-  "source": "computed",
-  "derivation": "National Special Projects Office: 3 as Prime",
-  "client": "National Special Projects Office",
-  "manager": null,
-  "work": null,
-  "question": "National Special Projects Office as Prime, what figure do I cross-check against the settlement ledger?"
  },
  {
   "qid": "HV-IC-0284",
@@ -3231,9 +2103,9 @@
   "qid": "HV-IC-0285",
   "shape": "awarded_vs_invoiced",
   "answer_type": "money",
-  "value": 1425667047,
+  "value": 1351409347,
   "source": "computed",
-  "derivation": "Suvarna Projects Limited: awarded 2,341,700,000 vs received 916,032,953",
+  "derivation": "Suvarna Projects Limited: awarded 2,341,700,000 vs invoiced 990,290,653",
   "client": "Suvarna Projects Limited",
   "manager": null,
   "work": null,
@@ -3262,18 +2134,6 @@
   "manager": null,
   "work": null,
   "question": "The draft figure circulating looks off\u2014can you walk me through the actual derived gap between Mega Infrastructure Authority's 2010 baseline and 2018 completed w"
- },
- {
-  "qid": "HV-IC-0288",
-  "shape": "business_units",
-  "answer_type": "count",
-  "value": 3,
-  "source": "computed",
-  "derivation": "Irrigation & Waterways Dept, Govt of West Bengal: 3 units across 3 works",
-  "client": "Irrigation & Waterways Dept, Govt of West Bengal",
-  "manager": "Rahul Menon",
-  "work": null,
-  "question": "Rahul Menon\u2019s current project shows a straightforward number on the portal, but I\u2019m pretty sure that\u2019s just the surface level\u2014could you actually verify how many"
  },
  {
   "qid": "HV-IC-0289",
@@ -3384,18 +2244,6 @@
   "question": "pheg gujarat 2010 vs 2017\u2014what\u2019s the actual move in completed work value?"
  },
  {
-  "qid": "HV-IC-0298",
-  "shape": "role_split",
-  "answer_type": "money",
-  "value": 1565300000,
-  "source": "computed",
-  "derivation": "Tamil Nadu Municipal Corporation: 2 as JV Partner",
-  "client": "Tamil Nadu Municipal Corporation",
-  "manager": null,
-  "work": null,
-  "question": "Tamil Nadu Municipal Corporation; as JV Partner \u2014 what\u2019s the combined value of the delivered scope I need to lock in before the 2 PM submission?"
- },
- {
   "qid": "HV-IC-0299",
   "shape": "threshold_aggregate",
   "answer_type": "money",
@@ -3444,18 +2292,6 @@
   "question": "My memory is fuzzy on whether Meera Roy\u2019s PMP (PMI-200011) only shows the Hospital Block \u2014 Odisha Pkg-39 project for Peninsular Petroleum Corporation, or if the"
  },
  {
-  "qid": "HV-IC-0303",
-  "shape": "role_split",
-  "answer_type": "money",
-  "value": 1017600000,
-  "source": "computed",
-  "derivation": "Subarnarekha Valley Corporation: 6 as JV Partner",
-  "client": "Subarnarekha Valley Corporation",
-  "manager": null,
-  "work": null,
-  "question": "subarnarekha valley corporation; as jv partner, what\u2019s the delivered value i need to pull?"
- },
- {
   "qid": "HV-IC-0304",
   "shape": "mean_minus_median",
   "answer_type": "money",
@@ -3490,30 +2326,6 @@
   "manager": null,
   "work": null,
   "question": "I\u2019m reviewing the Suvarna Projects Limited pipeline and my memory on the heavier contracts feels a bit fuzzy\u2014could you check whether the combined value for anyt"
- },
- {
-  "qid": "HV-IC-0307",
-  "shape": "pair_overlap",
-  "answer_type": "count",
-  "value": 7,
-  "source": "computed",
-  "derivation": "Mega Infrastructure Authority: 7 completed works",
-  "client": "Mega Infrastructure Authority",
-  "manager": "Priti Pillai",
-  "work": null,
-  "question": "I\u2019m fairly certain Asha Nair and Priti Pillai both handled the Mega Infrastructure Authority account under their PMP credentials, but I want to verify my recoll"
- },
- {
-  "qid": "HV-IC-0309",
-  "shape": "top_n_clients",
-  "answer_type": "money",
-  "value": 967800000,
-  "source": "computed",
-  "derivation": "Neha Chopra: top 2 of 6 clients (Arunodaya Infrastructure, Lakshya Engineering & Construction)",
-  "client": "Arunodaya Infrastructure",
-  "manager": "Neha Chopra",
-  "work": null,
-  "question": "Neha Chopra, I\u2019m trying to pin down a figure for her, and I\u2019m fairly certain it\u2019s the delivered value for her top two relationships added together, but I want t"
  },
  {
   "qid": "HV-IC-0310",
@@ -3600,18 +2412,6 @@
   "question": "I\u2019m still getting my bearings with the Jal Nigam UP file here\u2014could you let me know the net difference in completed work value between 2011 and 2018?"
  },
  {
-  "qid": "HV-IC-0317",
-  "shape": "pair_overlap",
-  "answer_type": "count",
-  "value": 3,
-  "source": "computed",
-  "derivation": "Tamil Nadu Municipal Corporation: 3 completed works",
-  "client": "Tamil Nadu Municipal Corporation",
-  "manager": "Lakshmi Ghosh",
-  "work": null,
-  "question": "Lakshmi Ghosh and Priya Gupta both managed the Tamil Nadu Municipal Corporation account under their PMP credentials, so could you please confirm the total numbe"
- },
- {
   "qid": "HV-IC-0318",
   "shape": "date_span",
   "answer_type": "days",
@@ -3634,30 +2434,6 @@
   "manager": "Imran Joshi",
   "work": "Sewerage Network \u2014 Maharashtra Pkg-87",
   "question": "Public Works Department, Govt of Maharashtra; excluding sewerage drainage\u2014I keep seeing the gross figure floating around, but I know that\u2019s still bundling the d"
- },
- {
-  "qid": "HV-IC-0320",
-  "shape": "largest_client_share",
-  "answer_type": "percent",
-  "value": 67.66,
-  "source": "computed",
-  "derivation": "Suresh Das: Irrigation & Waterways Dept, Govt of Rajasthan share of value across 2 clients",
-  "client": "Irrigation & Waterways Dept, Govt of Rajasthan",
-  "manager": "Suresh Das",
-  "work": null,
-  "question": "Cross-checking Suresh Das allocations against the master ledger, what percentage out of 100 went to the top account?"
- },
- {
-  "qid": "HV-IC-0321",
-  "shape": "role_split",
-  "answer_type": "money",
-  "value": 1424500000,
-  "source": "computed",
-  "derivation": "Trishakti Power Generation Corporation: 8 as JV Partner",
-  "client": "Trishakti Power Generation Corporation",
-  "manager": null,
-  "work": null,
-  "question": "Trishakti Power Generation Corporation; as JV Partner\u2014just verifying my memory, is the figure I\u2019m looking for the final delivered amount or just the contracted "
  },
  {
   "qid": "HV-IC-0322",
@@ -3694,18 +2470,6 @@
   "manager": "Amit Mukherjee",
   "work": "Institutional Building \u2014 Uttar Pradesh Pkg-11",
   "question": "I'm half-remembering the timeline for Amit Mukherjee's March 10, 2021 PMP on the Institutional Building \u2014 Uttar Pradesh Pkg-11 site\u2014could you confirm how long i"
- },
- {
-  "qid": "HV-IC-0325",
-  "shape": "business_units",
-  "answer_type": "count",
-  "value": 4,
-  "source": "computed",
-  "derivation": "Arunodaya Infrastructure: 4 units across 7 works",
-  "client": "Arunodaya Infrastructure",
-  "manager": "Neha Chopra",
-  "work": null,
-  "question": "Neha Chopra\u2019s file is on my desk, but I\u2019m still getting my bearings with how our delivery structure maps to client accounts\u2014could you just tell me how many sepa"
  },
  {
   "qid": "HV-IC-0326",
@@ -3924,18 +2688,6 @@
   "question": "irrigation & waterways dept, govt of west bengal, what\u2019s the difference between our biggest and next completed jobs?"
  },
  {
-  "qid": "HV-IC-0345",
-  "shape": "business_units",
-  "answer_type": "count",
-  "value": 6,
-  "source": "computed",
-  "derivation": "Trishakti Power Generation Corporation: 6 units across 19 works",
-  "client": "Trishakti Power Generation Corporation",
-  "manager": "Lakshmi Ghosh",
-  "work": null,
-  "question": "lakshmi ghosh\u2019s account\u2014how many separate units actually delivered it?"
- },
- {
   "qid": "HV-IC-0346",
   "shape": "collection_pct",
   "answer_type": "percent",
@@ -4020,42 +2772,6 @@
   "question": "Could you please confirm the collection percentage out of 100 for Chandan Banerjee\u2019s PMP on the Six-Lane Highway \u2014 West Bengal Pkg-116?"
  },
  {
-  "qid": "HV-IC-0353",
-  "shape": "largest_client_share",
-  "answer_type": "percent",
-  "value": 77.58,
-  "source": "computed",
-  "derivation": "Priya Gupta: Tamil Nadu Municipal Corporation share of value across 3 clients",
-  "client": "Tamil Nadu Municipal Corporation",
-  "manager": "Priya Gupta",
-  "work": null,
-  "question": "Priya Gupta, when we aggregate her complete delivery tally across her assigned accounts, what percentage out of a hundred of her overall output actually went to"
- },
- {
-  "qid": "HV-IC-0354",
-  "shape": "top_n_clients",
-  "answer_type": "money",
-  "value": 1802300000,
-  "source": "computed",
-  "derivation": "Priti Pillai: top 2 of 4 clients (Mega Infrastructure Authority, National Special Projects Office)",
-  "client": "Mega Infrastructure Authority",
-  "manager": "Priti Pillai",
-  "work": null,
-  "question": "Priti Pillai, could you please calculate the sum of the delivered value across her two largest client engagements and confirm the final figure for our records?"
- },
- {
-  "qid": "HV-IC-0355",
-  "shape": "role_split",
-  "answer_type": "money",
-  "value": 1696900000,
-  "source": "computed",
-  "derivation": "Mahanadi Steel Corporation: 8 as Prime",
-  "client": "Mahanadi Steel Corporation",
-  "manager": null,
-  "work": null,
-  "question": "Just verifying my recollection, is the figure I need for the Mahanadi Steel Corporation as Prime account the complete delivered value?"
- },
- {
   "qid": "HV-IC-0356",
   "shape": "rank_value",
   "answer_type": "money",
@@ -4078,42 +2794,6 @@
   "manager": null,
   "work": null,
   "question": "for odisha phed, what\u2019s the out of 100 figure for projects with client approval?"
- },
- {
-  "qid": "HV-IC-0358",
-  "shape": "top_n_clients",
-  "answer_type": "money",
-  "value": 1632600000,
-  "source": "computed",
-  "derivation": "Suresh Desai: top 2 of 5 clients (Meridian Constructors & Co., National Special Projects Office)",
-  "client": "Meridian Constructors & Co.",
-  "manager": "Suresh Desai",
-  "work": null,
-  "question": "Suresh, what\u2019s the combined delivered value for his top two accounts right now so I can lock the bid submission?"
- },
- {
-  "qid": "HV-IC-0359",
-  "shape": "pair_overlap",
-  "answer_type": "count",
-  "value": 12,
-  "source": "computed",
-  "derivation": "Mahanadi Steel Corporation: 12 completed works",
-  "client": "Mahanadi Steel Corporation",
-  "manager": "Meera Chatterjee",
-  "work": null,
-  "question": "Meera Chatterjee and Sunita Joshi both covered Mahanadi Steel Corporation, but how many completed projects do we hold that they both delivered for that account "
- },
- {
-  "qid": "HV-IC-0360",
-  "shape": "largest_client_share",
-  "answer_type": "percent",
-  "value": 32.77,
-  "source": "computed",
-  "derivation": "Rahul Menon: Irrigation & Waterways Dept, Govt of West Bengal share of value across 7 clients",
-  "client": "Irrigation & Waterways Dept, Govt of West Bengal",
-  "manager": "Rahul Menon",
-  "work": null,
-  "question": "Rahul Menon, bid submission is in twenty minutes\u2014what percentage out of a hundred of his total output actually went to his single largest client?"
  },
  {
   "qid": "HV-IC-0361",
@@ -4140,54 +2820,6 @@
   "question": "Following up on the Subarnarekha Valley Corporation account, that first number you sent looks like a raw sum of the awards\u2014can you actually calculate the real g"
  },
  {
-  "qid": "HV-IC-0363",
-  "shape": "largest_client_share",
-  "answer_type": "percent",
-  "value": 66.02,
-  "source": "computed",
-  "derivation": "Pooja Bose: Mahanadi Steel Corporation share of value across 2 clients",
-  "client": "Mahanadi Steel Corporation",
-  "manager": "Pooja Bose",
-  "work": null,
-  "question": "Pooja Bose, I'm half-remembering the breakdown for her primary client\u2014what percentage of her total output does that account represent?"
- },
- {
-  "qid": "HV-IC-0364",
-  "shape": "top_n_clients",
-  "answer_type": "money",
-  "value": 1588200000,
-  "source": "computed",
-  "derivation": "Lakshmi Ghosh: top 2 of 5 clients (Trishakti Power Generation Corporation, Arunodaya Infrastructure)",
-  "client": "Trishakti Power Generation Corporation",
-  "manager": "Lakshmi Ghosh",
-  "work": null,
-  "question": "Lakshmi, I\u2019m still getting my head around the bid metrics here\u2014could you just tell me what the combined delivered value comes to for her top two client relation"
- },
- {
-  "qid": "HV-IC-0365",
-  "shape": "business_units",
-  "answer_type": "count",
-  "value": 4,
-  "source": "computed",
-  "derivation": "Arunodaya Infrastructure: 4 units across 7 works",
-  "client": "Arunodaya Infrastructure",
-  "manager": "Neha Chopra",
-  "work": null,
-  "question": "Neha Chopra\u2019s account is coming up for an auditor review, and I need the defensible count of internal units involved\u2014could you confirm how many separate busines"
- },
- {
-  "qid": "HV-IC-0366",
-  "shape": "role_split",
-  "answer_type": "money",
-  "value": 4098100000,
-  "source": "computed",
-  "derivation": "Mega Infrastructure Authority: 7 as Prime",
-  "client": "Mega Infrastructure Authority",
-  "manager": null,
-  "work": null,
-  "question": "Could you please confirm the aggregate delivered value for the Mega Infrastructure Authority account where we held the Prime position?"
- },
- {
   "qid": "HV-IC-0368",
   "shape": "date_span",
   "answer_type": "days",
@@ -4200,52 +2832,16 @@
   "question": "I\u2019m still getting my bearings on how we track these, but could you tell me how many days elapsed from Naveen\u2019s March 10, 2021 PMP for the Uttar Pradesh Pkg-31 S"
  },
  {
-  "qid": "HV-IC-0369",
-  "shape": "exclusion_aggregate",
-  "answer_type": "money",
-  "value": 1100900000,
-  "source": "computed",
-  "derivation": "Central Works & Buildings Bureau: Prime only (no category)",
-  "client": "Central Works & Buildings Bureau",
-  "manager": null,
-  "work": null,
-  "question": "I\u2019m reviewing the Central Works & Buildings Bureau account for our JV Partner works, but the figure currently showing up looks like a gross contract sum rather "
- },
- {
-  "qid": "HV-IC-0370",
-  "shape": "largest_client_share",
-  "answer_type": "percent",
-  "value": 44.74,
-  "source": "computed",
-  "derivation": "Tanvir Menon: Mega Infrastructure Authority share of value across 5 clients",
-  "client": "Mega Infrastructure Authority",
-  "manager": "Tanvir Menon",
-  "work": null,
-  "question": "Tanvir Menon, I am matching his project completions against the client roster, what percentage out of 100 of his output went to the top account?"
- },
- {
   "qid": "HV-IC-0371",
   "shape": "awarded_vs_invoiced",
   "answer_type": "money",
-  "value": 811315848,
+  "value": 629771836,
   "source": "computed",
-  "derivation": "Public Health Engineering Dept, Odisha: awarded 1,661,400,000 vs received 850,084,152",
+  "derivation": "Public Health Engineering Dept, Odisha: awarded 1,661,400,000 vs invoiced 1,031,628,164",
   "client": "Public Health Engineering Dept, Odisha",
   "manager": null,
   "work": null,
   "question": "Public Health Engineering Dept, Odisha has awarded us a few projects, but am I right that my recollection is correct about how much of the total value is still "
- },
- {
-  "qid": "HV-IC-0372",
-  "shape": "largest_client_share",
-  "answer_type": "percent",
-  "value": 44.74,
-  "source": "computed",
-  "derivation": "Tanvir Menon: Mega Infrastructure Authority share of value across 5 clients",
-  "client": "Mega Infrastructure Authority",
-  "manager": "Tanvir Menon",
-  "work": null,
-  "question": "Tanvir, pulling together your full delivery slate, what percentage out of a hundred went to the single account that claimed the largest portion?"
  },
  {
   "qid": "HV-IC-0373",
@@ -4272,18 +2868,6 @@
   "question": "PMP; Imran Joshi\u2019s Patch Repair \u2014 Delhi Pkg-132 is on my desk, and while the dashboard flashes a quick rupee figure, I\u2019m fairly certain that\u2019s just a surface-le"
  },
  {
-  "qid": "HV-IC-0375",
-  "shape": "business_units",
-  "answer_type": "count",
-  "value": 4,
-  "source": "computed",
-  "derivation": "Public Works Department, Govt of Maharashtra: 4 units across 6 works",
-  "client": "Public Works Department, Govt of Maharashtra",
-  "manager": "Imran Joshi",
-  "work": null,
-  "question": "Imran Joshi\u2019s assignments are cross-checked against the client roster, but what is the count of internal business units that delivered for the account?"
- },
- {
   "qid": "HV-IC-0376",
   "shape": "threshold_aggregate",
   "answer_type": "money",
@@ -4306,30 +2890,6 @@
   "manager": "Suresh Das",
   "work": "Lift Irrigation \u2014 Rajasthan Pkg-41",
   "question": "irr & waterways dept rajasthan roll, can you sum the values clearing the twenty six crore mark?"
- },
- {
-  "qid": "HV-IC-0378",
-  "shape": "pair_overlap",
-  "answer_type": "count",
-  "value": 19,
-  "source": "computed",
-  "derivation": "Trishakti Power Generation Corporation: 19 completed works",
-  "client": "Trishakti Power Generation Corporation",
-  "manager": "Chandan Banerjee",
-  "work": null,
-  "question": "I\u2019m still wrapping my head around how we track past bids, but since both Chandan Banerjee and Farhan Rao handled the Trishakti Power Generation Corporation acco"
- },
- {
-  "qid": "HV-IC-0379",
-  "shape": "pair_overlap",
-  "answer_type": "count",
-  "value": 6,
-  "source": "computed",
-  "derivation": "Central Works & Buildings Bureau: 6 completed works",
-  "client": "Central Works & Buildings Bureau",
-  "manager": "Asha Nair",
-  "work": null,
-  "question": "I'm still getting my bearings with how we track past assignments, but I've got Neha's file open here\u2014since she and Asha Nair both covered the Central Works & Bu"
  },
  {
   "qid": "HV-IC-0380",
@@ -4368,30 +2928,6 @@
   "question": "I\u2019m just picking up Lakshya Engineering & Construction\u2019s file here and trying to figure out how to calculate the unbilled portion of their total project value\u2014c"
  },
  {
-  "qid": "HV-IC-0383",
-  "shape": "top_n_clients",
-  "answer_type": "money",
-  "value": 337600000,
-  "source": "computed",
-  "derivation": "Deepa Chatterjee: top 2 of 4 clients (Meridian Constructors & Co., Mahanadi Steel Corporation)",
-  "client": "Meridian Constructors & Co.",
-  "manager": "Deepa Chatterjee",
-  "work": null,
-  "question": "Deepa Chatterjee, I need the delivered value sum for her two client engagements to cross-check against the bid submission."
- },
- {
-  "qid": "HV-IC-0384",
-  "shape": "top_n_clients",
-  "answer_type": "money",
-  "value": 672600000,
-  "source": "computed",
-  "derivation": "Uma Sen: top 2 of 3 clients (Central Works & Buildings Bureau, Mega Infrastructure Authority)",
-  "client": "Central Works & Buildings Bureau",
-  "manager": "Uma Sen",
-  "work": null,
-  "question": "Uma Sen, that figure circulating for her portfolio is definitely off, so what\u2019s the actual combined delivered value for her two largest client relationships onc"
- },
- {
   "qid": "HV-IC-0385",
   "shape": "collection_pct",
   "answer_type": "percent",
@@ -4426,18 +2962,6 @@
   "manager": "Neha Chopra",
   "work": "Bituminous Overlay \u2014 Odisha Pkg-35",
   "question": "Could you please confirm the exact day count from the March 10, 2021 PMP issuance for Neha Chopra on the Bituminous Overlay \u2014 Odisha Pkg-35 project to its final"
- },
- {
-  "qid": "HV-IC-0388",
-  "shape": "business_units",
-  "answer_type": "count",
-  "value": 6,
-  "source": "computed",
-  "derivation": "Trishakti Power Generation Corporation: 6 units across 19 works",
-  "client": "Trishakti Power Generation Corporation",
-  "manager": "Lakshmi Ghosh",
-  "work": null,
-  "question": "Lakshmi Ghosh\u2019s client account requires a precise count of the distinct internal business units that have managed projects on their behalf\u2014could you confirm tha"
  },
  {
   "qid": "HV-IC-0389",

@@ -15,6 +15,9 @@ sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
 from qa import emit, execute, plan                       # noqa: E402
 from qa.resolve import Facts                             # noqa: E402
 
+if hasattr(sys.stdout, "reconfigure"):   # Windows consoles default to cp1252
+    sys.stdout.reconfigure(encoding="utf-8")
+
 ROOT = pathlib.Path(__file__).resolve().parent
 DS = ROOT / "dataset"
 
@@ -121,9 +124,12 @@ def main():
         json.dump(log, open(ROOT / "build" / "sample_log.json", "w"), indent=1, default=str)
         print(f"wrote {out}")
     else:
-        filled, total = emit.write(answers, log=log)
+        filled, total, substituted = emit.write(answers, log=log)
         computed = sum(1 for r in log if r["source"] == "computed")
         print(f"rows={total}  computed={computed}  fallback={total-computed}")
+        if substituted:
+            print(f"  !! {len(substituted)} solved values rejected by the format and replaced "
+                  f"with a placeholder: {substituted[:6]}")
 
 
 if __name__ == "__main__":

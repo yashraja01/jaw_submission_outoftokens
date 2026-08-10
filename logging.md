@@ -1,4 +1,53 @@
-# Build log — Phase 1
+# Build log
+
+## Phase 2 — regenerated for `hidden_set_v1.3` (248 questions)
+
+The earlier 371-question set (`hidden_set_v1.0`, score 88.671) is void. Upstream `4041a3d` cut the
+set in three steps — 371 → 344 → 320 → **248** — and the scorer now skips `scored: false` rows.
+The 248 are a **strict subset** of the 371: no new questions, no reworded ones.
+
+**Every shape flagged in the "judgement calls" section below was withdrawn in full**:
+`pair_overlap` (24), `business_units` (24), `largest_client_share` (23), `top_n_clients` (23),
+`role_split` (21), `grading_filter` (3), plus `work_count` (1), 2 `exclusion_aggregate`,
+1 `collection_pct`, 1 `awarded_vs_invoiced`. The organisers reached the same conclusion the risk
+register did, which retires open risks 1–4 and 8–9 entirely.
+
+### Bugs found and fixed while regenerating
+
+1. **Client resolution was matching *work*-name words.** "Steel Truss Bridge" selected Mahanadi
+   **Steel** Corporation; "Highway **Construction**" selected Lakshya … & **Construction**;
+   "Drainage **Works** — Gujarat" selected a Public **Works** Department. **7 of 248 questions had
+   the wrong client** — correct arithmetic over the wrong portfolio, which no range check catches.
+   Fixed two ways: client-name tokens that also occur in the work-name vocabulary are down-weighted,
+   and when the question cites an explicit `Pkg-N` that work's name is masked before client
+   matching. Pinned in `eval/test_resolution.py` (21 cases).
+2. **Three legitimate zeros were being overwritten by the placeholder.** A single-work client has
+   mean == median, so `mean_minus_median` is exactly 0 — and `coerce()` rejected money == 0 and
+   substituted 600,000,000. The scorer requires an exact 0 when gold is 0, so each was a 1.0 turned
+   into a 0. Money is now signed *and* may be zero; `emit.write()` reports any solved value the
+   format rejects, so this can't recur silently.
+3. **`against`-variant regex repeated a bug I'd already fixed elsewhere** — unanchored `collect`
+   matched "re**collect**ion" (HV-IC-0371), and "cash flow" overrode "successfully claimed"
+   (HV-IC-0285). In this corpus "claims/claimed" means *invoiced*; only explicit
+   collected/received/realised language now selects the receipts figure.
+4. **`Σ` in `graph/build.py` crashed the clean dry run** under Windows cp1252 when stdout is piped.
+   All entry points now force UTF-8.
+
+### Verification of the two largest surviving shapes
+
+- `awarded_vs_invoiced` (25): read all 25 verbatim. 23 say "awarded vs invoiced/billed" outright,
+  so the Σ(outstanding) alternative is wrong; kept awarded − invoiced.
+- `year_delta` (24): kept **absolute** difference — HV-IC-0269 asks for the "absolute difference"
+  explicitly and the rest use gap/variance/delta/shift language.
+
+### Final state (v1.3)
+
+248/248 computed · 0 fallbacks · samples **21/21 = 100%** · all three README golds exact ·
+validator PASS · client-resolution suite 21/21 · clean end-to-end dry run from an empty `build/`.
+
+---
+
+## Phase 1 (original 371-question set)
 
 Scoring model in force: `score = max(0, 1 − |got − gold| / |gold|)`, averaged over 371.
 Bias low on genuine uncertainty (overshoot caps at 0; undershoot is proportional).

@@ -228,30 +228,6 @@
   "question": "Jharkhand Municipal Corporation is where I am cross-checking our engagement history, so what number out of one hundred represents the count of assignments for t"
  },
  {
-  "qid": "HS-IC-0022",
-  "shape": "role_split",
-  "answer_type": "money",
-  "value": 157300000,
-  "source": "computed",
-  "derivation": "Public Health Engineering Dept, Gujarat: 2 as Prime",
-  "client": "Public Health Engineering Dept, Gujarat",
-  "manager": null,
-  "work": null,
-  "question": "Public Health Engineering Dept, Gujarat; as Prime\u2014what\u2019s the final contract value we need to lock in before the 3pm cutoff?"
- },
- {
-  "qid": "HS-IC-0023",
-  "shape": "role_split",
-  "answer_type": "money",
-  "value": 384100000,
-  "source": "computed",
-  "derivation": "Jharkhand Municipal Corporation: 2 as Prime",
-  "client": "Jharkhand Municipal Corporation",
-  "manager": null,
-  "work": null,
-  "question": "Jharkhand Municipal Corporation; as Prime\u2014what\u2019s the defensible aggregate value we should report for the completed scope?"
- },
- {
   "qid": "HS-IC-0024",
   "shape": "threshold_aggregate",
   "answer_type": "money",

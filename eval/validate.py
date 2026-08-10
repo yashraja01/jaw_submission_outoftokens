@@ -1,6 +1,9 @@
 """Submission format validator. Run as the last step of every tier."""
 import csv, json, math, pathlib, sys
 
+if hasattr(sys.stdout, "reconfigure"):   # Windows consoles default to cp1252
+    sys.stdout.reconfigure(encoding="utf-8")
+
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 DS = ROOT / "dataset"
 
@@ -25,8 +28,8 @@ def validate(sub_path=ROOT / "submission.csv", strict_order=True):
     if rows[0] != ["question_id", "answer"]:
         errs.append(f"header is {rows[0]!r}, expected ['question_id','answer']")
     data = rows[1:]
-    if len(data) != 371:
-        errs.append(f"{len(data)} data rows, expected 371")
+    if len(data) != len(want):
+        errs.append(f"{len(data)} data rows, expected {len(want)}")
 
     got = [r[0] for r in data if r]
     if strict_order and got != tmpl:
@@ -65,8 +68,8 @@ def validate(sub_path=ROOT / "submission.csv", strict_order=True):
             errs.append(f"{qid}: non-positive day count {a!r}")
         if t == "percent" and not (0 <= v <= 100):
             errs.append(f"{qid}: percent out of range {a!r}")
-        # money is signed: mean_minus_median questions state "negative if avg dips"
-        if t == "money" and not (0 < abs(v) <= 55_303_999_999):
+        # money is signed, and 0 is legitimate (mean == median on a single-work client)
+        if t == "money" and not (abs(v) <= 55_303_999_999):
             errs.append(f"{qid}: money outside corpus range {a!r}")
     return errs, warns
 

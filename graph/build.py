@@ -9,6 +9,9 @@ from decimal import Decimal
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent.parent))
 from facts import parse as P  # noqa: E402
 
+if hasattr(sys.stdout, "reconfigure"):   # Windows consoles default to cp1252
+    sys.stdout.reconfigure(encoding="utf-8")
+
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 DB = ROOT / "build" / "facts.db"
 

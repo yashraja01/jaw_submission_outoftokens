@@ -10,6 +10,9 @@ import pathlib
 import statistics
 import sys
 
+if hasattr(sys.stdout, "reconfigure"):   # Windows consoles default to cp1252
+    sys.stdout.reconfigure(encoding="utf-8")
+
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT))
 

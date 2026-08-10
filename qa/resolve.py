@@ -98,8 +98,14 @@ class Facts:
         # precompute matching signatures
         # Token weights are inverse-document-frequency across the 28 client names: "trishakti" is
         # decisive, "corporation" is nearly noise. A flat count made common tails dominate.
+        # Tokens that also occur in WORK names are unreliable client evidence: "Steel Truss Bridge"
+        # would otherwise identify Mahanadi Steel Corporation, "Highway Construction" would identify
+        # Lakshya Engineering & Construction, and "Drainage Works" would identify a Public Works
+        # Department. Down-weight them heavily.
+        self._workvocab = {t for w in self.works for t in norm_q(w["work_name"]).split()
+                           if not t.isdigit() and t != "pkg"}
         self._client_sig = {}
-        df = {}
+        self._df = df = {}
         for c in self.clients.values():
             for t in set(norm_q(c["name"]).split()):
                 df[t] = df.get(t, 0) + 1
@@ -108,8 +114,10 @@ class Facts:
             state = next((s for s in STATES if s in norm_q(c["name"])), None)
             statewords = {w for s in STATES for w in s.split()}
             core = [t for t in toks if t not in statewords]
-            self._client_sig[k] = {"toks": toks, "core": core, "state": state,
-                                   "w": {t: 1.0 / df.get(t, 1) for t in core}}
+            self._client_sig[k] = {
+                "toks": toks, "core": core, "state": state,
+                "w": {t: (1.0 / df.get(t, 1)) * (0.35 if t in self._workvocab else 1.0)
+                      for t in core}}
 
         self.categories = sorted({w["category"] for w in self.works}, key=len, reverse=True)
 
@@ -137,8 +145,16 @@ class Facts:
         return best if score >= (0.6 if manager else 0.8) else None
 
     # ------------------------------------------------------------------ clients
-    def resolve_client(self, q, exclude_states=False):
+    def resolve_client(self, q, mask_work=None):
+        """When the question cites an explicit Pkg-N, that work's name is masked first: its words
+        describe the work, not the client ('STP — West Bengal Pkg-73' must not select the Public
+        Works Department, Govt of West Bengal)."""
         nq = norm_q(q)
+        if mask_work:
+            for t in norm_q(mask_work["work_name"]).split():
+                if t in STOP or t.isdigit() or t == "pkg":
+                    continue
+                nq = re.sub(rf"\b{re.escape(t)}\b", " ", nq, count=1)
         best, score = None, 0.0
         for k, sig in self._client_sig.items():
             if not sig["core"]:
@@ -148,8 +164,9 @@ class Facts:
                 continue
             s = sum(sig["w"][t] for t in hit) / sum(sig["w"].values())
             # a token unique to one client ("trishakti", "arunodaya") identifies it on its own,
-            # even when the rest of the legal name is omitted ("the Trishakti account")
-            if any(sig["w"][t] == 1.0 for t in hit):
+            # even when the rest of the legal name is omitted ("the Trishakti account") — but only
+            # if that token never appears in a work name
+            if any(self._df.get(t, 1) == 1 and t not in self._workvocab for t in hit):
                 s = max(s, 1.0)
             if sig["state"]:
                 # Only a tiebreak. A dominant state bonus made "Gujarat Municipal Corporation" beat
@@ -157,7 +174,7 @@ class Facts:
                 s += 0.3 if sig["state"] in nq else -0.5
             if s > score:
                 best, score = self.clients[k], s
-        return best if score >= 0.7 else None
+        return best if score >= 0.55 else None
 
     def client_of_work(self, w):
         return self.clients.get(w["client_key"]) if w else None
