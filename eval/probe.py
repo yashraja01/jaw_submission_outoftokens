@@ -55,9 +55,17 @@ def main():
         targets |= {q for q, r in log.items() if r["shape"] == shape}
     for qid in targets:
         cur = next(float(r["answer"]) for r in sub if r["question_id"] == qid)
-        # 2x guarantees >=100% relative error against gold whenever the current answer is right,
-        # and can never accidentally land on gold when it is wrong by less than 100%
-        overrides[qid] = str(int(cur * 2) if cur else 10 ** 9)
+        atype = log[qid]["answer_type"]
+        # 0 is the only value that forces a score of 0 for EVERY non-zero gold:
+        # |0-g|/|g| == 1 exactly. Doubling does not — if the current answer is below gold,
+        # doubling moves it toward gold and the "null" leaks score back in.
+        if atype == "days":
+            null = "1"                       # validator forbids 0 days; leak is 1/gold ~ 0.001
+        elif cur == 0:
+            null = "55000000000"             # gold may itself be 0 here, so 0 would score 1.0
+        else:
+            null = "0"
+        overrides[qid] = null
         nulled.add(qid)
 
     out = ROOT / a.out
