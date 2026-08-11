@@ -1,0 +1,232 @@
+{
+ "baseline": "build/attemptE.csv",
+ "baseline_score": 99.965,
+ "probe": "build/probeH.csv",
+ "clean_score": 98.9010710358051,
+ "loss_interval": [
+  0.11488499999997626,
+  0.11821499999999807
+ ],
+ "hypotheses": {
+  "collection_pct|Trishakti Power Generation Corporation|99.7800@over": {
+   "group": "collection_pct|Trishakti Power Generation Corporation|99.7800",
+   "sign": 1,
+   "level": [
+    "down",
+    0.15
+   ],
+   "n": 4,
+   "score_lo": 98.9304,
+   "score_hi": 98.9312
+  },
+  "collection_pct|Trishakti Power Generation Corporation|99.7800@under": {
+   "group": "collection_pct|Trishakti Power Generation Corporation|99.7800",
+   "sign": -1,
+   "level": [
+    "down",
+    0.15
+   ],
+   "n": 4,
+   "score_lo": 98.8709,
+   "score_hi": 98.8717
+  },
+  "avg_work_size|Jal Nigam, Uttar Pradesh|416875000.0000@over": {
+   "group": "avg_work_size|Jal Nigam, Uttar Pradesh|416875000.0000",
+   "sign": 1,
+   "level": [
+    "up",
+    0.15
+   ],
+   "n": 1,
+   "score_lo": 98.8602,
+   "score_hi": 98.8614
+  },
+  "avg_work_size|Jal Nigam, Uttar Pradesh|416875000.0000@under": {
+   "group": "avg_work_size|Jal Nigam, Uttar Pradesh|416875000.0000",
+   "sign": -1,
+   "level": [
+    "up",
+    0.15
+   ],
+   "n": 1,
+   "score_lo": 98.9407,
+   "score_hi": 98.9419
+  },
+  "category_pair_diff|Arunodaya Infrastructure|410300000.0000@over": {
+   "group": "category_pair_diff|Arunodaya Infrastructure|410300000.0000",
+   "sign": 1,
+   "level": [
+    "up",
+    0.2196
+   ],
+   "n": 1,
+   "score_lo": 98.8578,
+   "score_hi": 98.859
+  },
+  "category_pair_diff|Arunodaya Infrastructure|410300000.0000@under": {
+   "group": "category_pair_diff|Arunodaya Infrastructure|410300000.0000",
+   "sign": -1,
+   "level": [
+    "up",
+    0.2196
+   ],
+   "n": 1,
+   "score_lo": 98.9431,
+   "score_hi": 98.9444
+  },
+  "category_pair_diff|National Special Projects Office|1122500000.0000@over": {
+   "group": "category_pair_diff|National Special Projects Office|1122500000.0000",
+   "sign": 1,
+   "level": [
+    "up",
+    0.2911
+   ],
+   "n": 1,
+   "score_lo": 98.8552,
+   "score_hi": 98.8565
+  },
+  "category_pair_diff|National Special Projects Office|1122500000.0000@under": {
+   "group": "category_pair_diff|National Special Projects Office|1122500000.0000",
+   "sign": -1,
+   "level": [
+    "up",
+    0.2911
+   ],
+   "n": 1,
+   "score_lo": 98.9456,
+   "score_hi": 98.9469
+  },
+  "category_pair_diff|Suvarna Projects Limited|129100000.0000@over": {
+   "group": "category_pair_diff|Suvarna Projects Limited|129100000.0000",
+   "sign": 1,
+   "level": [
+    "up",
+    0.3648
+   ],
+   "n": 1,
+   "score_lo": 98.8526,
+   "score_hi": 98.854
+  },
+  "category_pair_diff|Suvarna Projects Limited|129100000.0000@under": {
+   "group": "category_pair_diff|Suvarna Projects Limited|129100000.0000",
+   "sign": -1,
+   "level": [
+    "up",
+    0.3648
+   ],
+   "n": 1,
+   "score_lo": 98.9482,
+   "score_hi": 98.9495
+  },
+  "collection_pct|Gujarat Municipal Corporation|92.5000@over": {
+   "group": "collection_pct|Gujarat Municipal Corporation|92.5000",
+   "sign": 1,
+   "level": [
+    "down",
+    0.2092
+   ],
+   "n": 1,
+   "score_lo": 98.9284,
+   "score_hi": 98.9291
+  },
+  "collection_pct|Gujarat Municipal Corporation|92.5000@under": {
+   "group": "collection_pct|Gujarat Municipal Corporation|92.5000",
+   "sign": -1,
+   "level": [
+    "down",
+    0.2092
+   ],
+   "n": 1,
+   "score_lo": 98.873,
+   "score_hi": 98.8738
+  },
+  "date_span|Trishakti Power Generation Corporation|1339.0000@over": {
+   "group": "date_span|Trishakti Power Generation Corporation|1339.0000",
+   "sign": 1,
+   "level": [
+    "up",
+    0.4406
+   ],
+   "n": 1,
+   "score_lo": 98.8499,
+   "score_hi": 98.8514
+  },
+  "date_span|Trishakti Power Generation Corporation|1339.0000@under": {
+   "group": "date_span|Trishakti Power Generation Corporation|1339.0000",
+   "sign": -1,
+   "level": [
+    "up",
+    0.4406
+   ],
+   "n": 1,
+   "score_lo": 98.9508,
+   "score_hi": 98.9522
+  },
+  "gap_to_threshold|Irrigation & Waterways Dept, Govt of West Bengal|33000000.0000@over": {
+   "group": "gap_to_threshold|Irrigation & Waterways Dept, Govt of West Bengal|33000000.0000",
+   "sign": 1,
+   "level": [
+    "up",
+    0.5186
+   ],
+   "n": 1,
+   "score_lo": 98.8472,
+   "score_hi": 98.8487
+  },
+  "gap_to_threshold|Irrigation & Waterways Dept, Govt of West Bengal|33000000.0000@under": {
+   "group": "gap_to_threshold|Irrigation & Waterways Dept, Govt of West Bengal|33000000.0000",
+   "sign": -1,
+   "level": [
+    "up",
+    0.5186
+   ],
+   "n": 1,
+   "score_lo": 98.9535,
+   "score_hi": 98.955
+  },
+  "referenced_share|Mega Infrastructure Authority|85.7100@over": {
+   "group": "referenced_share|Mega Infrastructure Authority|85.7100",
+   "sign": 1,
+   "level": [
+    "down",
+    0.2666
+   ],
+   "n": 1,
+   "score_lo": 98.9264,
+   "score_hi": 98.9271
+  },
+  "referenced_share|Mega Infrastructure Authority|85.7100@under": {
+   "group": "referenced_share|Mega Infrastructure Authority|85.7100",
+   "sign": -1,
+   "level": [
+    "down",
+    0.2666
+   ],
+   "n": 1,
+   "score_lo": 98.875,
+   "score_hi": 98.8758
+  },
+  "year_delta|Meridian Constructors & Co.|1189100000.0000@over": {
+   "group": "year_delta|Meridian Constructors & Co.|1189100000.0000",
+   "sign": 1,
+   "level": [
+    "up",
+    0.5988
+   ],
+   "n": 1,
+   "score_lo": 98.8443,
+   "score_hi": 98.8459
+  },
+  "year_delta|Meridian Constructors & Co.|1189100000.0000@under": {
+   "group": "year_delta|Meridian Constructors & Co.|1189100000.0000",
+   "sign": -1,
+   "level": [
+    "up",
+    0.5988
+   ],
+   "n": 1,
+   "score_lo": 98.9562,
+   "score_hi": 98.9578
+  }
+ }
+}
