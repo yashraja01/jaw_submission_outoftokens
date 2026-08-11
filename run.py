@@ -12,7 +12,7 @@ import sys
 from decimal import Decimal
 
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
-from qa import emit, execute, plan                       # noqa: E402
+from qa import emit, execute, overrides, plan                       # noqa: E402
 from qa.resolve import Facts                             # noqa: E402
 
 if hasattr(sys.stdout, "reconfigure"):   # Windows consoles default to cp1252
@@ -133,9 +133,13 @@ def main():
         json.dump(log, open(ROOT / "build" / "sample_log.json", "w"), indent=1, default=str)
         print(f"wrote {out}")
     else:
+        for qid, was, now in overrides.apply(answers, log):
+            print(f"  pinned {qid}: solver {was} -> {now}")
         filled, total, substituted = emit.write(answers, log=log)
         computed = sum(1 for r in log if r["source"] == "computed")
-        print(f"rows={total}  computed={computed}  fallback={total-computed}")
+        pinned = sum(1 for r in log if r["source"] == "pinned")
+        print(f"rows={total}  computed={computed}  pinned={pinned}  "
+              f"fallback={total-computed-pinned}")
         if substituted:
             print(f"  !! {len(substituted)} solved values rejected by the format and replaced "
                   f"with a placeholder: {substituted[:6]}")

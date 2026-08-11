@@ -75,6 +75,9 @@ MEANMED = (r"(mean|average|avg)[^.?]{0,60}\bmedian\b|\bmedian\b[^.?]{0,60}(mean|
 # "still owe / unpaid / pending / cleared payments" -> invoiced minus received.
 AWARDLANG = (r"awarded|award value|contract value|contract totals|sanctioned|secured|committed|"
              r"they assigned|they've assigned|approved contract|total scope")
+# Endorsement language. Narrow on purpose: "reference" alone appears in receipts questions as
+# "Contract / Tender Reference", so only the words that can only mean a reference letter.
+REFLANG = r"endorse|testimonial|sign-?off|backed by|reference letter"
 RECEIVABLE = (r"still owe|owes us|\bunpaid\b|still pending|\bpending\b|remaining balance|"
               r"balance still|net balance|still due|currently due|total amount still outstanding|"
               r"outstanding across|cleared payment|payments we've actually cleared|"
@@ -167,6 +170,10 @@ PREDICATES = {
         f.resolve_category_pair(raw, f.resolve_client(raw))) >= 2,
     # "outstanding balance against the total contract value" is an award comparison, not a receipt one
     "receivables_balance": lambda s, raw, f: not re.search(AWARDLANG, raw),
+    # "cleared" is a receipts word everywhere except when the thing being cleared is an
+    # endorsement: "cross-check those against endorsements ... the portion that cleared" is the
+    # referenced share, and collection_pct is only ahead of it in RULES by accident of ordering
+    "collection_pct": lambda s, raw, f: not re.search(REFLANG, raw),
 }
 
 
