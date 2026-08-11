@@ -1,0 +1,4874 @@
+{
+ "baseline": "build/attemptE.csv",
+ "baseline_score": 99.965,
+ "probe": "build/probeG.csv",
+ "clean_score": 65.109126746159,
+ "loss_interval": [
+  0.11488499999997626,
+  0.11821499999999807
+ ],
+ "hypotheses": {
+  "collection_pct|Trishakti Power Generation Corporation|99.7800@over": {
+   "group": "collection_pct|Trishakti Power Generation Corporation|99.7800",
+   "sign": 1,
+   "level": [
+    "down",
+    0.15
+   ],
+   "n": 4,
+   "score_lo": 65.1385,
+   "score_hi": 65.1393
+  },
+  "collection_pct|Trishakti Power Generation Corporation|99.7800@under": {
+   "group": "collection_pct|Trishakti Power Generation Corporation|99.7800",
+   "sign": -1,
+   "level": [
+    "down",
+    0.15
+   ],
+   "n": 4,
+   "score_lo": 65.079,
+   "score_hi": 65.0798
+  },
+  "avg_work_size|Trishakti Power Generation Corporation|450694737.0000@over": {
+   "group": "avg_work_size|Trishakti Power Generation Corporation|450694737.0000",
+   "sign": 1,
+   "level": [
+    "up",
+    0.15
+   ],
+   "n": 3,
+   "score_lo": 65.0683,
+   "score_hi": 65.0695
+  },
+  "avg_work_size|Trishakti Power Generation Corporation|450694737.0000@under": {
+   "group": "avg_work_size|Trishakti Power Generation Corporation|450694737.0000",
+   "sign": -1,
+   "level": [
+    "up",
+    0.15
+   ],
+   "n": 3,
+   "score_lo": 65.1488,
+   "score_hi": 65.15
+  },
+  "awarded_vs_invoiced|Subarnarekha Valley Corporation|2293370196.0000@over": {
+   "group": "awarded_vs_invoiced|Subarnarekha Valley Corporation|2293370196.0000",
+   "sign": 1,
+   "level": [
+    "up",
+    0.2196
+   ],
+   "n": 3,
+   "score_lo": 65.0658,
+   "score_hi": 65.0671
+  },
+  "awarded_vs_invoiced|Subarnarekha Valley Corporation|2293370196.0000@under": {
+   "group": "awarded_vs_invoiced|Subarnarekha Valley Corporation|2293370196.0000",
+   "sign": -1,
+   "level": [
+    "up",
+    0.2196
+   ],
+   "n": 3,
+   "score_lo": 65.1512,
+   "score_hi": 65.1524
+  },
+  "collection_pct|Meridian Constructors & Co.|88.9000@over": {
+   "group": "collection_pct|Meridian Constructors & Co.|88.9000",
+   "sign": 1,
+   "level": [
+    "down",
+    0.2092
+   ],
+   "n": 3,
+   "score_lo": 65.1364,
+   "score_hi": 65.1372
+  },
+  "collection_pct|Meridian Constructors & Co.|88.9000@under": {
+   "group": "collection_pct|Meridian Constructors & Co.|88.9000",
+   "sign": -1,
+   "level": [
+    "down",
+    0.2092
+   ],
+   "n": 3,
+   "score_lo": 65.0811,
+   "score_hi": 65.0818
+  },
+  "collection_pct|Subarnarekha Valley Corporation|78.1300@over": {
+   "group": "collection_pct|Subarnarekha Valley Corporation|78.1300",
+   "sign": 1,
+   "level": [
+    "down",
+    0.2666
+   ],
+   "n": 3,
+   "score_lo": 65.1344,
+   "score_hi": 65.1352
+  },
+  "collection_pct|Subarnarekha Valley Corporation|78.1300@under": {
+   "group": "collection_pct|Subarnarekha Valley Corporation|78.1300",
+   "sign": -1,
+   "level": [
+    "down",
+    0.2666
+   ],
+   "n": 3,
+   "score_lo": 65.0831,
+   "score_hi": 65.0838
+  },
+  "hop_aggregate|National Expressway Development Authority|2942400000.0000@over": {
+   "group": "hop_aggregate|National Expressway Development Authority|2942400000.0000",
+   "sign": 1,
+   "level": [
+    "up",
+    0.2911
+   ],
+   "n": 3,
+   "score_lo": 65.0633,
+   "score_hi": 65.0646
+  },
+  "hop_aggregate|National Expressway Development Authority|2942400000.0000@under": {
+   "group": "hop_aggregate|National Expressway Development Authority|2942400000.0000",
+   "sign": -1,
+   "level": [
+    "up",
+    0.2911
+   ],
+   "n": 3,
+   "score_lo": 65.1537,
+   "score_hi": 65.155
+  },
+  "hop_aggregate|Trishakti Power Generation Corporation|8563200000.0000@over": {
+   "group": "hop_aggregate|Trishakti Power Generation Corporation|8563200000.0000",
+   "sign": 1,
+   "level": [
+    "up",
+    0.3648
+   ],
+   "n": 3,
+   "score_lo": 65.0607,
+   "score_hi": 65.062
+  },
+  "hop_aggregate|Trishakti Power Generation Corporation|8563200000.0000@under": {
+   "group": "hop_aggregate|Trishakti Power Generation Corporation|8563200000.0000",
+   "sign": -1,
+   "level": [
+    "up",
+    0.3648
+   ],
+   "n": 3,
+   "score_lo": 65.1562,
+   "score_hi": 65.1576
+  },
+  "avg_work_size|Irrigation & Waterways Dept, Govt of Rajasthan|326300000.0000@over": {
+   "group": "avg_work_size|Irrigation & Waterways Dept, Govt of Rajasthan|326300000.0000",
+   "sign": 1,
+   "level": [
+    "up",
+    0.4406
+   ],
+   "n": 2,
+   "score_lo": 65.058,
+   "score_hi": 65.0594
+  },
+  "avg_work_size|Irrigation & Waterways Dept, Govt of Rajasthan|326300000.0000@under": {
+   "group": "avg_work_size|Irrigation & Waterways Dept, Govt of Rajasthan|326300000.0000",
+   "sign": -1,
+   "level": [
+    "up",
+    0.4406
+   ],
+   "n": 2,
+   "score_lo": 65.1588,
+   "score_hi": 65.1603
+  },
+  "avg_work_size|Mahanadi Steel Corporation|274683333.0000@over": {
+   "group": "avg_work_size|Mahanadi Steel Corporation|274683333.0000",
+   "sign": 1,
+   "level": [
+    "up",
+    0.5186
+   ],
+   "n": 2,
+   "score_lo": 65.0552,
+   "score_hi": 65.0567
+  },
+  "avg_work_size|Mahanadi Steel Corporation|274683333.0000@under": {
+   "group": "avg_work_size|Mahanadi Steel Corporation|274683333.0000",
+   "sign": -1,
+   "level": [
+    "up",
+    0.5186
+   ],
+   "n": 2,
+   "score_lo": 65.1615,
+   "score_hi": 65.163
+  },
+  "avg_work_size|Public Health Engineering Dept, Odisha|207675000.0000@over": {
+   "group": "avg_work_size|Public Health Engineering Dept, Odisha|207675000.0000",
+   "sign": 1,
+   "level": [
+    "up",
+    0.5988
+   ],
+   "n": 2,
+   "score_lo": 65.0524,
+   "score_hi": 65.054
+  },
+  "avg_work_size|Public Health Engineering Dept, Odisha|207675000.0000@under": {
+   "group": "avg_work_size|Public Health Engineering Dept, Odisha|207675000.0000",
+   "sign": -1,
+   "level": [
+    "up",
+    0.5988
+   ],
+   "n": 2,
+   "score_lo": 65.1643,
+   "score_hi": 65.1659
+  },
+  "avg_work_size|Suvarna Projects Limited|260188889.0000@over": {
+   "group": "avg_work_size|Suvarna Projects Limited|260188889.0000",
+   "sign": 1,
+   "level": [
+    "up",
+    0.6814
+   ],
+   "n": 2,
+   "score_lo": 65.0494,
+   "score_hi": 65.0511
+  },
+  "avg_work_size|Suvarna Projects Limited|260188889.0000@under": {
+   "group": "avg_work_size|Suvarna Projects Limited|260188889.0000",
+   "sign": -1,
+   "level": [
+    "up",
+    0.6814
+   ],
+   "n": 2,
+   "score_lo": 65.1671,
+   "score_hi": 65.1688
+  },
+  "awarded_vs_invoiced|Arunodaya Infrastructure|1033673040.0000@over": {
+   "group": "awarded_vs_invoiced|Arunodaya Infrastructure|1033673040.0000",
+   "sign": 1,
+   "level": [
+    "up",
+    0.7664
+   ],
+   "n": 2,
+   "score_lo": 65.0464,
+   "score_hi": 65.0482
+  },
+  "awarded_vs_invoiced|Arunodaya Infrastructure|1033673040.0000@under": {
+   "group": "awarded_vs_invoiced|Arunodaya Infrastructure|1033673040.0000",
+   "sign": -1,
+   "level": [
+    "up",
+    0.7664
+   ],
+   "n": 2,
+   "score_lo": 65.1701,
+   "score_hi": 65.1718
+  },
+  "awarded_vs_invoiced|Lakshya Engineering & Construction|213836582.0000@over": {
+   "group": "awarded_vs_invoiced|Lakshya Engineering & Construction|213836582.0000",
+   "sign": 1,
+   "level": [
+    "down",
+    0.3225
+   ],
+   "n": 2,
+   "score_lo": 65.1325,
+   "score_hi": 65.1332
+  },
+  "awarded_vs_invoiced|Lakshya Engineering & Construction|213836582.0000@under": {
+   "group": "awarded_vs_invoiced|Lakshya Engineering & Construction|213836582.0000",
+   "sign": -1,
+   "level": [
+    "down",
+    0.3225
+   ],
+   "n": 2,
+   "score_lo": 65.0851,
+   "score_hi": 65.0858
+  },
+  "awarded_vs_invoiced|Mega Infrastructure Authority|3336816908.0000@over": {
+   "group": "awarded_vs_invoiced|Mega Infrastructure Authority|3336816908.0000",
+   "sign": 1,
+   "level": [
+    "down",
+    0.3768
+   ],
+   "n": 2,
+   "score_lo": 65.1306,
+   "score_hi": 65.1313
+  },
+  "awarded_vs_invoiced|Mega Infrastructure Authority|3336816908.0000@under": {
+   "group": "awarded_vs_invoiced|Mega Infrastructure Authority|3336816908.0000",
+   "sign": -1,
+   "level": [
+    "down",
+    0.3768
+   ],
+   "n": 2,
+   "score_lo": 65.087,
+   "score_hi": 65.0876
+  },
+  "awarded_vs_invoiced|Public Health Engineering Dept, Odisha|629771836.0000@over": {
+   "group": "awarded_vs_invoiced|Public Health Engineering Dept, Odisha|629771836.0000",
+   "sign": 1,
+   "level": [
+    "down",
+    0.4296
+   ],
+   "n": 2,
+   "score_lo": 65.1288,
+   "score_hi": 65.1294
+  },
+  "awarded_vs_invoiced|Public Health Engineering Dept, Odisha|629771836.0000@under": {
+   "group": "awarded_vs_invoiced|Public Health Engineering Dept, Odisha|629771836.0000",
+   "sign": -1,
+   "level": [
+    "down",
+    0.4296
+   ],
+   "n": 2,
+   "score_lo": 65.0889,
+   "score_hi": 65.0894
+  },
+  "awarded_vs_invoiced|Suvarna Projects Limited|1351409347.0000@over": {
+   "group": "awarded_vs_invoiced|Suvarna Projects Limited|1351409347.0000",
+   "sign": 1,
+   "level": [
+    "down",
+    0.4809
+   ],
+   "n": 2,
+   "score_lo": 65.127,
+   "score_hi": 65.1276
+  },
+  "awarded_vs_invoiced|Suvarna Projects Limited|1351409347.0000@under": {
+   "group": "awarded_vs_invoiced|Suvarna Projects Limited|1351409347.0000",
+   "sign": -1,
+   "level": [
+    "down",
+    0.4809
+   ],
+   "n": 2,
+   "score_lo": 65.0907,
+   "score_hi": 65.0912
+  },
+  "awarded_vs_invoiced|Trishakti Power Generation Corporation|6999776500.0000@over": {
+   "group": "awarded_vs_invoiced|Trishakti Power Generation Corporation|6999776500.0000",
+   "sign": 1,
+   "level": [
+    "down",
+    0.5307
+   ],
+   "n": 2,
+   "score_lo": 65.1253,
+   "score_hi": 65.1258
+  },
+  "awarded_vs_invoiced|Trishakti Power Generation Corporation|6999776500.0000@under": {
+   "group": "awarded_vs_invoiced|Trishakti Power Generation Corporation|6999776500.0000",
+   "sign": -1,
+   "level": [
+    "down",
+    0.5307
+   ],
+   "n": 2,
+   "score_lo": 65.0925,
+   "score_hi": 65.0929
+  },
+  "collection_pct|Arunodaya Infrastructure|78.1800@over": {
+   "group": "collection_pct|Arunodaya Infrastructure|78.1800",
+   "sign": 1,
+   "level": [
+    "down",
+    0.5791
+   ],
+   "n": 2,
+   "score_lo": 65.1236,
+   "score_hi": 65.1241
+  },
+  "collection_pct|Arunodaya Infrastructure|78.1800@under": {
+   "group": "collection_pct|Arunodaya Infrastructure|78.1800",
+   "sign": -1,
+   "level": [
+    "down",
+    0.5791
+   ],
+   "n": 2,
+   "score_lo": 65.0942,
+   "score_hi": 65.0946
+  },
+  "collection_pct|Mahanadi Steel Corporation|89.1900@over": {
+   "group": "collection_pct|Mahanadi Steel Corporation|89.1900",
+   "sign": 1,
+   "level": [
+    "down",
+    0.6262
+   ],
+   "n": 2,
+   "score_lo": 65.122,
+   "score_hi": 65.1224
+  },
+  "collection_pct|Mahanadi Steel Corporation|89.1900@under": {
+   "group": "collection_pct|Mahanadi Steel Corporation|89.1900",
+   "sign": -1,
+   "level": [
+    "down",
+    0.6262
+   ],
+   "n": 2,
+   "score_lo": 65.0959,
+   "score_hi": 65.0962
+  },
+  "collection_pct|Mega Infrastructure Authority|79.8200@over": {
+   "group": "collection_pct|Mega Infrastructure Authority|79.8200",
+   "sign": 1,
+   "level": [
+    "down",
+    0.6719
+   ],
+   "n": 2,
+   "score_lo": 65.1204,
+   "score_hi": 65.1208
+  },
+  "collection_pct|Mega Infrastructure Authority|79.8200@under": {
+   "group": "collection_pct|Mega Infrastructure Authority|79.8200",
+   "sign": -1,
+   "level": [
+    "down",
+    0.6719
+   ],
+   "n": 2,
+   "score_lo": 65.0975,
+   "score_hi": 65.0978
+  },
+  "collection_pct|Public Health Engineering Dept, Odisha|82.4000@over": {
+   "group": "collection_pct|Public Health Engineering Dept, Odisha|82.4000",
+   "sign": 1,
+   "level": [
+    "down",
+    0.7164
+   ],
+   "n": 2,
+   "score_lo": 65.1189,
+   "score_hi": 65.1192
+  },
+  "collection_pct|Public Health Engineering Dept, Odisha|82.4000@under": {
+   "group": "collection_pct|Public Health Engineering Dept, Odisha|82.4000",
+   "sign": -1,
+   "level": [
+    "down",
+    0.7164
+   ],
+   "n": 2,
+   "score_lo": 65.0991,
+   "score_hi": 65.0993
+  },
+  "exclusion_aggregate|National Expressway Development Authority|2262700000.0000@over": {
+   "group": "exclusion_aggregate|National Expressway Development Authority|2262700000.0000",
+   "sign": 1,
+   "level": [
+    "down",
+    0.7596
+   ],
+   "n": 2,
+   "score_lo": 65.1174,
+   "score_hi": 65.1177
+  },
+  "exclusion_aggregate|National Expressway Development Authority|2262700000.0000@under": {
+   "group": "exclusion_aggregate|National Expressway Development Authority|2262700000.0000",
+   "sign": -1,
+   "level": [
+    "down",
+    0.7596
+   ],
+   "n": 2,
+   "score_lo": 65.1006,
+   "score_hi": 65.1008
+  },
+  "hop_aggregate|Mahanadi Steel Corporation|3296200000.0000@over": {
+   "group": "hop_aggregate|Mahanadi Steel Corporation|3296200000.0000",
+   "sign": 1,
+   "level": [
+    "up",
+    0.15
+   ],
+   "n": 2,
+   "score_lo": 65.0683,
+   "score_hi": 65.0695
+  },
+  "hop_aggregate|Mahanadi Steel Corporation|3296200000.0000@under": {
+   "group": "hop_aggregate|Mahanadi Steel Corporation|3296200000.0000",
+   "sign": -1,
+   "level": [
+    "up",
+    0.15
+   ],
+   "n": 2,
+   "score_lo": 65.1488,
+   "score_hi": 65.15
+  },
+  "hop_aggregate|Peninsular Petroleum Corporation|1366300000.0000@over": {
+   "group": "hop_aggregate|Peninsular Petroleum Corporation|1366300000.0000",
+   "sign": 1,
+   "level": [
+    "up",
+    0.2196
+   ],
+   "n": 2,
+   "score_lo": 65.0658,
+   "score_hi": 65.0671
+  },
+  "hop_aggregate|Peninsular Petroleum Corporation|1366300000.0000@under": {
+   "group": "hop_aggregate|Peninsular Petroleum Corporation|1366300000.0000",
+   "sign": -1,
+   "level": [
+    "up",
+    0.2196
+   ],
+   "n": 2,
+   "score_lo": 65.1512,
+   "score_hi": 65.1524
+  },
+  "hop_aggregate|Public Health Engineering Dept, Odisha|1661400000.0000@over": {
+   "group": "hop_aggregate|Public Health Engineering Dept, Odisha|1661400000.0000",
+   "sign": 1,
+   "level": [
+    "up",
+    0.2911
+   ],
+   "n": 2,
+   "score_lo": 65.0633,
+   "score_hi": 65.0646
+  },
+  "hop_aggregate|Public Health Engineering Dept, Odisha|1661400000.0000@under": {
+   "group": "hop_aggregate|Public Health Engineering Dept, Odisha|1661400000.0000",
+   "sign": -1,
+   "level": [
+    "up",
+    0.2911
+   ],
+   "n": 2,
+   "score_lo": 65.1537,
+   "score_hi": 65.155
+  },
+  "hop_aggregate|Subarnarekha Valley Corporation|3698700000.0000@over": {
+   "group": "hop_aggregate|Subarnarekha Valley Corporation|3698700000.0000",
+   "sign": 1,
+   "level": [
+    "up",
+    0.3648
+   ],
+   "n": 2,
+   "score_lo": 65.0607,
+   "score_hi": 65.062
+  },
+  "hop_aggregate|Subarnarekha Valley Corporation|3698700000.0000@under": {
+   "group": "hop_aggregate|Subarnarekha Valley Corporation|3698700000.0000",
+   "sign": -1,
+   "level": [
+    "up",
+    0.3648
+   ],
+   "n": 2,
+   "score_lo": 65.1562,
+   "score_hi": 65.1576
+  },
+  "hop_aggregate|Suvarna Projects Limited|2341700000.0000@over": {
+   "group": "hop_aggregate|Suvarna Projects Limited|2341700000.0000",
+   "sign": 1,
+   "level": [
+    "up",
+    0.4406
+   ],
+   "n": 2,
+   "score_lo": 65.058,
+   "score_hi": 65.0594
+  },
+  "hop_aggregate|Suvarna Projects Limited|2341700000.0000@under": {
+   "group": "hop_aggregate|Suvarna Projects Limited|2341700000.0000",
+   "sign": -1,
+   "level": [
+    "up",
+    0.4406
+   ],
+   "n": 2,
+   "score_lo": 65.1588,
+   "score_hi": 65.1603
+  },
+  "rank_value|National Expressway Development Authority|880700000.0000@over": {
+   "group": "rank_value|National Expressway Development Authority|880700000.0000",
+   "sign": 1,
+   "level": [
+    "up",
+    0.5186
+   ],
+   "n": 2,
+   "score_lo": 65.0552,
+   "score_hi": 65.0567
+  },
+  "rank_value|National Expressway Development Authority|880700000.0000@under": {
+   "group": "rank_value|National Expressway Development Authority|880700000.0000",
+   "sign": -1,
+   "level": [
+    "up",
+    0.5186
+   ],
+   "n": 2,
+   "score_lo": 65.1615,
+   "score_hi": 65.163
+  },
+  "rank_value|Subarnarekha Valley Corporation|861300000.0000@over": {
+   "group": "rank_value|Subarnarekha Valley Corporation|861300000.0000",
+   "sign": 1,
+   "level": [
+    "up",
+    0.5988
+   ],
+   "n": 2,
+   "score_lo": 65.0524,
+   "score_hi": 65.054
+  },
+  "rank_value|Subarnarekha Valley Corporation|861300000.0000@under": {
+   "group": "rank_value|Subarnarekha Valley Corporation|861300000.0000",
+   "sign": -1,
+   "level": [
+    "up",
+    0.5988
+   ],
+   "n": 2,
+   "score_lo": 65.1643,
+   "score_hi": 65.1659
+  },
+  "avg_work_size|Arunodaya Infrastructure|317128571.0000@over": {
+   "group": "avg_work_size|Arunodaya Infrastructure|317128571.0000",
+   "sign": 1,
+   "level": [
+    "up",
+    0.6814
+   ],
+   "n": 1,
+   "score_lo": 65.0494,
+   "score_hi": 65.0511
+  },
+  "avg_work_size|Arunodaya Infrastructure|317128571.0000@under": {
+   "group": "avg_work_size|Arunodaya Infrastructure|317128571.0000",
+   "sign": -1,
+   "level": [
+    "up",
+    0.6814
+   ],
+   "n": 1,
+   "score_lo": 65.1671,
+   "score_hi": 65.1688
+  },
+  "avg_work_size|Irrigation & Waterways Dept, Govt of West Bengal|389000000.0000@over": {
+   "group": "avg_work_size|Irrigation & Waterways Dept, Govt of West Bengal|389000000.0000",
+   "sign": 1,
+   "level": [
+    "up",
+    0.7664
+   ],
+   "n": 1,
+   "score_lo": 65.0464,
+   "score_hi": 65.0482
+  },
+  "avg_work_size|Irrigation & Waterways Dept, Govt of West Bengal|389000000.0000@under": {
+   "group": "avg_work_size|Irrigation & Waterways Dept, Govt of West Bengal|389000000.0000",
+   "sign": -1,
+   "level": [
+    "up",
+    0.7664
+   ],
+   "n": 1,
+   "score_lo": 65.1701,
+   "score_hi": 65.1718
+  },
+  "avg_work_size|Jal Nigam, Uttar Pradesh|416875000.0000@over": {
+   "group": "avg_work_size|Jal Nigam, Uttar Pradesh|416875000.0000",
+   "sign": 1,
+   "level": [
+    "down",
+    0.15
+   ],
+   "n": 1,
+   "score_lo": 65.1385,
+   "score_hi": 65.1393
+  },
+  "avg_work_size|Jal Nigam, Uttar Pradesh|416875000.0000@under": {
+   "group": "avg_work_size|Jal Nigam, Uttar Pradesh|416875000.0000",
+   "sign": -1,
+   "level": [
+    "down",
+    0.15
+   ],
+   "n": 1,
+   "score_lo": 65.079,
+   "score_hi": 65.0798
+  },
+  "avg_work_size|Jharkhand Municipal Corporation|157166667.0000@over": {
+   "group": "avg_work_size|Jharkhand Municipal Corporation|157166667.0000",
+   "sign": 1,
+   "level": [
+    "down",
+    0.2092
+   ],
+   "n": 1,
+   "score_lo": 65.1364,
+   "score_hi": 65.1372
+  },
+  "avg_work_size|Jharkhand Municipal Corporation|157166667.0000@under": {
+   "group": "avg_work_size|Jharkhand Municipal Corporation|157166667.0000",
+   "sign": -1,
+   "level": [
+    "down",
+    0.2092
+   ],
+   "n": 1,
+   "score_lo": 65.0811,
+   "score_hi": 65.0818
+  },
+  "avg_work_size|Lakshya Engineering & Construction|277757143.0000@over": {
+   "group": "avg_work_size|Lakshya Engineering & Construction|277757143.0000",
+   "sign": 1,
+   "level": [
+    "down",
+    0.2666
+   ],
+   "n": 1,
+   "score_lo": 65.1344,
+   "score_hi": 65.1352
+  },
+  "avg_work_size|Lakshya Engineering & Construction|277757143.0000@under": {
+   "group": "avg_work_size|Lakshya Engineering & Construction|277757143.0000",
+   "sign": -1,
+   "level": [
+    "down",
+    0.2666
+   ],
+   "n": 1,
+   "score_lo": 65.0831,
+   "score_hi": 65.0838
+  },
+  "avg_work_size|Maharashtra Municipal Corporation|217833333.0000@over": {
+   "group": "avg_work_size|Maharashtra Municipal Corporation|217833333.0000",
+   "sign": 1,
+   "level": [
+    "down",
+    0.3225
+   ],
+   "n": 1,
+   "score_lo": 65.1325,
+   "score_hi": 65.1332
+  },
+  "avg_work_size|Maharashtra Municipal Corporation|217833333.0000@under": {
+   "group": "avg_work_size|Maharashtra Municipal Corporation|217833333.0000",
+   "sign": -1,
+   "level": [
+    "down",
+    0.3225
+   ],
+   "n": 1,
+   "score_lo": 65.0851,
+   "score_hi": 65.0858
+  },
+  "avg_work_size|Mega Infrastructure Authority|585442857.0000@over": {
+   "group": "avg_work_size|Mega Infrastructure Authority|585442857.0000",
+   "sign": 1,
+   "level": [
+    "down",
+    0.3768
+   ],
+   "n": 1,
+   "score_lo": 65.1306,
+   "score_hi": 65.1313
+  },
+  "avg_work_size|Mega Infrastructure Authority|585442857.0000@under": {
+   "group": "avg_work_size|Mega Infrastructure Authority|585442857.0000",
+   "sign": -1,
+   "level": [
+    "down",
+    0.3768
+   ],
+   "n": 1,
+   "score_lo": 65.087,
+   "score_hi": 65.0876
+  },
+  "avg_work_size|National Expressway Development Authority|326933333.0000@over": {
+   "group": "avg_work_size|National Expressway Development Authority|326933333.0000",
+   "sign": 1,
+   "level": [
+    "down",
+    0.4296
+   ],
+   "n": 1,
+   "score_lo": 65.1288,
+   "score_hi": 65.1294
+  },
+  "avg_work_size|National Expressway Development Authority|326933333.0000@under": {
+   "group": "avg_work_size|National Expressway Development Authority|326933333.0000",
+   "sign": -1,
+   "level": [
+    "down",
+    0.4296
+   ],
+   "n": 1,
+   "score_lo": 65.0889,
+   "score_hi": 65.0894
+  },
+  "avg_work_size|National Special Projects Office|783183333.0000@over": {
+   "group": "avg_work_size|National Special Projects Office|783183333.0000",
+   "sign": 1,
+   "level": [
+    "down",
+    0.4809
+   ],
+   "n": 1,
+   "score_lo": 65.127,
+   "score_hi": 65.1276
+  },
+  "avg_work_size|National Special Projects Office|783183333.0000@under": {
+   "group": "avg_work_size|National Special Projects Office|783183333.0000",
+   "sign": -1,
+   "level": [
+    "down",
+    0.4809
+   ],
+   "n": 1,
+   "score_lo": 65.0907,
+   "score_hi": 65.0912
+  },
+  "avg_work_size|Peninsular Petroleum Corporation|195185714.0000@over": {
+   "group": "avg_work_size|Peninsular Petroleum Corporation|195185714.0000",
+   "sign": 1,
+   "level": [
+    "down",
+    0.5307
+   ],
+   "n": 1,
+   "score_lo": 65.1253,
+   "score_hi": 65.1258
+  },
+  "avg_work_size|Peninsular Petroleum Corporation|195185714.0000@under": {
+   "group": "avg_work_size|Peninsular Petroleum Corporation|195185714.0000",
+   "sign": -1,
+   "level": [
+    "down",
+    0.5307
+   ],
+   "n": 1,
+   "score_lo": 65.0925,
+   "score_hi": 65.0929
+  },
+  "avg_work_size|Public Works Department, Govt of Maharashtra|334700000.0000@over": {
+   "group": "avg_work_size|Public Works Department, Govt of Maharashtra|334700000.0000",
+   "sign": 1,
+   "level": [
+    "down",
+    0.5791
+   ],
+   "n": 1,
+   "score_lo": 65.1236,
+   "score_hi": 65.1241
+  },
+  "avg_work_size|Public Works Department, Govt of Maharashtra|334700000.0000@under": {
+   "group": "avg_work_size|Public Works Department, Govt of Maharashtra|334700000.0000",
+   "sign": -1,
+   "level": [
+    "down",
+    0.5791
+   ],
+   "n": 1,
+   "score_lo": 65.0942,
+   "score_hi": 65.0946
+  },
+  "avg_work_size|Subarnarekha Valley Corporation|410966667.0000@over": {
+   "group": "avg_work_size|Subarnarekha Valley Corporation|410966667.0000",
+   "sign": 1,
+   "level": [
+    "down",
+    0.6262
+   ],
+   "n": 1,
+   "score_lo": 65.122,
+   "score_hi": 65.1224
+  },
+  "avg_work_size|Subarnarekha Valley Corporation|410966667.0000@under": {
+   "group": "avg_work_size|Subarnarekha Valley Corporation|410966667.0000",
+   "sign": -1,
+   "level": [
+    "down",
+    0.6262
+   ],
+   "n": 1,
+   "score_lo": 65.0959,
+   "score_hi": 65.0962
+  },
+  "avg_work_size|Tamil Nadu Municipal Corporation|611100000.0000@over": {
+   "group": "avg_work_size|Tamil Nadu Municipal Corporation|611100000.0000",
+   "sign": 1,
+   "level": [
+    "down",
+    0.6719
+   ],
+   "n": 1,
+   "score_lo": 65.1204,
+   "score_hi": 65.1208
+  },
+  "avg_work_size|Tamil Nadu Municipal Corporation|611100000.0000@under": {
+   "group": "avg_work_size|Tamil Nadu Municipal Corporation|611100000.0000",
+   "sign": -1,
+   "level": [
+    "down",
+    0.6719
+   ],
+   "n": 1,
+   "score_lo": 65.0975,
+   "score_hi": 65.0978
+  },
+  "awarded_vs_invoiced|Central Works & Buildings Bureau|1386519548.0000@over": {
+   "group": "awarded_vs_invoiced|Central Works & Buildings Bureau|1386519548.0000",
+   "sign": 1,
+   "level": [
+    "down",
+    0.7164
+   ],
+   "n": 1,
+   "score_lo": 65.1189,
+   "score_hi": 65.1192
+  },
+  "awarded_vs_invoiced|Central Works & Buildings Bureau|1386519548.0000@under": {
+   "group": "awarded_vs_invoiced|Central Works & Buildings Bureau|1386519548.0000",
+   "sign": -1,
+   "level": [
+    "down",
+    0.7164
+   ],
+   "n": 1,
+   "score_lo": 65.0991,
+   "score_hi": 65.0993
+  },
+  "awarded_vs_invoiced|Irrigation & Waterways Dept, Govt of Rajasthan|1901520126.0000@over": {
+   "group": "awarded_vs_invoiced|Irrigation & Waterways Dept, Govt of Rajasthan|1901520126.0000",
+   "sign": 1,
+   "level": [
+    "down",
+    0.7596
+   ],
+   "n": 1,
+   "score_lo": 65.1174,
+   "score_hi": 65.1177
+  },
+  "awarded_vs_invoiced|Irrigation & Waterways Dept, Govt of Rajasthan|1901520126.0000@under": {
+   "group": "awarded_vs_invoiced|Irrigation & Waterways Dept, Govt of Rajasthan|1901520126.0000",
+   "sign": -1,
+   "level": [
+    "down",
+    0.7596
+   ],
+   "n": 1,
+   "score_lo": 65.1006,
+   "score_hi": 65.1008
+  },
+  "awarded_vs_invoiced|Irrigation & Waterways Dept, Govt of Uttar Pradesh|377309701.0000@over": {
+   "group": "awarded_vs_invoiced|Irrigation & Waterways Dept, Govt of Uttar Pradesh|377309701.0000",
+   "sign": 1,
+   "level": [
+    "up",
+    0.15
+   ],
+   "n": 1,
+   "score_lo": 65.0683,
+   "score_hi": 65.0695
+  },
+  "awarded_vs_invoiced|Irrigation & Waterways Dept, Govt of Uttar Pradesh|377309701.0000@under": {
+   "group": "awarded_vs_invoiced|Irrigation & Waterways Dept, Govt of Uttar Pradesh|377309701.0000",
+   "sign": -1,
+   "level": [
+    "up",
+    0.15
+   ],
+   "n": 1,
+   "score_lo": 65.1488,
+   "score_hi": 65.15
+  },
+  "awarded_vs_invoiced|Jal Nigam, Jharkhand|1179034540.0000@over": {
+   "group": "awarded_vs_invoiced|Jal Nigam, Jharkhand|1179034540.0000",
+   "sign": 1,
+   "level": [
+    "up",
+    0.2196
+   ],
+   "n": 1,
+   "score_lo": 65.0658,
+   "score_hi": 65.0671
+  },
+  "awarded_vs_invoiced|Jal Nigam, Jharkhand|1179034540.0000@under": {
+   "group": "awarded_vs_invoiced|Jal Nigam, Jharkhand|1179034540.0000",
+   "sign": -1,
+   "level": [
+    "up",
+    0.2196
+   ],
+   "n": 1,
+   "score_lo": 65.1512,
+   "score_hi": 65.1524
+  },
+  "awarded_vs_invoiced|Mahanadi Steel Corporation|2728865201.0000@over": {
+   "group": "awarded_vs_invoiced|Mahanadi Steel Corporation|2728865201.0000",
+   "sign": 1,
+   "level": [
+    "up",
+    0.2911
+   ],
+   "n": 1,
+   "score_lo": 65.0633,
+   "score_hi": 65.0646
+  },
+  "awarded_vs_invoiced|Mahanadi Steel Corporation|2728865201.0000@under": {
+   "group": "awarded_vs_invoiced|Mahanadi Steel Corporation|2728865201.0000",
+   "sign": -1,
+   "level": [
+    "up",
+    0.2911
+   ],
+   "n": 1,
+   "score_lo": 65.1537,
+   "score_hi": 65.155
+  },
+  "awarded_vs_invoiced|Maharashtra Municipal Corporation|532779688.0000@over": {
+   "group": "awarded_vs_invoiced|Maharashtra Municipal Corporation|532779688.0000",
+   "sign": 1,
+   "level": [
+    "up",
+    0.3648
+   ],
+   "n": 1,
+   "score_lo": 65.0607,
+   "score_hi": 65.062
+  },
+  "awarded_vs_invoiced|Maharashtra Municipal Corporation|532779688.0000@under": {
+   "group": "awarded_vs_invoiced|Maharashtra Municipal Corporation|532779688.0000",
+   "sign": -1,
+   "level": [
+    "up",
+    0.3648
+   ],
+   "n": 1,
+   "score_lo": 65.1562,
+   "score_hi": 65.1576
+  },
+  "awarded_vs_invoiced|Meridian Constructors & Co.|875511822.0000@over": {
+   "group": "awarded_vs_invoiced|Meridian Constructors & Co.|875511822.0000",
+   "sign": 1,
+   "level": [
+    "up",
+    0.4406
+   ],
+   "n": 1,
+   "score_lo": 65.058,
+   "score_hi": 65.0594
+  },
+  "awarded_vs_invoiced|Meridian Constructors & Co.|875511822.0000@under": {
+   "group": "awarded_vs_invoiced|Meridian Constructors & Co.|875511822.0000",
+   "sign": -1,
+   "level": [
+    "up",
+    0.4406
+   ],
+   "n": 1,
+   "score_lo": 65.1588,
+   "score_hi": 65.1603
+  },
+  "awarded_vs_invoiced|National Special Projects Office|4243158462.0000@over": {
+   "group": "awarded_vs_invoiced|National Special Projects Office|4243158462.0000",
+   "sign": 1,
+   "level": [
+    "up",
+    0.5186
+   ],
+   "n": 1,
+   "score_lo": 65.0552,
+   "score_hi": 65.0567
+  },
+  "awarded_vs_invoiced|National Special Projects Office|4243158462.0000@under": {
+   "group": "awarded_vs_invoiced|National Special Projects Office|4243158462.0000",
+   "sign": -1,
+   "level": [
+    "up",
+    0.5186
+   ],
+   "n": 1,
+   "score_lo": 65.1615,
+   "score_hi": 65.163
+  },
+  "awarded_vs_invoiced|Public Works Department, Govt of Gujarat|233820699.0000@over": {
+   "group": "awarded_vs_invoiced|Public Works Department, Govt of Gujarat|233820699.0000",
+   "sign": 1,
+   "level": [
+    "up",
+    0.5988
+   ],
+   "n": 1,
+   "score_lo": 65.0524,
+   "score_hi": 65.054
+  },
+  "awarded_vs_invoiced|Public Works Department, Govt of Gujarat|233820699.0000@under": {
+   "group": "awarded_vs_invoiced|Public Works Department, Govt of Gujarat|233820699.0000",
+   "sign": -1,
+   "level": [
+    "up",
+    0.5988
+   ],
+   "n": 1,
+   "score_lo": 65.1643,
+   "score_hi": 65.1659
+  },
+  "awarded_vs_invoiced|Tamil Nadu Municipal Corporation|1691908530.0000@over": {
+   "group": "awarded_vs_invoiced|Tamil Nadu Municipal Corporation|1691908530.0000",
+   "sign": 1,
+   "level": [
+    "up",
+    0.6814
+   ],
+   "n": 1,
+   "score_lo": 65.0494,
+   "score_hi": 65.0511
+  },
+  "awarded_vs_invoiced|Tamil Nadu Municipal Corporation|1691908530.0000@under": {
+   "group": "awarded_vs_invoiced|Tamil Nadu Municipal Corporation|1691908530.0000",
+   "sign": -1,
+   "level": [
+    "up",
+    0.6814
+   ],
+   "n": 1,
+   "score_lo": 65.1671,
+   "score_hi": 65.1688
+  },
+  "category_pair_diff|Arunodaya Infrastructure|369100000.0000@over": {
+   "group": "category_pair_diff|Arunodaya Infrastructure|369100000.0000",
+   "sign": 1,
+   "level": [
+    "up",
+    0.7664
+   ],
+   "n": 1,
+   "score_lo": 65.0464,
+   "score_hi": 65.0482
+  },
+  "category_pair_diff|Arunodaya Infrastructure|369100000.0000@under": {
+   "group": "category_pair_diff|Arunodaya Infrastructure|369100000.0000",
+   "sign": -1,
+   "level": [
+    "up",
+    0.7664
+   ],
+   "n": 1,
+   "score_lo": 65.1701,
+   "score_hi": 65.1718
+  },
+  "category_pair_diff|Arunodaya Infrastructure|410300000.0000@over": {
+   "group": "category_pair_diff|Arunodaya Infrastructure|410300000.0000",
+   "sign": 1,
+   "level": [
+    "down",
+    0.15
+   ],
+   "n": 1,
+   "score_lo": 65.1385,
+   "score_hi": 65.1393
+  },
+  "category_pair_diff|Arunodaya Infrastructure|410300000.0000@under": {
+   "group": "category_pair_diff|Arunodaya Infrastructure|410300000.0000",
+   "sign": -1,
+   "level": [
+    "down",
+    0.15
+   ],
+   "n": 1,
+   "score_lo": 65.079,
+   "score_hi": 65.0798
+  },
+  "category_pair_diff|Jal Nigam, Gujarat|889700000.0000@over": {
+   "group": "category_pair_diff|Jal Nigam, Gujarat|889700000.0000",
+   "sign": 1,
+   "level": [
+    "down",
+    0.2092
+   ],
+   "n": 1,
+   "score_lo": 65.1364,
+   "score_hi": 65.1372
+  },
+  "category_pair_diff|Jal Nigam, Gujarat|889700000.0000@under": {
+   "group": "category_pair_diff|Jal Nigam, Gujarat|889700000.0000",
+   "sign": -1,
+   "level": [
+    "down",
+    0.2092
+   ],
+   "n": 1,
+   "score_lo": 65.0811,
+   "score_hi": 65.0818
+  },
+  "category_pair_diff|Jharkhand Municipal Corporation|17900000.0000@over": {
+   "group": "category_pair_diff|Jharkhand Municipal Corporation|17900000.0000",
+   "sign": 1,
+   "level": [
+    "down",
+    0.2666
+   ],
+   "n": 1,
+   "score_lo": 65.1344,
+   "score_hi": 65.1352
+  },
+  "category_pair_diff|Jharkhand Municipal Corporation|17900000.0000@under": {
+   "group": "category_pair_diff|Jharkhand Municipal Corporation|17900000.0000",
+   "sign": -1,
+   "level": [
+    "down",
+    0.2666
+   ],
+   "n": 1,
+   "score_lo": 65.0831,
+   "score_hi": 65.0838
+  },
+  "category_pair_diff|Jharkhand Municipal Corporation|227200000.0000@over": {
+   "group": "category_pair_diff|Jharkhand Municipal Corporation|227200000.0000",
+   "sign": 1,
+   "level": [
+    "down",
+    0.3225
+   ],
+   "n": 1,
+   "score_lo": 65.1325,
+   "score_hi": 65.1332
+  },
+  "category_pair_diff|Jharkhand Municipal Corporation|227200000.0000@under": {
+   "group": "category_pair_diff|Jharkhand Municipal Corporation|227200000.0000",
+   "sign": -1,
+   "level": [
+    "down",
+    0.3225
+   ],
+   "n": 1,
+   "score_lo": 65.0851,
+   "score_hi": 65.0858
+  },
+  "category_pair_diff|Jharkhand Municipal Corporation|245100000.0000@over": {
+   "group": "category_pair_diff|Jharkhand Municipal Corporation|245100000.0000",
+   "sign": 1,
+   "level": [
+    "down",
+    0.3768
+   ],
+   "n": 1,
+   "score_lo": 65.1306,
+   "score_hi": 65.1313
+  },
+  "category_pair_diff|Jharkhand Municipal Corporation|245100000.0000@under": {
+   "group": "category_pair_diff|Jharkhand Municipal Corporation|245100000.0000",
+   "sign": -1,
+   "level": [
+    "down",
+    0.3768
+   ],
+   "n": 1,
+   "score_lo": 65.087,
+   "score_hi": 65.0876
+  },
+  "category_pair_diff|Mahanadi Steel Corporation|1201100000.0000@over": {
+   "group": "category_pair_diff|Mahanadi Steel Corporation|1201100000.0000",
+   "sign": 1,
+   "level": [
+    "down",
+    0.4296
+   ],
+   "n": 1,
+   "score_lo": 65.1288,
+   "score_hi": 65.1294
+  },
+  "category_pair_diff|Mahanadi Steel Corporation|1201100000.0000@under": {
+   "group": "category_pair_diff|Mahanadi Steel Corporation|1201100000.0000",
+   "sign": -1,
+   "level": [
+    "down",
+    0.4296
+   ],
+   "n": 1,
+   "score_lo": 65.0889,
+   "score_hi": 65.0894
+  },
+  "category_pair_diff|Mahanadi Steel Corporation|1324900000.0000@over": {
+   "group": "category_pair_diff|Mahanadi Steel Corporation|1324900000.0000",
+   "sign": 1,
+   "level": [
+    "down",
+    0.4809
+   ],
+   "n": 1,
+   "score_lo": 65.127,
+   "score_hi": 65.1276
+  },
+  "category_pair_diff|Mahanadi Steel Corporation|1324900000.0000@under": {
+   "group": "category_pair_diff|Mahanadi Steel Corporation|1324900000.0000",
+   "sign": -1,
+   "level": [
+    "down",
+    0.4809
+   ],
+   "n": 1,
+   "score_lo": 65.0907,
+   "score_hi": 65.0912
+  },
+  "category_pair_diff|Mahanadi Steel Corporation|218500000.0000@over": {
+   "group": "category_pair_diff|Mahanadi Steel Corporation|218500000.0000",
+   "sign": 1,
+   "level": [
+    "down",
+    0.5307
+   ],
+   "n": 1,
+   "score_lo": 65.1253,
+   "score_hi": 65.1258
+  },
+  "category_pair_diff|Mahanadi Steel Corporation|218500000.0000@under": {
+   "group": "category_pair_diff|Mahanadi Steel Corporation|218500000.0000",
+   "sign": -1,
+   "level": [
+    "down",
+    0.5307
+   ],
+   "n": 1,
+   "score_lo": 65.0925,
+   "score_hi": 65.0929
+  },
+  "category_pair_diff|Mahanadi Steel Corporation|256500000.0000@over": {
+   "group": "category_pair_diff|Mahanadi Steel Corporation|256500000.0000",
+   "sign": 1,
+   "level": [
+    "down",
+    0.5791
+   ],
+   "n": 1,
+   "score_lo": 65.1236,
+   "score_hi": 65.1241
+  },
+  "category_pair_diff|Mahanadi Steel Corporation|256500000.0000@under": {
+   "group": "category_pair_diff|Mahanadi Steel Corporation|256500000.0000",
+   "sign": -1,
+   "level": [
+    "down",
+    0.5791
+   ],
+   "n": 1,
+   "score_lo": 65.0942,
+   "score_hi": 65.0946
+  },
+  "category_pair_diff|Mahanadi Steel Corporation|38000000.0000@over": {
+   "group": "category_pair_diff|Mahanadi Steel Corporation|38000000.0000",
+   "sign": 1,
+   "level": [
+    "down",
+    0.6262
+   ],
+   "n": 1,
+   "score_lo": 65.122,
+   "score_hi": 65.1224
+  },
+  "category_pair_diff|Mahanadi Steel Corporation|38000000.0000@under": {
+   "group": "category_pair_diff|Mahanadi Steel Corporation|38000000.0000",
+   "sign": -1,
+   "level": [
+    "down",
+    0.6262
+   ],
+   "n": 1,
+   "score_lo": 65.0959,
+   "score_hi": 65.0962
+  },
+  "category_pair_diff|Mahanadi Steel Corporation|422500000.0000@over": {
+   "group": "category_pair_diff|Mahanadi Steel Corporation|422500000.0000",
+   "sign": 1,
+   "level": [
+    "down",
+    0.6719
+   ],
+   "n": 1,
+   "score_lo": 65.1204,
+   "score_hi": 65.1208
+  },
+  "category_pair_diff|Mahanadi Steel Corporation|422500000.0000@under": {
+   "group": "category_pair_diff|Mahanadi Steel Corporation|422500000.0000",
+   "sign": -1,
+   "level": [
+    "down",
+    0.6719
+   ],
+   "n": 1,
+   "score_lo": 65.0975,
+   "score_hi": 65.0978
+  },
+  "category_pair_diff|Mahanadi Steel Corporation|525700000.0000@over": {
+   "group": "category_pair_diff|Mahanadi Steel Corporation|525700000.0000",
+   "sign": 1,
+   "level": [
+    "down",
+    0.7164
+   ],
+   "n": 1,
+   "score_lo": 65.1189,
+   "score_hi": 65.1192
+  },
+  "category_pair_diff|Mahanadi Steel Corporation|525700000.0000@under": {
+   "group": "category_pair_diff|Mahanadi Steel Corporation|525700000.0000",
+   "sign": -1,
+   "level": [
+    "down",
+    0.7164
+   ],
+   "n": 1,
+   "score_lo": 65.0991,
+   "score_hi": 65.0993
+  },
+  "category_pair_diff|Mahanadi Steel Corporation|8500000.0000@over": {
+   "group": "category_pair_diff|Mahanadi Steel Corporation|8500000.0000",
+   "sign": 1,
+   "level": [
+    "down",
+    0.7596
+   ],
+   "n": 1,
+   "score_lo": 65.1174,
+   "score_hi": 65.1177
+  },
+  "category_pair_diff|Mahanadi Steel Corporation|8500000.0000@under": {
+   "group": "category_pair_diff|Mahanadi Steel Corporation|8500000.0000",
+   "sign": -1,
+   "level": [
+    "down",
+    0.7596
+   ],
+   "n": 1,
+   "score_lo": 65.1006,
+   "score_hi": 65.1008
+  },
+  "category_pair_diff|Mahanadi Steel Corporation|893900000.0000@over": {
+   "group": "category_pair_diff|Mahanadi Steel Corporation|893900000.0000",
+   "sign": 1,
+   "level": [
+    "up",
+    0.15
+   ],
+   "n": 1,
+   "score_lo": 65.0683,
+   "score_hi": 65.0695
+  },
+  "category_pair_diff|Mahanadi Steel Corporation|893900000.0000@under": {
+   "group": "category_pair_diff|Mahanadi Steel Corporation|893900000.0000",
+   "sign": -1,
+   "level": [
+    "up",
+    0.15
+   ],
+   "n": 1,
+   "score_lo": 65.1488,
+   "score_hi": 65.15
+  },
+  "category_pair_diff|Mahanadi Steel Corporation|931900000.0000@over": {
+   "group": "category_pair_diff|Mahanadi Steel Corporation|931900000.0000",
+   "sign": 1,
+   "level": [
+    "up",
+    0.2196
+   ],
+   "n": 1,
+   "score_lo": 65.0658,
+   "score_hi": 65.0671
+  },
+  "category_pair_diff|Mahanadi Steel Corporation|931900000.0000@under": {
+   "group": "category_pair_diff|Mahanadi Steel Corporation|931900000.0000",
+   "sign": -1,
+   "level": [
+    "up",
+    0.2196
+   ],
+   "n": 1,
+   "score_lo": 65.1512,
+   "score_hi": 65.1524
+  },
+  "category_pair_diff|Maharashtra Municipal Corporation|554700000.0000@over": {
+   "group": "category_pair_diff|Maharashtra Municipal Corporation|554700000.0000",
+   "sign": 1,
+   "level": [
+    "up",
+    0.2911
+   ],
+   "n": 1,
+   "score_lo": 65.0633,
+   "score_hi": 65.0646
+  },
+  "category_pair_diff|Maharashtra Municipal Corporation|554700000.0000@under": {
+   "group": "category_pair_diff|Maharashtra Municipal Corporation|554700000.0000",
+   "sign": -1,
+   "level": [
+    "up",
+    0.2911
+   ],
+   "n": 1,
+   "score_lo": 65.1537,
+   "score_hi": 65.155
+  },
+  "category_pair_diff|Meridian Constructors & Co.|1116200000.0000@over": {
+   "group": "category_pair_diff|Meridian Constructors & Co.|1116200000.0000",
+   "sign": 1,
+   "level": [
+    "up",
+    0.3648
+   ],
+   "n": 1,
+   "score_lo": 65.0607,
+   "score_hi": 65.062
+  },
+  "category_pair_diff|Meridian Constructors & Co.|1116200000.0000@under": {
+   "group": "category_pair_diff|Meridian Constructors & Co.|1116200000.0000",
+   "sign": -1,
+   "level": [
+    "up",
+    0.3648
+   ],
+   "n": 1,
+   "score_lo": 65.1562,
+   "score_hi": 65.1576
+  },
+  "category_pair_diff|National Expressway Development Authority|160800000.0000@over": {
+   "group": "category_pair_diff|National Expressway Development Authority|160800000.0000",
+   "sign": 1,
+   "level": [
+    "up",
+    0.4406
+   ],
+   "n": 1,
+   "score_lo": 65.058,
+   "score_hi": 65.0594
+  },
+  "category_pair_diff|National Expressway Development Authority|160800000.0000@under": {
+   "group": "category_pair_diff|National Expressway Development Authority|160800000.0000",
+   "sign": -1,
+   "level": [
+    "up",
+    0.4406
+   ],
+   "n": 1,
+   "score_lo": 65.1588,
+   "score_hi": 65.1603
+  },
+  "category_pair_diff|National Expressway Development Authority|188500000.0000@over": {
+   "group": "category_pair_diff|National Expressway Development Authority|188500000.0000",
+   "sign": 1,
+   "level": [
+    "up",
+    0.5186
+   ],
+   "n": 1,
+   "score_lo": 65.0552,
+   "score_hi": 65.0567
+  },
+  "category_pair_diff|National Expressway Development Authority|188500000.0000@under": {
+   "group": "category_pair_diff|National Expressway Development Authority|188500000.0000",
+   "sign": -1,
+   "level": [
+    "up",
+    0.5186
+   ],
+   "n": 1,
+   "score_lo": 65.1615,
+   "score_hi": 65.163
+  },
+  "category_pair_diff|National Expressway Development Authority|279700000.0000@over": {
+   "group": "category_pair_diff|National Expressway Development Authority|279700000.0000",
+   "sign": 1,
+   "level": [
+    "up",
+    0.5988
+   ],
+   "n": 1,
+   "score_lo": 65.0524,
+   "score_hi": 65.054
+  },
+  "category_pair_diff|National Expressway Development Authority|279700000.0000@under": {
+   "group": "category_pair_diff|National Expressway Development Authority|279700000.0000",
+   "sign": -1,
+   "level": [
+    "up",
+    0.5988
+   ],
+   "n": 1,
+   "score_lo": 65.1643,
+   "score_hi": 65.1659
+  },
+  "category_pair_diff|National Expressway Development Authority|440500000.0000@over": {
+   "group": "category_pair_diff|National Expressway Development Authority|440500000.0000",
+   "sign": 1,
+   "level": [
+    "up",
+    0.6814
+   ],
+   "n": 1,
+   "score_lo": 65.0494,
+   "score_hi": 65.0511
+  },
+  "category_pair_diff|National Expressway Development Authority|440500000.0000@under": {
+   "group": "category_pair_diff|National Expressway Development Authority|440500000.0000",
+   "sign": -1,
+   "level": [
+    "up",
+    0.6814
+   ],
+   "n": 1,
+   "score_lo": 65.1671,
+   "score_hi": 65.1688
+  },
+  "category_pair_diff|National Expressway Development Authority|468200000.0000@over": {
+   "group": "category_pair_diff|National Expressway Development Authority|468200000.0000",
+   "sign": 1,
+   "level": [
+    "up",
+    0.7664
+   ],
+   "n": 1,
+   "score_lo": 65.0464,
+   "score_hi": 65.0482
+  },
+  "category_pair_diff|National Expressway Development Authority|468200000.0000@under": {
+   "group": "category_pair_diff|National Expressway Development Authority|468200000.0000",
+   "sign": -1,
+   "level": [
+    "up",
+    0.7664
+   ],
+   "n": 1,
+   "score_lo": 65.1701,
+   "score_hi": 65.1718
+  },
+  "category_pair_diff|National Special Projects Office|1122500000.0000@over": {
+   "group": "category_pair_diff|National Special Projects Office|1122500000.0000",
+   "sign": 1,
+   "level": [
+    "down",
+    0.15
+   ],
+   "n": 1,
+   "score_lo": 65.1385,
+   "score_hi": 65.1393
+  },
+  "category_pair_diff|National Special Projects Office|1122500000.0000@under": {
+   "group": "category_pair_diff|National Special Projects Office|1122500000.0000",
+   "sign": -1,
+   "level": [
+    "down",
+    0.15
+   ],
+   "n": 1,
+   "score_lo": 65.079,
+   "score_hi": 65.0798
+  },
+  "category_pair_diff|National Special Projects Office|1586500000.0000@over": {
+   "group": "category_pair_diff|National Special Projects Office|1586500000.0000",
+   "sign": 1,
+   "level": [
+    "down",
+    0.2092
+   ],
+   "n": 1,
+   "score_lo": 65.1364,
+   "score_hi": 65.1372
+  },
+  "category_pair_diff|National Special Projects Office|1586500000.0000@under": {
+   "group": "category_pair_diff|National Special Projects Office|1586500000.0000",
+   "sign": -1,
+   "level": [
+    "down",
+    0.2092
+   ],
+   "n": 1,
+   "score_lo": 65.0811,
+   "score_hi": 65.0818
+  },
+  "category_pair_diff|National Special Projects Office|1666200000.0000@over": {
+   "group": "category_pair_diff|National Special Projects Office|1666200000.0000",
+   "sign": 1,
+   "level": [
+    "down",
+    0.2666
+   ],
+   "n": 1,
+   "score_lo": 65.1344,
+   "score_hi": 65.1352
+  },
+  "category_pair_diff|National Special Projects Office|1666200000.0000@under": {
+   "group": "category_pair_diff|National Special Projects Office|1666200000.0000",
+   "sign": -1,
+   "level": [
+    "down",
+    0.2666
+   ],
+   "n": 1,
+   "score_lo": 65.0831,
+   "score_hi": 65.0838
+  },
+  "category_pair_diff|National Special Projects Office|464000000.0000@over": {
+   "group": "category_pair_diff|National Special Projects Office|464000000.0000",
+   "sign": 1,
+   "level": [
+    "down",
+    0.3225
+   ],
+   "n": 1,
+   "score_lo": 65.1325,
+   "score_hi": 65.1332
+  },
+  "category_pair_diff|National Special Projects Office|464000000.0000@under": {
+   "group": "category_pair_diff|National Special Projects Office|464000000.0000",
+   "sign": -1,
+   "level": [
+    "down",
+    0.3225
+   ],
+   "n": 1,
+   "score_lo": 65.0851,
+   "score_hi": 65.0858
+  },
+  "category_pair_diff|Peninsular Petroleum Corporation|462900000.0000@over": {
+   "group": "category_pair_diff|Peninsular Petroleum Corporation|462900000.0000",
+   "sign": 1,
+   "level": [
+    "down",
+    0.3768
+   ],
+   "n": 1,
+   "score_lo": 65.1306,
+   "score_hi": 65.1313
+  },
+  "category_pair_diff|Peninsular Petroleum Corporation|462900000.0000@under": {
+   "group": "category_pair_diff|Peninsular Petroleum Corporation|462900000.0000",
+   "sign": -1,
+   "level": [
+    "down",
+    0.3768
+   ],
+   "n": 1,
+   "score_lo": 65.087,
+   "score_hi": 65.0876
+  },
+  "category_pair_diff|Public Health Engineering Dept, Odisha|187900000.0000@over": {
+   "group": "category_pair_diff|Public Health Engineering Dept, Odisha|187900000.0000",
+   "sign": 1,
+   "level": [
+    "down",
+    0.4296
+   ],
+   "n": 1,
+   "score_lo": 65.1288,
+   "score_hi": 65.1294
+  },
+  "category_pair_diff|Public Health Engineering Dept, Odisha|187900000.0000@under": {
+   "group": "category_pair_diff|Public Health Engineering Dept, Odisha|187900000.0000",
+   "sign": -1,
+   "level": [
+    "down",
+    0.4296
+   ],
+   "n": 1,
+   "score_lo": 65.0889,
+   "score_hi": 65.0894
+  },
+  "category_pair_diff|Public Health Engineering Dept, Odisha|550900000.0000@over": {
+   "group": "category_pair_diff|Public Health Engineering Dept, Odisha|550900000.0000",
+   "sign": 1,
+   "level": [
+    "down",
+    0.4809
+   ],
+   "n": 1,
+   "score_lo": 65.127,
+   "score_hi": 65.1276
+  },
+  "category_pair_diff|Public Health Engineering Dept, Odisha|550900000.0000@under": {
+   "group": "category_pair_diff|Public Health Engineering Dept, Odisha|550900000.0000",
+   "sign": -1,
+   "level": [
+    "down",
+    0.4809
+   ],
+   "n": 1,
+   "score_lo": 65.0907,
+   "score_hi": 65.0912
+  },
+  "category_pair_diff|Public Works Department, Govt of Gujarat|197200000.0000@over": {
+   "group": "category_pair_diff|Public Works Department, Govt of Gujarat|197200000.0000",
+   "sign": 1,
+   "level": [
+    "down",
+    0.5307
+   ],
+   "n": 1,
+   "score_lo": 65.1253,
+   "score_hi": 65.1258
+  },
+  "category_pair_diff|Public Works Department, Govt of Gujarat|197200000.0000@under": {
+   "group": "category_pair_diff|Public Works Department, Govt of Gujarat|197200000.0000",
+   "sign": -1,
+   "level": [
+    "down",
+    0.5307
+   ],
+   "n": 1,
+   "score_lo": 65.0925,
+   "score_hi": 65.0929
+  },
+  "category_pair_diff|Public Works Department, Govt of Maharashtra|114000001.0000@over": {
+   "group": "category_pair_diff|Public Works Department, Govt of Maharashtra|114000001.0000",
+   "sign": 1,
+   "level": [
+    "down",
+    0.5791
+   ],
+   "n": 1,
+   "score_lo": 65.1236,
+   "score_hi": 65.1241
+  },
+  "category_pair_diff|Public Works Department, Govt of Maharashtra|114000001.0000@under": {
+   "group": "category_pair_diff|Public Works Department, Govt of Maharashtra|114000001.0000",
+   "sign": -1,
+   "level": [
+    "down",
+    0.5791
+   ],
+   "n": 1,
+   "score_lo": 65.0942,
+   "score_hi": 65.0946
+  },
+  "category_pair_diff|Public Works Department, Govt of Maharashtra|16699999.0000@over": {
+   "group": "category_pair_diff|Public Works Department, Govt of Maharashtra|16699999.0000",
+   "sign": 1,
+   "level": [
+    "down",
+    0.6262
+   ],
+   "n": 1,
+   "score_lo": 65.122,
+   "score_hi": 65.1224
+  },
+  "category_pair_diff|Public Works Department, Govt of Maharashtra|16699999.0000@under": {
+   "group": "category_pair_diff|Public Works Department, Govt of Maharashtra|16699999.0000",
+   "sign": -1,
+   "level": [
+    "down",
+    0.6262
+   ],
+   "n": 1,
+   "score_lo": 65.0959,
+   "score_hi": 65.0962
+  },
+  "category_pair_diff|Public Works Department, Govt of Maharashtra|315700000.0000@over": {
+   "group": "category_pair_diff|Public Works Department, Govt of Maharashtra|315700000.0000",
+   "sign": 1,
+   "level": [
+    "down",
+    0.6719
+   ],
+   "n": 1,
+   "score_lo": 65.1204,
+   "score_hi": 65.1208
+  },
+  "category_pair_diff|Public Works Department, Govt of Maharashtra|315700000.0000@under": {
+   "group": "category_pair_diff|Public Works Department, Govt of Maharashtra|315700000.0000",
+   "sign": -1,
+   "level": [
+    "down",
+    0.6719
+   ],
+   "n": 1,
+   "score_lo": 65.0975,
+   "score_hi": 65.0978
+  },
+  "category_pair_diff|Public Works Department, Govt of Maharashtra|372700000.0000@over": {
+   "group": "category_pair_diff|Public Works Department, Govt of Maharashtra|372700000.0000",
+   "sign": 1,
+   "level": [
+    "down",
+    0.7164
+   ],
+   "n": 1,
+   "score_lo": 65.1189,
+   "score_hi": 65.1192
+  },
+  "category_pair_diff|Public Works Department, Govt of Maharashtra|372700000.0000@under": {
+   "group": "category_pair_diff|Public Works Department, Govt of Maharashtra|372700000.0000",
+   "sign": -1,
+   "level": [
+    "down",
+    0.7164
+   ],
+   "n": 1,
+   "score_lo": 65.0991,
+   "score_hi": 65.0993
+  },
+  "category_pair_diff|Public Works Department, Govt of Maharashtra|37600000.0000@over": {
+   "group": "category_pair_diff|Public Works Department, Govt of Maharashtra|37600000.0000",
+   "sign": 1,
+   "level": [
+    "down",
+    0.7596
+   ],
+   "n": 1,
+   "score_lo": 65.1174,
+   "score_hi": 65.1177
+  },
+  "category_pair_diff|Public Works Department, Govt of Maharashtra|37600000.0000@under": {
+   "group": "category_pair_diff|Public Works Department, Govt of Maharashtra|37600000.0000",
+   "sign": -1,
+   "level": [
+    "down",
+    0.7596
+   ],
+   "n": 1,
+   "score_lo": 65.1006,
+   "score_hi": 65.1008
+  },
+  "category_pair_diff|Public Works Department, Govt of Maharashtra|410300000.0000@over": {
+   "group": "category_pair_diff|Public Works Department, Govt of Maharashtra|410300000.0000",
+   "sign": 1,
+   "level": [
+    "up",
+    0.15
+   ],
+   "n": 1,
+   "score_lo": 65.0683,
+   "score_hi": 65.0695
+  },
+  "category_pair_diff|Public Works Department, Govt of Maharashtra|410300000.0000@under": {
+   "group": "category_pair_diff|Public Works Department, Govt of Maharashtra|410300000.0000",
+   "sign": -1,
+   "level": [
+    "up",
+    0.15
+   ],
+   "n": 1,
+   "score_lo": 65.1488,
+   "score_hi": 65.15
+  },
+  "category_pair_diff|Subarnarekha Valley Corporation|1701800000.0000@over": {
+   "group": "category_pair_diff|Subarnarekha Valley Corporation|1701800000.0000",
+   "sign": 1,
+   "level": [
+    "up",
+    0.2196
+   ],
+   "n": 1,
+   "score_lo": 65.0658,
+   "score_hi": 65.0671
+  },
+  "category_pair_diff|Subarnarekha Valley Corporation|1701800000.0000@under": {
+   "group": "category_pair_diff|Subarnarekha Valley Corporation|1701800000.0000",
+   "sign": -1,
+   "level": [
+    "up",
+    0.2196
+   ],
+   "n": 1,
+   "score_lo": 65.1512,
+   "score_hi": 65.1524
+  },
+  "category_pair_diff|Subarnarekha Valley Corporation|194900000.0000@over": {
+   "group": "category_pair_diff|Subarnarekha Valley Corporation|194900000.0000",
+   "sign": 1,
+   "level": [
+    "up",
+    0.2911
+   ],
+   "n": 1,
+   "score_lo": 65.0633,
+   "score_hi": 65.0646
+  },
+  "category_pair_diff|Subarnarekha Valley Corporation|194900000.0000@under": {
+   "group": "category_pair_diff|Subarnarekha Valley Corporation|194900000.0000",
+   "sign": -1,
+   "level": [
+    "up",
+    0.2911
+   ],
+   "n": 1,
+   "score_lo": 65.1537,
+   "score_hi": 65.155
+  },
+  "category_pair_diff|Subarnarekha Valley Corporation|278600000.0000@over": {
+   "group": "category_pair_diff|Subarnarekha Valley Corporation|278600000.0000",
+   "sign": 1,
+   "level": [
+    "up",
+    0.3648
+   ],
+   "n": 1,
+   "score_lo": 65.0607,
+   "score_hi": 65.062
+  },
+  "category_pair_diff|Subarnarekha Valley Corporation|278600000.0000@under": {
+   "group": "category_pair_diff|Subarnarekha Valley Corporation|278600000.0000",
+   "sign": -1,
+   "level": [
+    "up",
+    0.3648
+   ],
+   "n": 1,
+   "score_lo": 65.1562,
+   "score_hi": 65.1576
+  },
+  "category_pair_diff|Subarnarekha Valley Corporation|393800000.0000@over": {
+   "group": "category_pair_diff|Subarnarekha Valley Corporation|393800000.0000",
+   "sign": 1,
+   "level": [
+    "up",
+    0.4406
+   ],
+   "n": 1,
+   "score_lo": 65.058,
+   "score_hi": 65.0594
+  },
+  "category_pair_diff|Subarnarekha Valley Corporation|393800000.0000@under": {
+   "group": "category_pair_diff|Subarnarekha Valley Corporation|393800000.0000",
+   "sign": -1,
+   "level": [
+    "up",
+    0.4406
+   ],
+   "n": 1,
+   "score_lo": 65.1588,
+   "score_hi": 65.1603
+  },
+  "category_pair_diff|Subarnarekha Valley Corporation|652200000.0000@over": {
+   "group": "category_pair_diff|Subarnarekha Valley Corporation|652200000.0000",
+   "sign": 1,
+   "level": [
+    "up",
+    0.5186
+   ],
+   "n": 1,
+   "score_lo": 65.0552,
+   "score_hi": 65.0567
+  },
+  "category_pair_diff|Subarnarekha Valley Corporation|652200000.0000@under": {
+   "group": "category_pair_diff|Subarnarekha Valley Corporation|652200000.0000",
+   "sign": -1,
+   "level": [
+    "up",
+    0.5186
+   ],
+   "n": 1,
+   "score_lo": 65.1615,
+   "score_hi": 65.163
+  },
+  "category_pair_diff|Subarnarekha Valley Corporation|77600000.0000@over": {
+   "group": "category_pair_diff|Subarnarekha Valley Corporation|77600000.0000",
+   "sign": 1,
+   "level": [
+    "up",
+    0.5988
+   ],
+   "n": 1,
+   "score_lo": 65.0524,
+   "score_hi": 65.054
+  },
+  "category_pair_diff|Subarnarekha Valley Corporation|77600000.0000@under": {
+   "group": "category_pair_diff|Subarnarekha Valley Corporation|77600000.0000",
+   "sign": -1,
+   "level": [
+    "up",
+    0.5988
+   ],
+   "n": 1,
+   "score_lo": 65.1643,
+   "score_hi": 65.1659
+  },
+  "category_pair_diff|Subarnarekha Valley Corporation|83700000.0000@over": {
+   "group": "category_pair_diff|Subarnarekha Valley Corporation|83700000.0000",
+   "sign": 1,
+   "level": [
+    "up",
+    0.6814
+   ],
+   "n": 1,
+   "score_lo": 65.0494,
+   "score_hi": 65.0511
+  },
+  "category_pair_diff|Subarnarekha Valley Corporation|83700000.0000@under": {
+   "group": "category_pair_diff|Subarnarekha Valley Corporation|83700000.0000",
+   "sign": -1,
+   "level": [
+    "up",
+    0.6814
+   ],
+   "n": 1,
+   "score_lo": 65.1671,
+   "score_hi": 65.1688
+  },
+  "category_pair_diff|Subarnarekha Valley Corporation|861300000.0000@over": {
+   "group": "category_pair_diff|Subarnarekha Valley Corporation|861300000.0000",
+   "sign": 1,
+   "level": [
+    "up",
+    0.7664
+   ],
+   "n": 1,
+   "score_lo": 65.0464,
+   "score_hi": 65.0482
+  },
+  "category_pair_diff|Subarnarekha Valley Corporation|861300000.0000@under": {
+   "group": "category_pair_diff|Subarnarekha Valley Corporation|861300000.0000",
+   "sign": -1,
+   "level": [
+    "up",
+    0.7664
+   ],
+   "n": 1,
+   "score_lo": 65.1701,
+   "score_hi": 65.1718
+  },
+  "category_pair_diff|Suvarna Projects Limited|129100000.0000@over": {
+   "group": "category_pair_diff|Suvarna Projects Limited|129100000.0000",
+   "sign": 1,
+   "level": [
+    "down",
+    0.15
+   ],
+   "n": 1,
+   "score_lo": 65.1385,
+   "score_hi": 65.1393
+  },
+  "category_pair_diff|Suvarna Projects Limited|129100000.0000@under": {
+   "group": "category_pair_diff|Suvarna Projects Limited|129100000.0000",
+   "sign": -1,
+   "level": [
+    "down",
+    0.15
+   ],
+   "n": 1,
+   "score_lo": 65.079,
+   "score_hi": 65.0798
+  },
+  "category_pair_diff|Suvarna Projects Limited|153300000.0000@over": {
+   "group": "category_pair_diff|Suvarna Projects Limited|153300000.0000",
+   "sign": 1,
+   "level": [
+    "down",
+    0.2092
+   ],
+   "n": 1,
+   "score_lo": 65.1364,
+   "score_hi": 65.1372
+  },
+  "category_pair_diff|Suvarna Projects Limited|153300000.0000@under": {
+   "group": "category_pair_diff|Suvarna Projects Limited|153300000.0000",
+   "sign": -1,
+   "level": [
+    "down",
+    0.2092
+   ],
+   "n": 1,
+   "score_lo": 65.0811,
+   "score_hi": 65.0818
+  },
+  "category_pair_diff|Suvarna Projects Limited|181300000.0000@over": {
+   "group": "category_pair_diff|Suvarna Projects Limited|181300000.0000",
+   "sign": 1,
+   "level": [
+    "down",
+    0.2666
+   ],
+   "n": 1,
+   "score_lo": 65.1344,
+   "score_hi": 65.1352
+  },
+  "category_pair_diff|Suvarna Projects Limited|181300000.0000@under": {
+   "group": "category_pair_diff|Suvarna Projects Limited|181300000.0000",
+   "sign": -1,
+   "level": [
+    "down",
+    0.2666
+   ],
+   "n": 1,
+   "score_lo": 65.0831,
+   "score_hi": 65.0838
+  },
+  "category_pair_diff|Suvarna Projects Limited|382500000.0000@over": {
+   "group": "category_pair_diff|Suvarna Projects Limited|382500000.0000",
+   "sign": 1,
+   "level": [
+    "down",
+    0.3225
+   ],
+   "n": 1,
+   "score_lo": 65.1325,
+   "score_hi": 65.1332
+  },
+  "category_pair_diff|Suvarna Projects Limited|382500000.0000@under": {
+   "group": "category_pair_diff|Suvarna Projects Limited|382500000.0000",
+   "sign": -1,
+   "level": [
+    "down",
+    0.3225
+   ],
+   "n": 1,
+   "score_lo": 65.0851,
+   "score_hi": 65.0858
+  },
+  "category_pair_diff|Suvarna Projects Limited|472200000.0000@over": {
+   "group": "category_pair_diff|Suvarna Projects Limited|472200000.0000",
+   "sign": 1,
+   "level": [
+    "down",
+    0.3768
+   ],
+   "n": 1,
+   "score_lo": 65.1306,
+   "score_hi": 65.1313
+  },
+  "category_pair_diff|Suvarna Projects Limited|472200000.0000@under": {
+   "group": "category_pair_diff|Suvarna Projects Limited|472200000.0000",
+   "sign": -1,
+   "level": [
+    "down",
+    0.3768
+   ],
+   "n": 1,
+   "score_lo": 65.087,
+   "score_hi": 65.0876
+  },
+  "category_pair_diff|Suvarna Projects Limited|885500000.0000@over": {
+   "group": "category_pair_diff|Suvarna Projects Limited|885500000.0000",
+   "sign": 1,
+   "level": [
+    "down",
+    0.4296
+   ],
+   "n": 1,
+   "score_lo": 65.1288,
+   "score_hi": 65.1294
+  },
+  "category_pair_diff|Suvarna Projects Limited|885500000.0000@under": {
+   "group": "category_pair_diff|Suvarna Projects Limited|885500000.0000",
+   "sign": -1,
+   "level": [
+    "down",
+    0.4296
+   ],
+   "n": 1,
+   "score_lo": 65.0889,
+   "score_hi": 65.0894
+  },
+  "category_pair_diff|Suvarna Projects Limited|924900000.0000@over": {
+   "group": "category_pair_diff|Suvarna Projects Limited|924900000.0000",
+   "sign": 1,
+   "level": [
+    "down",
+    0.4809
+   ],
+   "n": 1,
+   "score_lo": 65.127,
+   "score_hi": 65.1276
+  },
+  "category_pair_diff|Suvarna Projects Limited|924900000.0000@under": {
+   "group": "category_pair_diff|Suvarna Projects Limited|924900000.0000",
+   "sign": -1,
+   "level": [
+    "down",
+    0.4809
+   ],
+   "n": 1,
+   "score_lo": 65.0907,
+   "score_hi": 65.0912
+  },
+  "category_pair_diff|Suvarna Projects Limited|977100000.0000@over": {
+   "group": "category_pair_diff|Suvarna Projects Limited|977100000.0000",
+   "sign": 1,
+   "level": [
+    "down",
+    0.5307
+   ],
+   "n": 1,
+   "score_lo": 65.1253,
+   "score_hi": 65.1258
+  },
+  "category_pair_diff|Suvarna Projects Limited|977100000.0000@under": {
+   "group": "category_pair_diff|Suvarna Projects Limited|977100000.0000",
+   "sign": -1,
+   "level": [
+    "down",
+    0.5307
+   ],
+   "n": 1,
+   "score_lo": 65.0925,
+   "score_hi": 65.0929
+  },
+  "category_pair_diff|Tamil Nadu Municipal Corporation|1196800000.0000@over": {
+   "group": "category_pair_diff|Tamil Nadu Municipal Corporation|1196800000.0000",
+   "sign": 1,
+   "level": [
+    "down",
+    0.5791
+   ],
+   "n": 1,
+   "score_lo": 65.1236,
+   "score_hi": 65.1241
+  },
+  "category_pair_diff|Tamil Nadu Municipal Corporation|1196800000.0000@under": {
+   "group": "category_pair_diff|Tamil Nadu Municipal Corporation|1196800000.0000",
+   "sign": -1,
+   "level": [
+    "down",
+    0.5791
+   ],
+   "n": 1,
+   "score_lo": 65.0942,
+   "score_hi": 65.0946
+  },
+  "category_pair_diff|Trishakti Power Generation Corporation|102100000.0000@over": {
+   "group": "category_pair_diff|Trishakti Power Generation Corporation|102100000.0000",
+   "sign": 1,
+   "level": [
+    "down",
+    0.6262
+   ],
+   "n": 1,
+   "score_lo": 65.122,
+   "score_hi": 65.1224
+  },
+  "category_pair_diff|Trishakti Power Generation Corporation|102100000.0000@under": {
+   "group": "category_pair_diff|Trishakti Power Generation Corporation|102100000.0000",
+   "sign": -1,
+   "level": [
+    "down",
+    0.6262
+   ],
+   "n": 1,
+   "score_lo": 65.0959,
+   "score_hi": 65.0962
+  },
+  "category_pair_diff|Trishakti Power Generation Corporation|1042700000.0000@over": {
+   "group": "category_pair_diff|Trishakti Power Generation Corporation|1042700000.0000",
+   "sign": 1,
+   "level": [
+    "down",
+    0.6719
+   ],
+   "n": 1,
+   "score_lo": 65.1204,
+   "score_hi": 65.1208
+  },
+  "category_pair_diff|Trishakti Power Generation Corporation|1042700000.0000@under": {
+   "group": "category_pair_diff|Trishakti Power Generation Corporation|1042700000.0000",
+   "sign": -1,
+   "level": [
+    "down",
+    0.6719
+   ],
+   "n": 1,
+   "score_lo": 65.0975,
+   "score_hi": 65.0978
+  },
+  "category_pair_diff|Trishakti Power Generation Corporation|298900000.0000@over": {
+   "group": "category_pair_diff|Trishakti Power Generation Corporation|298900000.0000",
+   "sign": 1,
+   "level": [
+    "down",
+    0.7164
+   ],
+   "n": 1,
+   "score_lo": 65.1189,
+   "score_hi": 65.1192
+  },
+  "category_pair_diff|Trishakti Power Generation Corporation|298900000.0000@under": {
+   "group": "category_pair_diff|Trishakti Power Generation Corporation|298900000.0000",
+   "sign": -1,
+   "level": [
+    "down",
+    0.7164
+   ],
+   "n": 1,
+   "score_lo": 65.0991,
+   "score_hi": 65.0993
+  },
+  "category_pair_diff|Trishakti Power Generation Corporation|3878700000.0000@over": {
+   "group": "category_pair_diff|Trishakti Power Generation Corporation|3878700000.0000",
+   "sign": 1,
+   "level": [
+    "down",
+    0.7596
+   ],
+   "n": 1,
+   "score_lo": 65.1174,
+   "score_hi": 65.1177
+  },
+  "category_pair_diff|Trishakti Power Generation Corporation|3878700000.0000@under": {
+   "group": "category_pair_diff|Trishakti Power Generation Corporation|3878700000.0000",
+   "sign": -1,
+   "level": [
+    "down",
+    0.7596
+   ],
+   "n": 1,
+   "score_lo": 65.1006,
+   "score_hi": 65.1008
+  },
+  "category_pair_diff|Trishakti Power Generation Corporation|514500000.0000@over": {
+   "group": "category_pair_diff|Trishakti Power Generation Corporation|514500000.0000",
+   "sign": 1,
+   "level": [
+    "up",
+    0.15
+   ],
+   "n": 1,
+   "score_lo": 65.0683,
+   "score_hi": 65.0695
+  },
+  "category_pair_diff|Trishakti Power Generation Corporation|514500000.0000@under": {
+   "group": "category_pair_diff|Trishakti Power Generation Corporation|514500000.0000",
+   "sign": -1,
+   "level": [
+    "up",
+    0.15
+   ],
+   "n": 1,
+   "score_lo": 65.1488,
+   "score_hi": 65.15
+  },
+  "category_pair_diff|Trishakti Power Generation Corporation|659200000.0000@over": {
+   "group": "category_pair_diff|Trishakti Power Generation Corporation|659200000.0000",
+   "sign": 1,
+   "level": [
+    "up",
+    0.2196
+   ],
+   "n": 1,
+   "score_lo": 65.0658,
+   "score_hi": 65.0671
+  },
+  "category_pair_diff|Trishakti Power Generation Corporation|659200000.0000@under": {
+   "group": "category_pair_diff|Trishakti Power Generation Corporation|659200000.0000",
+   "sign": -1,
+   "level": [
+    "up",
+    0.2196
+   ],
+   "n": 1,
+   "score_lo": 65.1512,
+   "score_hi": 65.1524
+  },
+  "category_pair_diff|Trishakti Power Generation Corporation|985600000.0000@over": {
+   "group": "category_pair_diff|Trishakti Power Generation Corporation|985600000.0000",
+   "sign": 1,
+   "level": [
+    "up",
+    0.2911
+   ],
+   "n": 1,
+   "score_lo": 65.0633,
+   "score_hi": 65.0646
+  },
+  "category_pair_diff|Trishakti Power Generation Corporation|985600000.0000@under": {
+   "group": "category_pair_diff|Trishakti Power Generation Corporation|985600000.0000",
+   "sign": -1,
+   "level": [
+    "up",
+    0.2911
+   ],
+   "n": 1,
+   "score_lo": 65.1537,
+   "score_hi": 65.155
+  },
+  "collection_pct|Gujarat Municipal Corporation|92.5000@over": {
+   "group": "collection_pct|Gujarat Municipal Corporation|92.5000",
+   "sign": 1,
+   "level": [
+    "down",
+    0.15
+   ],
+   "n": 1,
+   "score_lo": 65.1384,
+   "score_hi": 65.1393
+  },
+  "collection_pct|Gujarat Municipal Corporation|92.5000@under": {
+   "group": "collection_pct|Gujarat Municipal Corporation|92.5000",
+   "sign": -1,
+   "level": [
+    "down",
+    0.15
+   ],
+   "n": 1,
+   "score_lo": 65.079,
+   "score_hi": 65.0798
+  },
+  "collection_pct|Irrigation & Waterways Dept, Govt of Uttar Pradesh|99.0500@over": {
+   "group": "collection_pct|Irrigation & Waterways Dept, Govt of Uttar Pradesh|99.0500",
+   "sign": 1,
+   "level": [
+    "down",
+    0.2092
+   ],
+   "n": 1,
+   "score_lo": 65.1364,
+   "score_hi": 65.1372
+  },
+  "collection_pct|Irrigation & Waterways Dept, Govt of Uttar Pradesh|99.0500@under": {
+   "group": "collection_pct|Irrigation & Waterways Dept, Govt of Uttar Pradesh|99.0500",
+   "sign": -1,
+   "level": [
+    "down",
+    0.2092
+   ],
+   "n": 1,
+   "score_lo": 65.0811,
+   "score_hi": 65.0818
+  },
+  "collection_pct|Lakshya Engineering & Construction|82.3800@over": {
+   "group": "collection_pct|Lakshya Engineering & Construction|82.3800",
+   "sign": 1,
+   "level": [
+    "down",
+    0.2666
+   ],
+   "n": 1,
+   "score_lo": 65.1344,
+   "score_hi": 65.1352
+  },
+  "collection_pct|Lakshya Engineering & Construction|82.3800@under": {
+   "group": "collection_pct|Lakshya Engineering & Construction|82.3800",
+   "sign": -1,
+   "level": [
+    "down",
+    0.2666
+   ],
+   "n": 1,
+   "score_lo": 65.0831,
+   "score_hi": 65.0838
+  },
+  "collection_pct|National Expressway Development Authority|78.6300@over": {
+   "group": "collection_pct|National Expressway Development Authority|78.6300",
+   "sign": 1,
+   "level": [
+    "down",
+    0.3225
+   ],
+   "n": 1,
+   "score_lo": 65.1325,
+   "score_hi": 65.1332
+  },
+  "collection_pct|National Expressway Development Authority|78.6300@under": {
+   "group": "collection_pct|National Expressway Development Authority|78.6300",
+   "sign": -1,
+   "level": [
+    "down",
+    0.3225
+   ],
+   "n": 1,
+   "score_lo": 65.0851,
+   "score_hi": 65.0858
+  },
+  "collection_pct|Public Health Engineering Dept, Gujarat|55.5000@over": {
+   "group": "collection_pct|Public Health Engineering Dept, Gujarat|55.5000",
+   "sign": 1,
+   "level": [
+    "up",
+    0.3648
+   ],
+   "n": 1,
+   "score_lo": 65.0607,
+   "score_hi": 65.062
+  },
+  "collection_pct|Public Health Engineering Dept, Gujarat|55.5000@under": {
+   "group": "collection_pct|Public Health Engineering Dept, Gujarat|55.5000",
+   "sign": -1,
+   "level": [
+    "up",
+    0.3648
+   ],
+   "n": 1,
+   "score_lo": 65.1562,
+   "score_hi": 65.1576
+  },
+  "collection_pct|Public Works Department, Govt of West Bengal|90.1900@over": {
+   "group": "collection_pct|Public Works Department, Govt of West Bengal|90.1900",
+   "sign": 1,
+   "level": [
+    "down",
+    0.3768
+   ],
+   "n": 1,
+   "score_lo": 65.1306,
+   "score_hi": 65.1313
+  },
+  "collection_pct|Public Works Department, Govt of West Bengal|90.1900@under": {
+   "group": "collection_pct|Public Works Department, Govt of West Bengal|90.1900",
+   "sign": -1,
+   "level": [
+    "down",
+    0.3768
+   ],
+   "n": 1,
+   "score_lo": 65.087,
+   "score_hi": 65.0876
+  },
+  "collection_pct|Tamil Nadu Municipal Corporation|58.0000@over": {
+   "group": "collection_pct|Tamil Nadu Municipal Corporation|58.0000",
+   "sign": 1,
+   "level": [
+    "up",
+    0.4406
+   ],
+   "n": 1,
+   "score_lo": 65.058,
+   "score_hi": 65.0594
+  },
+  "collection_pct|Tamil Nadu Municipal Corporation|58.0000@under": {
+   "group": "collection_pct|Tamil Nadu Municipal Corporation|58.0000",
+   "sign": -1,
+   "level": [
+    "up",
+    0.4406
+   ],
+   "n": 1,
+   "score_lo": 65.1588,
+   "score_hi": 65.1603
+  },
+  "date_span|Arunodaya Infrastructure|374.0000@over": {
+   "group": "date_span|Arunodaya Infrastructure|374.0000",
+   "sign": 1,
+   "level": [
+    "up",
+    0.5186
+   ],
+   "n": 1,
+   "score_lo": 65.0552,
+   "score_hi": 65.0567
+  },
+  "date_span|Arunodaya Infrastructure|374.0000@under": {
+   "group": "date_span|Arunodaya Infrastructure|374.0000",
+   "sign": -1,
+   "level": [
+    "up",
+    0.5186
+   ],
+   "n": 1,
+   "score_lo": 65.1615,
+   "score_hi": 65.163
+  },
+  "date_span|Arunodaya Infrastructure|854.0000@over": {
+   "group": "date_span|Arunodaya Infrastructure|854.0000",
+   "sign": 1,
+   "level": [
+    "up",
+    0.5988
+   ],
+   "n": 1,
+   "score_lo": 65.0524,
+   "score_hi": 65.054
+  },
+  "date_span|Arunodaya Infrastructure|854.0000@under": {
+   "group": "date_span|Arunodaya Infrastructure|854.0000",
+   "sign": -1,
+   "level": [
+    "up",
+    0.5988
+   ],
+   "n": 1,
+   "score_lo": 65.1643,
+   "score_hi": 65.1659
+  },
+  "date_span|Gujarat Municipal Corporation|1267.0000@over": {
+   "group": "date_span|Gujarat Municipal Corporation|1267.0000",
+   "sign": 1,
+   "level": [
+    "up",
+    0.6814
+   ],
+   "n": 1,
+   "score_lo": 65.0494,
+   "score_hi": 65.0511
+  },
+  "date_span|Gujarat Municipal Corporation|1267.0000@under": {
+   "group": "date_span|Gujarat Municipal Corporation|1267.0000",
+   "sign": -1,
+   "level": [
+    "up",
+    0.6814
+   ],
+   "n": 1,
+   "score_lo": 65.1671,
+   "score_hi": 65.1688
+  },
+  "date_span|Irrigation & Waterways Dept, Govt of Uttar Pradesh|1388.0000@over": {
+   "group": "date_span|Irrigation & Waterways Dept, Govt of Uttar Pradesh|1388.0000",
+   "sign": 1,
+   "level": [
+    "up",
+    0.7664
+   ],
+   "n": 1,
+   "score_lo": 65.0464,
+   "score_hi": 65.0482
+  },
+  "date_span|Irrigation & Waterways Dept, Govt of Uttar Pradesh|1388.0000@under": {
+   "group": "date_span|Irrigation & Waterways Dept, Govt of Uttar Pradesh|1388.0000",
+   "sign": -1,
+   "level": [
+    "up",
+    0.7664
+   ],
+   "n": 1,
+   "score_lo": 65.1701,
+   "score_hi": 65.1718
+  },
+  "date_span|Irrigation & Waterways Dept, Govt of Uttar Pradesh|1589.0000@over": {
+   "group": "date_span|Irrigation & Waterways Dept, Govt of Uttar Pradesh|1589.0000",
+   "sign": 1,
+   "level": [
+    "down",
+    0.4296
+   ],
+   "n": 1,
+   "score_lo": 65.1288,
+   "score_hi": 65.1294
+  },
+  "date_span|Irrigation & Waterways Dept, Govt of Uttar Pradesh|1589.0000@under": {
+   "group": "date_span|Irrigation & Waterways Dept, Govt of Uttar Pradesh|1589.0000",
+   "sign": -1,
+   "level": [
+    "down",
+    0.4296
+   ],
+   "n": 1,
+   "score_lo": 65.0889,
+   "score_hi": 65.0895
+  },
+  "date_span|Irrigation & Waterways Dept, Govt of West Bengal|1277.0000@over": {
+   "group": "date_span|Irrigation & Waterways Dept, Govt of West Bengal|1277.0000",
+   "sign": 1,
+   "level": [
+    "down",
+    0.4809
+   ],
+   "n": 1,
+   "score_lo": 65.127,
+   "score_hi": 65.1276
+  },
+  "date_span|Irrigation & Waterways Dept, Govt of West Bengal|1277.0000@under": {
+   "group": "date_span|Irrigation & Waterways Dept, Govt of West Bengal|1277.0000",
+   "sign": -1,
+   "level": [
+    "down",
+    0.4809
+   ],
+   "n": 1,
+   "score_lo": 65.0907,
+   "score_hi": 65.0912
+  },
+  "date_span|Irrigation & Waterways Dept, Govt of West Bengal|801.0000@over": {
+   "group": "date_span|Irrigation & Waterways Dept, Govt of West Bengal|801.0000",
+   "sign": 1,
+   "level": [
+    "down",
+    0.5307
+   ],
+   "n": 1,
+   "score_lo": 65.1253,
+   "score_hi": 65.1258
+  },
+  "date_span|Irrigation & Waterways Dept, Govt of West Bengal|801.0000@under": {
+   "group": "date_span|Irrigation & Waterways Dept, Govt of West Bengal|801.0000",
+   "sign": -1,
+   "level": [
+    "down",
+    0.5307
+   ],
+   "n": 1,
+   "score_lo": 65.0925,
+   "score_hi": 65.0929
+  },
+  "date_span|Jal Nigam, Jharkhand|160.0000@over": {
+   "group": "date_span|Jal Nigam, Jharkhand|160.0000",
+   "sign": 1,
+   "level": [
+    "down",
+    0.5791
+   ],
+   "n": 1,
+   "score_lo": 65.1236,
+   "score_hi": 65.124
+  },
+  "date_span|Jal Nigam, Jharkhand|160.0000@under": {
+   "group": "date_span|Jal Nigam, Jharkhand|160.0000",
+   "sign": -1,
+   "level": [
+    "down",
+    0.5791
+   ],
+   "n": 1,
+   "score_lo": 65.0943,
+   "score_hi": 65.0947
+  },
+  "date_span|Lakshya Engineering & Construction|110.0000@over": {
+   "group": "date_span|Lakshya Engineering & Construction|110.0000",
+   "sign": 1,
+   "level": [
+    "down",
+    0.6262
+   ],
+   "n": 1,
+   "score_lo": 65.122,
+   "score_hi": 65.1224
+  },
+  "date_span|Lakshya Engineering & Construction|110.0000@under": {
+   "group": "date_span|Lakshya Engineering & Construction|110.0000",
+   "sign": -1,
+   "level": [
+    "down",
+    0.6262
+   ],
+   "n": 1,
+   "score_lo": 65.0959,
+   "score_hi": 65.0963
+  },
+  "date_span|Mahanadi Steel Corporation|1134.0000@over": {
+   "group": "date_span|Mahanadi Steel Corporation|1134.0000",
+   "sign": 1,
+   "level": [
+    "down",
+    0.6719
+   ],
+   "n": 1,
+   "score_lo": 65.1204,
+   "score_hi": 65.1208
+  },
+  "date_span|Mahanadi Steel Corporation|1134.0000@under": {
+   "group": "date_span|Mahanadi Steel Corporation|1134.0000",
+   "sign": -1,
+   "level": [
+    "down",
+    0.6719
+   ],
+   "n": 1,
+   "score_lo": 65.0975,
+   "score_hi": 65.0978
+  },
+  "date_span|Mahanadi Steel Corporation|1449.0000@over": {
+   "group": "date_span|Mahanadi Steel Corporation|1449.0000",
+   "sign": 1,
+   "level": [
+    "down",
+    0.7164
+   ],
+   "n": 1,
+   "score_lo": 65.1189,
+   "score_hi": 65.1192
+  },
+  "date_span|Mahanadi Steel Corporation|1449.0000@under": {
+   "group": "date_span|Mahanadi Steel Corporation|1449.0000",
+   "sign": -1,
+   "level": [
+    "down",
+    0.7164
+   ],
+   "n": 1,
+   "score_lo": 65.0991,
+   "score_hi": 65.0993
+  },
+  "date_span|Mahanadi Steel Corporation|536.0000@over": {
+   "group": "date_span|Mahanadi Steel Corporation|536.0000",
+   "sign": 1,
+   "level": [
+    "down",
+    0.7596
+   ],
+   "n": 1,
+   "score_lo": 65.1174,
+   "score_hi": 65.1177
+  },
+  "date_span|Mahanadi Steel Corporation|536.0000@under": {
+   "group": "date_span|Mahanadi Steel Corporation|536.0000",
+   "sign": -1,
+   "level": [
+    "down",
+    0.7596
+   ],
+   "n": 1,
+   "score_lo": 65.1006,
+   "score_hi": 65.1008
+  },
+  "date_span|Meridian Constructors & Co.|438.0000@over": {
+   "group": "date_span|Meridian Constructors & Co.|438.0000",
+   "sign": 1,
+   "level": [
+    "up",
+    0.15
+   ],
+   "n": 1,
+   "score_lo": 65.0683,
+   "score_hi": 65.0694
+  },
+  "date_span|Meridian Constructors & Co.|438.0000@under": {
+   "group": "date_span|Meridian Constructors & Co.|438.0000",
+   "sign": -1,
+   "level": [
+    "up",
+    0.15
+   ],
+   "n": 1,
+   "score_lo": 65.1488,
+   "score_hi": 65.15
+  },
+  "date_span|National Expressway Development Authority|143.0000@over": {
+   "group": "date_span|National Expressway Development Authority|143.0000",
+   "sign": 1,
+   "level": [
+    "up",
+    0.2196
+   ],
+   "n": 1,
+   "score_lo": 65.0659,
+   "score_hi": 65.0671
+  },
+  "date_span|National Expressway Development Authority|143.0000@under": {
+   "group": "date_span|National Expressway Development Authority|143.0000",
+   "sign": -1,
+   "level": [
+    "up",
+    0.2196
+   ],
+   "n": 1,
+   "score_lo": 65.1511,
+   "score_hi": 65.1523
+  },
+  "date_span|National Special Projects Office|1503.0000@over": {
+   "group": "date_span|National Special Projects Office|1503.0000",
+   "sign": 1,
+   "level": [
+    "up",
+    0.2911
+   ],
+   "n": 1,
+   "score_lo": 65.0633,
+   "score_hi": 65.0646
+  },
+  "date_span|National Special Projects Office|1503.0000@under": {
+   "group": "date_span|National Special Projects Office|1503.0000",
+   "sign": -1,
+   "level": [
+    "up",
+    0.2911
+   ],
+   "n": 1,
+   "score_lo": 65.1537,
+   "score_hi": 65.155
+  },
+  "date_span|Peninsular Petroleum Corporation|1308.0000@over": {
+   "group": "date_span|Peninsular Petroleum Corporation|1308.0000",
+   "sign": 1,
+   "level": [
+    "up",
+    0.3648
+   ],
+   "n": 1,
+   "score_lo": 65.0607,
+   "score_hi": 65.062
+  },
+  "date_span|Peninsular Petroleum Corporation|1308.0000@under": {
+   "group": "date_span|Peninsular Petroleum Corporation|1308.0000",
+   "sign": -1,
+   "level": [
+    "up",
+    0.3648
+   ],
+   "n": 1,
+   "score_lo": 65.1562,
+   "score_hi": 65.1576
+  },
+  "date_span|Peninsular Petroleum Corporation|798.0000@over": {
+   "group": "date_span|Peninsular Petroleum Corporation|798.0000",
+   "sign": 1,
+   "level": [
+    "up",
+    0.4406
+   ],
+   "n": 1,
+   "score_lo": 65.058,
+   "score_hi": 65.0594
+  },
+  "date_span|Peninsular Petroleum Corporation|798.0000@under": {
+   "group": "date_span|Peninsular Petroleum Corporation|798.0000",
+   "sign": -1,
+   "level": [
+    "up",
+    0.4406
+   ],
+   "n": 1,
+   "score_lo": 65.1588,
+   "score_hi": 65.1603
+  },
+  "date_span|Public Health Engineering Dept, Odisha|1680.0000@over": {
+   "group": "date_span|Public Health Engineering Dept, Odisha|1680.0000",
+   "sign": 1,
+   "level": [
+    "up",
+    0.5186
+   ],
+   "n": 1,
+   "score_lo": 65.0552,
+   "score_hi": 65.0567
+  },
+  "date_span|Public Health Engineering Dept, Odisha|1680.0000@under": {
+   "group": "date_span|Public Health Engineering Dept, Odisha|1680.0000",
+   "sign": -1,
+   "level": [
+    "up",
+    0.5186
+   ],
+   "n": 1,
+   "score_lo": 65.1615,
+   "score_hi": 65.163
+  },
+  "date_span|Public Health Engineering Dept, Odisha|710.0000@over": {
+   "group": "date_span|Public Health Engineering Dept, Odisha|710.0000",
+   "sign": 1,
+   "level": [
+    "up",
+    0.5988
+   ],
+   "n": 1,
+   "score_lo": 65.0524,
+   "score_hi": 65.054
+  },
+  "date_span|Public Health Engineering Dept, Odisha|710.0000@under": {
+   "group": "date_span|Public Health Engineering Dept, Odisha|710.0000",
+   "sign": -1,
+   "level": [
+    "up",
+    0.5988
+   ],
+   "n": 1,
+   "score_lo": 65.1643,
+   "score_hi": 65.1659
+  },
+  "date_span|Public Works Department, Govt of Maharashtra|77.0000@over": {
+   "group": "date_span|Public Works Department, Govt of Maharashtra|77.0000",
+   "sign": 1,
+   "level": [
+    "up",
+    0.6814
+   ],
+   "n": 1,
+   "score_lo": 65.0497,
+   "score_hi": 65.0513
+  },
+  "date_span|Public Works Department, Govt of Maharashtra|77.0000@under": {
+   "group": "date_span|Public Works Department, Govt of Maharashtra|77.0000",
+   "sign": -1,
+   "level": [
+    "up",
+    0.6814
+   ],
+   "n": 1,
+   "score_lo": 65.1669,
+   "score_hi": 65.1686
+  },
+  "date_span|Suvarna Projects Limited|86.0000@over": {
+   "group": "date_span|Suvarna Projects Limited|86.0000",
+   "sign": 1,
+   "level": [
+    "up",
+    0.7664
+   ],
+   "n": 1,
+   "score_lo": 65.0464,
+   "score_hi": 65.0482
+  },
+  "date_span|Suvarna Projects Limited|86.0000@under": {
+   "group": "date_span|Suvarna Projects Limited|86.0000",
+   "sign": -1,
+   "level": [
+    "up",
+    0.7664
+   ],
+   "n": 1,
+   "score_lo": 65.1701,
+   "score_hi": 65.1719
+  },
+  "date_span|Trishakti Power Generation Corporation|1339.0000@over": {
+   "group": "date_span|Trishakti Power Generation Corporation|1339.0000",
+   "sign": 1,
+   "level": [
+    "down",
+    0.15
+   ],
+   "n": 1,
+   "score_lo": 65.1384,
+   "score_hi": 65.1393
+  },
+  "date_span|Trishakti Power Generation Corporation|1339.0000@under": {
+   "group": "date_span|Trishakti Power Generation Corporation|1339.0000",
+   "sign": -1,
+   "level": [
+    "down",
+    0.15
+   ],
+   "n": 1,
+   "score_lo": 65.079,
+   "score_hi": 65.0798
+  },
+  "date_span|Trishakti Power Generation Corporation|676.0000@over": {
+   "group": "date_span|Trishakti Power Generation Corporation|676.0000",
+   "sign": 1,
+   "level": [
+    "down",
+    0.2092
+   ],
+   "n": 1,
+   "score_lo": 65.1364,
+   "score_hi": 65.1372
+  },
+  "date_span|Trishakti Power Generation Corporation|676.0000@under": {
+   "group": "date_span|Trishakti Power Generation Corporation|676.0000",
+   "sign": -1,
+   "level": [
+    "down",
+    0.2092
+   ],
+   "n": 1,
+   "score_lo": 65.081,
+   "score_hi": 65.0818
+  },
+  "date_span|Trishakti Power Generation Corporation|87.0000@over": {
+   "group": "date_span|Trishakti Power Generation Corporation|87.0000",
+   "sign": 1,
+   "level": [
+    "down",
+    0.2666
+   ],
+   "n": 1,
+   "score_lo": 65.1345,
+   "score_hi": 65.1352
+  },
+  "date_span|Trishakti Power Generation Corporation|87.0000@under": {
+   "group": "date_span|Trishakti Power Generation Corporation|87.0000",
+   "sign": -1,
+   "level": [
+    "down",
+    0.2666
+   ],
+   "n": 1,
+   "score_lo": 65.083,
+   "score_hi": 65.0837
+  },
+  "exclusion_aggregate|Arunodaya Infrastructure|1219500000.0000@over": {
+   "group": "exclusion_aggregate|Arunodaya Infrastructure|1219500000.0000",
+   "sign": 1,
+   "level": [
+    "down",
+    0.3225
+   ],
+   "n": 1,
+   "score_lo": 65.1325,
+   "score_hi": 65.1332
+  },
+  "exclusion_aggregate|Arunodaya Infrastructure|1219500000.0000@under": {
+   "group": "exclusion_aggregate|Arunodaya Infrastructure|1219500000.0000",
+   "sign": -1,
+   "level": [
+    "down",
+    0.3225
+   ],
+   "n": 1,
+   "score_lo": 65.0851,
+   "score_hi": 65.0858
+  },
+  "exclusion_aggregate|Central Works & Buildings Bureau|1232600000.0000@over": {
+   "group": "exclusion_aggregate|Central Works & Buildings Bureau|1232600000.0000",
+   "sign": 1,
+   "level": [
+    "down",
+    0.3768
+   ],
+   "n": 1,
+   "score_lo": 65.1306,
+   "score_hi": 65.1313
+  },
+  "exclusion_aggregate|Central Works & Buildings Bureau|1232600000.0000@under": {
+   "group": "exclusion_aggregate|Central Works & Buildings Bureau|1232600000.0000",
+   "sign": -1,
+   "level": [
+    "down",
+    0.3768
+   ],
+   "n": 1,
+   "score_lo": 65.087,
+   "score_hi": 65.0876
+  },
+  "exclusion_aggregate|Central Works & Buildings Bureau|1522500000.0000@over": {
+   "group": "exclusion_aggregate|Central Works & Buildings Bureau|1522500000.0000",
+   "sign": 1,
+   "level": [
+    "down",
+    0.4296
+   ],
+   "n": 1,
+   "score_lo": 65.1288,
+   "score_hi": 65.1294
+  },
+  "exclusion_aggregate|Central Works & Buildings Bureau|1522500000.0000@under": {
+   "group": "exclusion_aggregate|Central Works & Buildings Bureau|1522500000.0000",
+   "sign": -1,
+   "level": [
+    "down",
+    0.4296
+   ],
+   "n": 1,
+   "score_lo": 65.0889,
+   "score_hi": 65.0894
+  },
+  "exclusion_aggregate|Irrigation & Waterways Dept, Govt of Rajasthan|1516600000.0000@over": {
+   "group": "exclusion_aggregate|Irrigation & Waterways Dept, Govt of Rajasthan|1516600000.0000",
+   "sign": 1,
+   "level": [
+    "down",
+    0.4809
+   ],
+   "n": 1,
+   "score_lo": 65.127,
+   "score_hi": 65.1276
+  },
+  "exclusion_aggregate|Irrigation & Waterways Dept, Govt of Rajasthan|1516600000.0000@under": {
+   "group": "exclusion_aggregate|Irrigation & Waterways Dept, Govt of Rajasthan|1516600000.0000",
+   "sign": -1,
+   "level": [
+    "down",
+    0.4809
+   ],
+   "n": 1,
+   "score_lo": 65.0907,
+   "score_hi": 65.0912
+  },
+  "exclusion_aggregate|Jal Nigam, Uttar Pradesh|1383400000.0000@over": {
+   "group": "exclusion_aggregate|Jal Nigam, Uttar Pradesh|1383400000.0000",
+   "sign": 1,
+   "level": [
+    "down",
+    0.5307
+   ],
+   "n": 1,
+   "score_lo": 65.1253,
+   "score_hi": 65.1258
+  },
+  "exclusion_aggregate|Jal Nigam, Uttar Pradesh|1383400000.0000@under": {
+   "group": "exclusion_aggregate|Jal Nigam, Uttar Pradesh|1383400000.0000",
+   "sign": -1,
+   "level": [
+    "down",
+    0.5307
+   ],
+   "n": 1,
+   "score_lo": 65.0925,
+   "score_hi": 65.0929
+  },
+  "exclusion_aggregate|Mahanadi Steel Corporation|2615300000.0000@over": {
+   "group": "exclusion_aggregate|Mahanadi Steel Corporation|2615300000.0000",
+   "sign": 1,
+   "level": [
+    "down",
+    0.5791
+   ],
+   "n": 1,
+   "score_lo": 65.1236,
+   "score_hi": 65.1241
+  },
+  "exclusion_aggregate|Mahanadi Steel Corporation|2615300000.0000@under": {
+   "group": "exclusion_aggregate|Mahanadi Steel Corporation|2615300000.0000",
+   "sign": -1,
+   "level": [
+    "down",
+    0.5791
+   ],
+   "n": 1,
+   "score_lo": 65.0942,
+   "score_hi": 65.0946
+  },
+  "exclusion_aggregate|Mahanadi Steel Corporation|2833800000.0000@over": {
+   "group": "exclusion_aggregate|Mahanadi Steel Corporation|2833800000.0000",
+   "sign": 1,
+   "level": [
+    "down",
+    0.6262
+   ],
+   "n": 1,
+   "score_lo": 65.122,
+   "score_hi": 65.1224
+  },
+  "exclusion_aggregate|Mahanadi Steel Corporation|2833800000.0000@under": {
+   "group": "exclusion_aggregate|Mahanadi Steel Corporation|2833800000.0000",
+   "sign": -1,
+   "level": [
+    "down",
+    0.6262
+   ],
+   "n": 1,
+   "score_lo": 65.0959,
+   "score_hi": 65.0962
+  },
+  "exclusion_aggregate|Maharashtra Municipal Corporation|592700000.0000@over": {
+   "group": "exclusion_aggregate|Maharashtra Municipal Corporation|592700000.0000",
+   "sign": 1,
+   "level": [
+    "down",
+    0.6719
+   ],
+   "n": 1,
+   "score_lo": 65.1204,
+   "score_hi": 65.1208
+  },
+  "exclusion_aggregate|Maharashtra Municipal Corporation|592700000.0000@under": {
+   "group": "exclusion_aggregate|Maharashtra Municipal Corporation|592700000.0000",
+   "sign": -1,
+   "level": [
+    "down",
+    0.6719
+   ],
+   "n": 1,
+   "score_lo": 65.0975,
+   "score_hi": 65.0978
+  },
+  "exclusion_aggregate|Mega Infrastructure Authority|3849600000.0000@over": {
+   "group": "exclusion_aggregate|Mega Infrastructure Authority|3849600000.0000",
+   "sign": 1,
+   "level": [
+    "down",
+    0.7164
+   ],
+   "n": 1,
+   "score_lo": 65.1189,
+   "score_hi": 65.1192
+  },
+  "exclusion_aggregate|Mega Infrastructure Authority|3849600000.0000@under": {
+   "group": "exclusion_aggregate|Mega Infrastructure Authority|3849600000.0000",
+   "sign": -1,
+   "level": [
+    "down",
+    0.7164
+   ],
+   "n": 1,
+   "score_lo": 65.0991,
+   "score_hi": 65.0993
+  },
+  "exclusion_aggregate|National Expressway Development Authority|2730900000.0000@over": {
+   "group": "exclusion_aggregate|National Expressway Development Authority|2730900000.0000",
+   "sign": 1,
+   "level": [
+    "down",
+    0.7596
+   ],
+   "n": 1,
+   "score_lo": 65.1174,
+   "score_hi": 65.1177
+  },
+  "exclusion_aggregate|National Expressway Development Authority|2730900000.0000@under": {
+   "group": "exclusion_aggregate|National Expressway Development Authority|2730900000.0000",
+   "sign": -1,
+   "level": [
+    "down",
+    0.7596
+   ],
+   "n": 1,
+   "score_lo": 65.1006,
+   "score_hi": 65.1008
+  },
+  "exclusion_aggregate|National Special Projects Office|3163100000.0000@over": {
+   "group": "exclusion_aggregate|National Special Projects Office|3163100000.0000",
+   "sign": 1,
+   "level": [
+    "up",
+    0.15
+   ],
+   "n": 1,
+   "score_lo": 65.0683,
+   "score_hi": 65.0695
+  },
+  "exclusion_aggregate|National Special Projects Office|3163100000.0000@under": {
+   "group": "exclusion_aggregate|National Special Projects Office|3163100000.0000",
+   "sign": -1,
+   "level": [
+    "up",
+    0.15
+   ],
+   "n": 1,
+   "score_lo": 65.1488,
+   "score_hi": 65.15
+  },
+  "exclusion_aggregate|Peninsular Petroleum Corporation|831800000.0000@over": {
+   "group": "exclusion_aggregate|Peninsular Petroleum Corporation|831800000.0000",
+   "sign": 1,
+   "level": [
+    "up",
+    0.2196
+   ],
+   "n": 1,
+   "score_lo": 65.0658,
+   "score_hi": 65.0671
+  },
+  "exclusion_aggregate|Peninsular Petroleum Corporation|831800000.0000@under": {
+   "group": "exclusion_aggregate|Peninsular Petroleum Corporation|831800000.0000",
+   "sign": -1,
+   "level": [
+    "up",
+    0.2196
+   ],
+   "n": 1,
+   "score_lo": 65.1512,
+   "score_hi": 65.1524
+  },
+  "exclusion_aggregate|Public Works Department, Govt of Maharashtra|1831599999.0000@over": {
+   "group": "exclusion_aggregate|Public Works Department, Govt of Maharashtra|1831599999.0000",
+   "sign": 1,
+   "level": [
+    "up",
+    0.2911
+   ],
+   "n": 1,
+   "score_lo": 65.0633,
+   "score_hi": 65.0646
+  },
+  "exclusion_aggregate|Public Works Department, Govt of Maharashtra|1831599999.0000@under": {
+   "group": "exclusion_aggregate|Public Works Department, Govt of Maharashtra|1831599999.0000",
+   "sign": -1,
+   "level": [
+    "up",
+    0.2911
+   ],
+   "n": 1,
+   "score_lo": 65.1537,
+   "score_hi": 65.155
+  },
+  "exclusion_aggregate|Subarnarekha Valley Corporation|3284500000.0000@over": {
+   "group": "exclusion_aggregate|Subarnarekha Valley Corporation|3284500000.0000",
+   "sign": 1,
+   "level": [
+    "up",
+    0.3648
+   ],
+   "n": 1,
+   "score_lo": 65.0607,
+   "score_hi": 65.062
+  },
+  "exclusion_aggregate|Subarnarekha Valley Corporation|3284500000.0000@under": {
+   "group": "exclusion_aggregate|Subarnarekha Valley Corporation|3284500000.0000",
+   "sign": -1,
+   "level": [
+    "up",
+    0.3648
+   ],
+   "n": 1,
+   "score_lo": 65.1562,
+   "score_hi": 65.1576
+  },
+  "exclusion_aggregate|Suvarna Projects Limited|2097600000.0000@over": {
+   "group": "exclusion_aggregate|Suvarna Projects Limited|2097600000.0000",
+   "sign": 1,
+   "level": [
+    "up",
+    0.4406
+   ],
+   "n": 1,
+   "score_lo": 65.058,
+   "score_hi": 65.0594
+  },
+  "exclusion_aggregate|Suvarna Projects Limited|2097600000.0000@under": {
+   "group": "exclusion_aggregate|Suvarna Projects Limited|2097600000.0000",
+   "sign": -1,
+   "level": [
+    "up",
+    0.4406
+   ],
+   "n": 1,
+   "score_lo": 65.1588,
+   "score_hi": 65.1603
+  },
+  "exclusion_aggregate|Suvarna Projects Limited|2303100000.0000@over": {
+   "group": "exclusion_aggregate|Suvarna Projects Limited|2303100000.0000",
+   "sign": 1,
+   "level": [
+    "up",
+    0.5186
+   ],
+   "n": 1,
+   "score_lo": 65.0552,
+   "score_hi": 65.0567
+  },
+  "exclusion_aggregate|Suvarna Projects Limited|2303100000.0000@under": {
+   "group": "exclusion_aggregate|Suvarna Projects Limited|2303100000.0000",
+   "sign": -1,
+   "level": [
+    "up",
+    0.5186
+   ],
+   "n": 1,
+   "score_lo": 65.1615,
+   "score_hi": 65.163
+  },
+  "exclusion_aggregate|Tamil Nadu Municipal Corporation|1732800000.0000@over": {
+   "group": "exclusion_aggregate|Tamil Nadu Municipal Corporation|1732800000.0000",
+   "sign": 1,
+   "level": [
+    "up",
+    0.5988
+   ],
+   "n": 1,
+   "score_lo": 65.0524,
+   "score_hi": 65.054
+  },
+  "exclusion_aggregate|Tamil Nadu Municipal Corporation|1732800000.0000@under": {
+   "group": "exclusion_aggregate|Tamil Nadu Municipal Corporation|1732800000.0000",
+   "sign": -1,
+   "level": [
+    "up",
+    0.5988
+   ],
+   "n": 1,
+   "score_lo": 65.1643,
+   "score_hi": 65.1659
+  },
+  "exclusion_aggregate|Trishakti Power Generation Corporation|4563200000.0000@over": {
+   "group": "exclusion_aggregate|Trishakti Power Generation Corporation|4563200000.0000",
+   "sign": 1,
+   "level": [
+    "up",
+    0.6814
+   ],
+   "n": 1,
+   "score_lo": 65.0494,
+   "score_hi": 65.0511
+  },
+  "exclusion_aggregate|Trishakti Power Generation Corporation|4563200000.0000@under": {
+   "group": "exclusion_aggregate|Trishakti Power Generation Corporation|4563200000.0000",
+   "sign": -1,
+   "level": [
+    "up",
+    0.6814
+   ],
+   "n": 1,
+   "score_lo": 65.1671,
+   "score_hi": 65.1688
+  },
+  "exclusion_aggregate|Trishakti Power Generation Corporation|7802900000.0000@over": {
+   "group": "exclusion_aggregate|Trishakti Power Generation Corporation|7802900000.0000",
+   "sign": 1,
+   "level": [
+    "up",
+    0.7664
+   ],
+   "n": 1,
+   "score_lo": 65.0464,
+   "score_hi": 65.0482
+  },
+  "exclusion_aggregate|Trishakti Power Generation Corporation|7802900000.0000@under": {
+   "group": "exclusion_aggregate|Trishakti Power Generation Corporation|7802900000.0000",
+   "sign": -1,
+   "level": [
+    "up",
+    0.7664
+   ],
+   "n": 1,
+   "score_lo": 65.1701,
+   "score_hi": 65.1718
+  },
+  "gap_to_threshold|Irrigation & Waterways Dept, Govt of West Bengal|33000000.0000@over": {
+   "group": "gap_to_threshold|Irrigation & Waterways Dept, Govt of West Bengal|33000000.0000",
+   "sign": 1,
+   "level": [
+    "down",
+    0.15
+   ],
+   "n": 1,
+   "score_lo": 65.1385,
+   "score_hi": 65.1393
+  },
+  "gap_to_threshold|Irrigation & Waterways Dept, Govt of West Bengal|33000000.0000@under": {
+   "group": "gap_to_threshold|Irrigation & Waterways Dept, Govt of West Bengal|33000000.0000",
+   "sign": -1,
+   "level": [
+    "down",
+    0.15
+   ],
+   "n": 1,
+   "score_lo": 65.079,
+   "score_hi": 65.0798
+  },
+  "gap_to_threshold|Jharkhand Municipal Corporation|28500000.0000@over": {
+   "group": "gap_to_threshold|Jharkhand Municipal Corporation|28500000.0000",
+   "sign": 1,
+   "level": [
+    "down",
+    0.2092
+   ],
+   "n": 1,
+   "score_lo": 65.1364,
+   "score_hi": 65.1372
+  },
+  "gap_to_threshold|Jharkhand Municipal Corporation|28500000.0000@under": {
+   "group": "gap_to_threshold|Jharkhand Municipal Corporation|28500000.0000",
+   "sign": -1,
+   "level": [
+    "down",
+    0.2092
+   ],
+   "n": 1,
+   "score_lo": 65.0811,
+   "score_hi": 65.0818
+  },
+  "hop_aggregate|Arunodaya Infrastructure|2219900000.0000@over": {
+   "group": "hop_aggregate|Arunodaya Infrastructure|2219900000.0000",
+   "sign": 1,
+   "level": [
+    "down",
+    0.2666
+   ],
+   "n": 1,
+   "score_lo": 65.1344,
+   "score_hi": 65.1352
+  },
+  "hop_aggregate|Arunodaya Infrastructure|2219900000.0000@under": {
+   "group": "hop_aggregate|Arunodaya Infrastructure|2219900000.0000",
+   "sign": -1,
+   "level": [
+    "down",
+    0.2666
+   ],
+   "n": 1,
+   "score_lo": 65.0831,
+   "score_hi": 65.0838
+  },
+  "hop_aggregate|Central Works & Buildings Bureau|1591200000.0000@over": {
+   "group": "hop_aggregate|Central Works & Buildings Bureau|1591200000.0000",
+   "sign": 1,
+   "level": [
+    "down",
+    0.3225
+   ],
+   "n": 1,
+   "score_lo": 65.1325,
+   "score_hi": 65.1332
+  },
+  "hop_aggregate|Central Works & Buildings Bureau|1591200000.0000@under": {
+   "group": "hop_aggregate|Central Works & Buildings Bureau|1591200000.0000",
+   "sign": -1,
+   "level": [
+    "down",
+    0.3225
+   ],
+   "n": 1,
+   "score_lo": 65.0851,
+   "score_hi": 65.0858
+  },
+  "hop_aggregate|Mega Infrastructure Authority|4098100000.0000@over": {
+   "group": "hop_aggregate|Mega Infrastructure Authority|4098100000.0000",
+   "sign": 1,
+   "level": [
+    "down",
+    0.3768
+   ],
+   "n": 1,
+   "score_lo": 65.1306,
+   "score_hi": 65.1313
+  },
+  "hop_aggregate|Mega Infrastructure Authority|4098100000.0000@under": {
+   "group": "hop_aggregate|Mega Infrastructure Authority|4098100000.0000",
+   "sign": -1,
+   "level": [
+    "down",
+    0.3768
+   ],
+   "n": 1,
+   "score_lo": 65.087,
+   "score_hi": 65.0876
+  },
+  "rank_value|Arunodaya Infrastructure|52200000.0000@over": {
+   "group": "rank_value|Arunodaya Infrastructure|52200000.0000",
+   "sign": 1,
+   "level": [
+    "down",
+    0.4296
+   ],
+   "n": 1,
+   "score_lo": 65.1288,
+   "score_hi": 65.1294
+  },
+  "rank_value|Arunodaya Infrastructure|52200000.0000@under": {
+   "group": "rank_value|Arunodaya Infrastructure|52200000.0000",
+   "sign": -1,
+   "level": [
+    "down",
+    0.4296
+   ],
+   "n": 1,
+   "score_lo": 65.0889,
+   "score_hi": 65.0894
+  },
+  "rank_value|Irrigation & Waterways Dept, Govt of West Bengal|342900000.0000@over": {
+   "group": "rank_value|Irrigation & Waterways Dept, Govt of West Bengal|342900000.0000",
+   "sign": 1,
+   "level": [
+    "down",
+    0.4809
+   ],
+   "n": 1,
+   "score_lo": 65.127,
+   "score_hi": 65.1276
+  },
+  "rank_value|Irrigation & Waterways Dept, Govt of West Bengal|342900000.0000@under": {
+   "group": "rank_value|Irrigation & Waterways Dept, Govt of West Bengal|342900000.0000",
+   "sign": -1,
+   "level": [
+    "down",
+    0.4809
+   ],
+   "n": 1,
+   "score_lo": 65.0907,
+   "score_hi": 65.0912
+  },
+  "rank_value|Jal Nigam, Uttar Pradesh|495900000.0000@over": {
+   "group": "rank_value|Jal Nigam, Uttar Pradesh|495900000.0000",
+   "sign": 1,
+   "level": [
+    "down",
+    0.5307
+   ],
+   "n": 1,
+   "score_lo": 65.1253,
+   "score_hi": 65.1258
+  },
+  "rank_value|Jal Nigam, Uttar Pradesh|495900000.0000@under": {
+   "group": "rank_value|Jal Nigam, Uttar Pradesh|495900000.0000",
+   "sign": -1,
+   "level": [
+    "down",
+    0.5307
+   ],
+   "n": 1,
+   "score_lo": 65.0925,
+   "score_hi": 65.0929
+  },
+  "rank_value|Lakshya Engineering & Construction|658300000.0000@over": {
+   "group": "rank_value|Lakshya Engineering & Construction|658300000.0000",
+   "sign": 1,
+   "level": [
+    "down",
+    0.5791
+   ],
+   "n": 1,
+   "score_lo": 65.1236,
+   "score_hi": 65.1241
+  },
+  "rank_value|Lakshya Engineering & Construction|658300000.0000@under": {
+   "group": "rank_value|Lakshya Engineering & Construction|658300000.0000",
+   "sign": -1,
+   "level": [
+    "down",
+    0.5791
+   ],
+   "n": 1,
+   "score_lo": 65.0942,
+   "score_hi": 65.0946
+  },
+  "rank_value|Maharashtra Municipal Corporation|512900000.0000@over": {
+   "group": "rank_value|Maharashtra Municipal Corporation|512900000.0000",
+   "sign": 1,
+   "level": [
+    "down",
+    0.6262
+   ],
+   "n": 1,
+   "score_lo": 65.122,
+   "score_hi": 65.1224
+  },
+  "rank_value|Maharashtra Municipal Corporation|512900000.0000@under": {
+   "group": "rank_value|Maharashtra Municipal Corporation|512900000.0000",
+   "sign": -1,
+   "level": [
+    "down",
+    0.6262
+   ],
+   "n": 1,
+   "score_lo": 65.0959,
+   "score_hi": 65.0962
+  },
+  "rank_value|Mega Infrastructure Authority|1034200000.0000@over": {
+   "group": "rank_value|Mega Infrastructure Authority|1034200000.0000",
+   "sign": 1,
+   "level": [
+    "down",
+    0.6719
+   ],
+   "n": 1,
+   "score_lo": 65.1204,
+   "score_hi": 65.1208
+  },
+  "rank_value|Mega Infrastructure Authority|1034200000.0000@under": {
+   "group": "rank_value|Mega Infrastructure Authority|1034200000.0000",
+   "sign": -1,
+   "level": [
+    "down",
+    0.6719
+   ],
+   "n": 1,
+   "score_lo": 65.0975,
+   "score_hi": 65.0978
+  },
+  "rank_value|Meridian Constructors & Co.|1067200000.0000@over": {
+   "group": "rank_value|Meridian Constructors & Co.|1067200000.0000",
+   "sign": 1,
+   "level": [
+    "down",
+    0.7164
+   ],
+   "n": 1,
+   "score_lo": 65.1189,
+   "score_hi": 65.1192
+  },
+  "rank_value|Meridian Constructors & Co.|1067200000.0000@under": {
+   "group": "rank_value|Meridian Constructors & Co.|1067200000.0000",
+   "sign": -1,
+   "level": [
+    "down",
+    0.7164
+   ],
+   "n": 1,
+   "score_lo": 65.0991,
+   "score_hi": 65.0993
+  },
+  "rank_value|National Special Projects Office|864000000.0000@over": {
+   "group": "rank_value|National Special Projects Office|864000000.0000",
+   "sign": 1,
+   "level": [
+    "down",
+    0.7596
+   ],
+   "n": 1,
+   "score_lo": 65.1174,
+   "score_hi": 65.1177
+  },
+  "rank_value|National Special Projects Office|864000000.0000@under": {
+   "group": "rank_value|National Special Projects Office|864000000.0000",
+   "sign": -1,
+   "level": [
+    "down",
+    0.7596
+   ],
+   "n": 1,
+   "score_lo": 65.1006,
+   "score_hi": 65.1008
+  },
+  "rank_value|Peninsular Petroleum Corporation|250600000.0000@over": {
+   "group": "rank_value|Peninsular Petroleum Corporation|250600000.0000",
+   "sign": 1,
+   "level": [
+    "up",
+    0.15
+   ],
+   "n": 1,
+   "score_lo": 65.0683,
+   "score_hi": 65.0695
+  },
+  "rank_value|Peninsular Petroleum Corporation|250600000.0000@under": {
+   "group": "rank_value|Peninsular Petroleum Corporation|250600000.0000",
+   "sign": -1,
+   "level": [
+    "up",
+    0.15
+   ],
+   "n": 1,
+   "score_lo": 65.1488,
+   "score_hi": 65.15
+  },
+  "rank_value|Public Works Department, Govt of Maharashtra|57000000.0000@over": {
+   "group": "rank_value|Public Works Department, Govt of Maharashtra|57000000.0000",
+   "sign": 1,
+   "level": [
+    "up",
+    0.2196
+   ],
+   "n": 1,
+   "score_lo": 65.0658,
+   "score_hi": 65.0671
+  },
+  "rank_value|Public Works Department, Govt of Maharashtra|57000000.0000@under": {
+   "group": "rank_value|Public Works Department, Govt of Maharashtra|57000000.0000",
+   "sign": -1,
+   "level": [
+    "up",
+    0.2196
+   ],
+   "n": 1,
+   "score_lo": 65.1512,
+   "score_hi": 65.1524
+  },
+  "rank_value|Suvarna Projects Limited|645300000.0000@over": {
+   "group": "rank_value|Suvarna Projects Limited|645300000.0000",
+   "sign": 1,
+   "level": [
+    "up",
+    0.2911
+   ],
+   "n": 1,
+   "score_lo": 65.0633,
+   "score_hi": 65.0646
+  },
+  "rank_value|Suvarna Projects Limited|645300000.0000@under": {
+   "group": "rank_value|Suvarna Projects Limited|645300000.0000",
+   "sign": -1,
+   "level": [
+    "up",
+    0.2911
+   ],
+   "n": 1,
+   "score_lo": 65.1537,
+   "score_hi": 65.155
+  },
+  "rank_value|Tamil Nadu Municipal Corporation|1196800000.0000@over": {
+   "group": "rank_value|Tamil Nadu Municipal Corporation|1196800000.0000",
+   "sign": 1,
+   "level": [
+    "up",
+    0.3648
+   ],
+   "n": 1,
+   "score_lo": 65.0607,
+   "score_hi": 65.062
+  },
+  "rank_value|Tamil Nadu Municipal Corporation|1196800000.0000@under": {
+   "group": "rank_value|Tamil Nadu Municipal Corporation|1196800000.0000",
+   "sign": -1,
+   "level": [
+    "up",
+    0.3648
+   ],
+   "n": 1,
+   "score_lo": 65.1562,
+   "score_hi": 65.1576
+  },
+  "referenced_share|Mega Infrastructure Authority|85.7100@over": {
+   "group": "referenced_share|Mega Infrastructure Authority|85.7100",
+   "sign": 1,
+   "level": [
+    "down",
+    0.15
+   ],
+   "n": 1,
+   "score_lo": 65.1385,
+   "score_hi": 65.1393
+  },
+  "referenced_share|Mega Infrastructure Authority|85.7100@under": {
+   "group": "referenced_share|Mega Infrastructure Authority|85.7100",
+   "sign": -1,
+   "level": [
+    "down",
+    0.15
+   ],
+   "n": 1,
+   "score_lo": 65.079,
+   "score_hi": 65.0798
+  },
+  "referenced_share|Meridian Constructors & Co.|83.3300@over": {
+   "group": "referenced_share|Meridian Constructors & Co.|83.3300",
+   "sign": 1,
+   "level": [
+    "down",
+    0.2092
+   ],
+   "n": 1,
+   "score_lo": 65.1364,
+   "score_hi": 65.1372
+  },
+  "referenced_share|Meridian Constructors & Co.|83.3300@under": {
+   "group": "referenced_share|Meridian Constructors & Co.|83.3300",
+   "sign": -1,
+   "level": [
+    "down",
+    0.2092
+   ],
+   "n": 1,
+   "score_lo": 65.0811,
+   "score_hi": 65.0818
+  },
+  "referenced_share|National Expressway Development Authority|88.8900@over": {
+   "group": "referenced_share|National Expressway Development Authority|88.8900",
+   "sign": 1,
+   "level": [
+    "down",
+    0.2666
+   ],
+   "n": 1,
+   "score_lo": 65.1344,
+   "score_hi": 65.1352
+  },
+  "referenced_share|National Expressway Development Authority|88.8900@under": {
+   "group": "referenced_share|National Expressway Development Authority|88.8900",
+   "sign": -1,
+   "level": [
+    "down",
+    0.2666
+   ],
+   "n": 1,
+   "score_lo": 65.0831,
+   "score_hi": 65.0838
+  },
+  "referenced_share|Public Health Engineering Dept, Odisha|62.5000@over": {
+   "group": "referenced_share|Public Health Engineering Dept, Odisha|62.5000",
+   "sign": 1,
+   "level": [
+    "up",
+    0.4406
+   ],
+   "n": 1,
+   "score_lo": 65.058,
+   "score_hi": 65.0594
+  },
+  "referenced_share|Public Health Engineering Dept, Odisha|62.5000@under": {
+   "group": "referenced_share|Public Health Engineering Dept, Odisha|62.5000",
+   "sign": -1,
+   "level": [
+    "up",
+    0.4406
+   ],
+   "n": 1,
+   "score_lo": 65.1588,
+   "score_hi": 65.1603
+  },
+  "referenced_share|Public Works Department, Govt of Maharashtra|83.3300@over": {
+   "group": "referenced_share|Public Works Department, Govt of Maharashtra|83.3300",
+   "sign": 1,
+   "level": [
+    "down",
+    0.3225
+   ],
+   "n": 1,
+   "score_lo": 65.1325,
+   "score_hi": 65.1332
+  },
+  "referenced_share|Public Works Department, Govt of Maharashtra|83.3300@under": {
+   "group": "referenced_share|Public Works Department, Govt of Maharashtra|83.3300",
+   "sign": -1,
+   "level": [
+    "down",
+    0.3225
+   ],
+   "n": 1,
+   "score_lo": 65.0851,
+   "score_hi": 65.0858
+  },
+  "referenced_share|Suvarna Projects Limited|88.8900@over": {
+   "group": "referenced_share|Suvarna Projects Limited|88.8900",
+   "sign": 1,
+   "level": [
+    "down",
+    0.3768
+   ],
+   "n": 1,
+   "score_lo": 65.1306,
+   "score_hi": 65.1313
+  },
+  "referenced_share|Suvarna Projects Limited|88.8900@under": {
+   "group": "referenced_share|Suvarna Projects Limited|88.8900",
+   "sign": -1,
+   "level": [
+    "down",
+    0.3768
+   ],
+   "n": 1,
+   "score_lo": 65.087,
+   "score_hi": 65.0876
+  },
+  "temporal_chain|Arunodaya Infrastructure|1083300000.0000@over": {
+   "group": "temporal_chain|Arunodaya Infrastructure|1083300000.0000",
+   "sign": 1,
+   "level": [
+    "up",
+    0.5186
+   ],
+   "n": 1,
+   "score_lo": 65.0552,
+   "score_hi": 65.0567
+  },
+  "temporal_chain|Arunodaya Infrastructure|1083300000.0000@under": {
+   "group": "temporal_chain|Arunodaya Infrastructure|1083300000.0000",
+   "sign": -1,
+   "level": [
+    "up",
+    0.5186
+   ],
+   "n": 1,
+   "score_lo": 65.1615,
+   "score_hi": 65.163
+  },
+  "temporal_chain|Gujarat Municipal Corporation|128700000.0000@over": {
+   "group": "temporal_chain|Gujarat Municipal Corporation|128700000.0000",
+   "sign": 1,
+   "level": [
+    "up",
+    0.5988
+   ],
+   "n": 1,
+   "score_lo": 65.0524,
+   "score_hi": 65.054
+  },
+  "temporal_chain|Gujarat Municipal Corporation|128700000.0000@under": {
+   "group": "temporal_chain|Gujarat Municipal Corporation|128700000.0000",
+   "sign": -1,
+   "level": [
+    "up",
+    0.5988
+   ],
+   "n": 1,
+   "score_lo": 65.1643,
+   "score_hi": 65.1659
+  },
+  "temporal_chain|Irrigation & Waterways Dept, Govt of Uttar Pradesh|769000000.0000@over": {
+   "group": "temporal_chain|Irrigation & Waterways Dept, Govt of Uttar Pradesh|769000000.0000",
+   "sign": 1,
+   "level": [
+    "up",
+    0.6814
+   ],
+   "n": 1,
+   "score_lo": 65.0494,
+   "score_hi": 65.0511
+  },
+  "temporal_chain|Irrigation & Waterways Dept, Govt of Uttar Pradesh|769000000.0000@under": {
+   "group": "temporal_chain|Irrigation & Waterways Dept, Govt of Uttar Pradesh|769000000.0000",
+   "sign": -1,
+   "level": [
+    "up",
+    0.6814
+   ],
+   "n": 1,
+   "score_lo": 65.1671,
+   "score_hi": 65.1688
+  },
+  "temporal_chain|Irrigation & Waterways Dept, Govt of West Bengal|430100000.0000@over": {
+   "group": "temporal_chain|Irrigation & Waterways Dept, Govt of West Bengal|430100000.0000",
+   "sign": 1,
+   "level": [
+    "up",
+    0.7664
+   ],
+   "n": 1,
+   "score_lo": 65.0464,
+   "score_hi": 65.0482
+  },
+  "temporal_chain|Irrigation & Waterways Dept, Govt of West Bengal|430100000.0000@under": {
+   "group": "temporal_chain|Irrigation & Waterways Dept, Govt of West Bengal|430100000.0000",
+   "sign": -1,
+   "level": [
+    "up",
+    0.7664
+   ],
+   "n": 1,
+   "score_lo": 65.1701,
+   "score_hi": 65.1718
+  },
+  "temporal_chain|Lakshya Engineering & Construction|410800000.0000@over": {
+   "group": "temporal_chain|Lakshya Engineering & Construction|410800000.0000",
+   "sign": 1,
+   "level": [
+    "down",
+    0.4296
+   ],
+   "n": 1,
+   "score_lo": 65.1288,
+   "score_hi": 65.1294
+  },
+  "temporal_chain|Lakshya Engineering & Construction|410800000.0000@under": {
+   "group": "temporal_chain|Lakshya Engineering & Construction|410800000.0000",
+   "sign": -1,
+   "level": [
+    "down",
+    0.4296
+   ],
+   "n": 1,
+   "score_lo": 65.0889,
+   "score_hi": 65.0894
+  },
+  "temporal_chain|Mahanadi Steel Corporation|714500000.0000@over": {
+   "group": "temporal_chain|Mahanadi Steel Corporation|714500000.0000",
+   "sign": 1,
+   "level": [
+    "down",
+    0.4809
+   ],
+   "n": 1,
+   "score_lo": 65.127,
+   "score_hi": 65.1276
+  },
+  "temporal_chain|Mahanadi Steel Corporation|714500000.0000@under": {
+   "group": "temporal_chain|Mahanadi Steel Corporation|714500000.0000",
+   "sign": -1,
+   "level": [
+    "down",
+    0.4809
+   ],
+   "n": 1,
+   "score_lo": 65.0907,
+   "score_hi": 65.0912
+  },
+  "temporal_chain|Maharashtra Municipal Corporation|201600000.0000@over": {
+   "group": "temporal_chain|Maharashtra Municipal Corporation|201600000.0000",
+   "sign": 1,
+   "level": [
+    "down",
+    0.5307
+   ],
+   "n": 1,
+   "score_lo": 65.1253,
+   "score_hi": 65.1258
+  },
+  "temporal_chain|Maharashtra Municipal Corporation|201600000.0000@under": {
+   "group": "temporal_chain|Maharashtra Municipal Corporation|201600000.0000",
+   "sign": -1,
+   "level": [
+    "down",
+    0.5307
+   ],
+   "n": 1,
+   "score_lo": 65.0925,
+   "score_hi": 65.0929
+  },
+  "temporal_chain|Public Health Engineering Dept, Odisha|265700000.0000@over": {
+   "group": "temporal_chain|Public Health Engineering Dept, Odisha|265700000.0000",
+   "sign": 1,
+   "level": [
+    "down",
+    0.5791
+   ],
+   "n": 1,
+   "score_lo": 65.1236,
+   "score_hi": 65.1241
+  },
+  "temporal_chain|Public Health Engineering Dept, Odisha|265700000.0000@under": {
+   "group": "temporal_chain|Public Health Engineering Dept, Odisha|265700000.0000",
+   "sign": -1,
+   "level": [
+    "down",
+    0.5791
+   ],
+   "n": 1,
+   "score_lo": 65.0942,
+   "score_hi": 65.0946
+  },
+  "temporal_chain|Suvarna Projects Limited|507900000.0000@over": {
+   "group": "temporal_chain|Suvarna Projects Limited|507900000.0000",
+   "sign": 1,
+   "level": [
+    "down",
+    0.6262
+   ],
+   "n": 1,
+   "score_lo": 65.122,
+   "score_hi": 65.1224
+  },
+  "temporal_chain|Suvarna Projects Limited|507900000.0000@under": {
+   "group": "temporal_chain|Suvarna Projects Limited|507900000.0000",
+   "sign": -1,
+   "level": [
+    "down",
+    0.6262
+   ],
+   "n": 1,
+   "score_lo": 65.0959,
+   "score_hi": 65.0962
+  },
+  "temporal_chain|Tamil Nadu Municipal Corporation|296300000.0000@over": {
+   "group": "temporal_chain|Tamil Nadu Municipal Corporation|296300000.0000",
+   "sign": 1,
+   "level": [
+    "down",
+    0.6719
+   ],
+   "n": 1,
+   "score_lo": 65.1204,
+   "score_hi": 65.1208
+  },
+  "temporal_chain|Tamil Nadu Municipal Corporation|296300000.0000@under": {
+   "group": "temporal_chain|Tamil Nadu Municipal Corporation|296300000.0000",
+   "sign": -1,
+   "level": [
+    "down",
+    0.6719
+   ],
+   "n": 1,
+   "score_lo": 65.0975,
+   "score_hi": 65.0978
+  },
+  "temporal_chain|Trishakti Power Generation Corporation|898500000.0000@over": {
+   "group": "temporal_chain|Trishakti Power Generation Corporation|898500000.0000",
+   "sign": 1,
+   "level": [
+    "down",
+    0.7164
+   ],
+   "n": 1,
+   "score_lo": 65.1189,
+   "score_hi": 65.1192
+  },
+  "temporal_chain|Trishakti Power Generation Corporation|898500000.0000@under": {
+   "group": "temporal_chain|Trishakti Power Generation Corporation|898500000.0000",
+   "sign": -1,
+   "level": [
+    "down",
+    0.7164
+   ],
+   "n": 1,
+   "score_lo": 65.0991,
+   "score_hi": 65.0993
+  },
+  "year_delta|Arunodaya Infrastructure|49800000.0000@over": {
+   "group": "year_delta|Arunodaya Infrastructure|49800000.0000",
+   "sign": 1,
+   "level": [
+    "down",
+    0.7596
+   ],
+   "n": 1,
+   "score_lo": 65.1174,
+   "score_hi": 65.1177
+  },
+  "year_delta|Arunodaya Infrastructure|49800000.0000@under": {
+   "group": "year_delta|Arunodaya Infrastructure|49800000.0000",
+   "sign": -1,
+   "level": [
+    "down",
+    0.7596
+   ],
+   "n": 1,
+   "score_lo": 65.1006,
+   "score_hi": 65.1008
+  },
+  "year_delta|Arunodaya Infrastructure|58000000.0000@over": {
+   "group": "year_delta|Arunodaya Infrastructure|58000000.0000",
+   "sign": 1,
+   "level": [
+    "up",
+    0.15
+   ],
+   "n": 1,
+   "score_lo": 65.0683,
+   "score_hi": 65.0695
+  },
+  "year_delta|Arunodaya Infrastructure|58000000.0000@under": {
+   "group": "year_delta|Arunodaya Infrastructure|58000000.0000",
+   "sign": -1,
+   "level": [
+    "up",
+    0.15
+   ],
+   "n": 1,
+   "score_lo": 65.1488,
+   "score_hi": 65.15
+  },
+  "year_delta|Central Works & Buildings Bureau|309700000.0000@over": {
+   "group": "year_delta|Central Works & Buildings Bureau|309700000.0000",
+   "sign": 1,
+   "level": [
+    "up",
+    0.2196
+   ],
+   "n": 1,
+   "score_lo": 65.0658,
+   "score_hi": 65.0671
+  },
+  "year_delta|Central Works & Buildings Bureau|309700000.0000@under": {
+   "group": "year_delta|Central Works & Buildings Bureau|309700000.0000",
+   "sign": -1,
+   "level": [
+    "up",
+    0.2196
+   ],
+   "n": 1,
+   "score_lo": 65.1512,
+   "score_hi": 65.1524
+  },
+  "year_delta|Jal Nigam, Jharkhand|661000000.0000@over": {
+   "group": "year_delta|Jal Nigam, Jharkhand|661000000.0000",
+   "sign": 1,
+   "level": [
+    "up",
+    0.2911
+   ],
+   "n": 1,
+   "score_lo": 65.0633,
+   "score_hi": 65.0646
+  },
+  "year_delta|Jal Nigam, Jharkhand|661000000.0000@under": {
+   "group": "year_delta|Jal Nigam, Jharkhand|661000000.0000",
+   "sign": -1,
+   "level": [
+    "up",
+    0.2911
+   ],
+   "n": 1,
+   "score_lo": 65.1537,
+   "score_hi": 65.155
+  },
+  "year_delta|Jal Nigam, Uttar Pradesh|153300000.0000@over": {
+   "group": "year_delta|Jal Nigam, Uttar Pradesh|153300000.0000",
+   "sign": 1,
+   "level": [
+    "up",
+    0.3648
+   ],
+   "n": 1,
+   "score_lo": 65.0607,
+   "score_hi": 65.062
+  },
+  "year_delta|Jal Nigam, Uttar Pradesh|153300000.0000@under": {
+   "group": "year_delta|Jal Nigam, Uttar Pradesh|153300000.0000",
+   "sign": -1,
+   "level": [
+    "up",
+    0.3648
+   ],
+   "n": 1,
+   "score_lo": 65.1562,
+   "score_hi": 65.1576
+  },
+  "year_delta|Jharkhand Municipal Corporation|17900000.0000@over": {
+   "group": "year_delta|Jharkhand Municipal Corporation|17900000.0000",
+   "sign": 1,
+   "level": [
+    "up",
+    0.4406
+   ],
+   "n": 1,
+   "score_lo": 65.058,
+   "score_hi": 65.0594
+  },
+  "year_delta|Jharkhand Municipal Corporation|17900000.0000@under": {
+   "group": "year_delta|Jharkhand Municipal Corporation|17900000.0000",
+   "sign": -1,
+   "level": [
+    "up",
+    0.4406
+   ],
+   "n": 1,
+   "score_lo": 65.1588,
+   "score_hi": 65.1603
+  },
+  "year_delta|Mahanadi Steel Corporation|50500000.0000@over": {
+   "group": "year_delta|Mahanadi Steel Corporation|50500000.0000",
+   "sign": 1,
+   "level": [
+    "up",
+    0.5186
+   ],
+   "n": 1,
+   "score_lo": 65.0552,
+   "score_hi": 65.0567
+  },
+  "year_delta|Mahanadi Steel Corporation|50500000.0000@under": {
+   "group": "year_delta|Mahanadi Steel Corporation|50500000.0000",
+   "sign": -1,
+   "level": [
+    "up",
+    0.5186
+   ],
+   "n": 1,
+   "score_lo": 65.1615,
+   "score_hi": 65.163
+  },
+  "year_delta|Mega Infrastructure Authority|1958800000.0000@over": {
+   "group": "year_delta|Mega Infrastructure Authority|1958800000.0000",
+   "sign": 1,
+   "level": [
+    "up",
+    0.5988
+   ],
+   "n": 1,
+   "score_lo": 65.0524,
+   "score_hi": 65.054
+  },
+  "year_delta|Mega Infrastructure Authority|1958800000.0000@under": {
+   "group": "year_delta|Mega Infrastructure Authority|1958800000.0000",
+   "sign": -1,
+   "level": [
+    "up",
+    0.5988
+   ],
+   "n": 1,
+   "score_lo": 65.1643,
+   "score_hi": 65.1659
+  },
+  "year_delta|Mega Infrastructure Authority|368700000.0000@over": {
+   "group": "year_delta|Mega Infrastructure Authority|368700000.0000",
+   "sign": 1,
+   "level": [
+    "up",
+    0.6814
+   ],
+   "n": 1,
+   "score_lo": 65.0494,
+   "score_hi": 65.0511
+  },
+  "year_delta|Mega Infrastructure Authority|368700000.0000@under": {
+   "group": "year_delta|Mega Infrastructure Authority|368700000.0000",
+   "sign": -1,
+   "level": [
+    "up",
+    0.6814
+   ],
+   "n": 1,
+   "score_lo": 65.1671,
+   "score_hi": 65.1688
+  },
+  "year_delta|Mega Infrastructure Authority|826600000.0000@over": {
+   "group": "year_delta|Mega Infrastructure Authority|826600000.0000",
+   "sign": 1,
+   "level": [
+    "up",
+    0.7664
+   ],
+   "n": 1,
+   "score_lo": 65.0464,
+   "score_hi": 65.0482
+  },
+  "year_delta|Mega Infrastructure Authority|826600000.0000@under": {
+   "group": "year_delta|Mega Infrastructure Authority|826600000.0000",
+   "sign": -1,
+   "level": [
+    "up",
+    0.7664
+   ],
+   "n": 1,
+   "score_lo": 65.1701,
+   "score_hi": 65.1718
+  },
+  "year_delta|Meridian Constructors & Co.|1189100000.0000@over": {
+   "group": "year_delta|Meridian Constructors & Co.|1189100000.0000",
+   "sign": 1,
+   "level": [
+    "down",
+    0.15
+   ],
+   "n": 1,
+   "score_lo": 65.1385,
+   "score_hi": 65.1393
+  },
+  "year_delta|Meridian Constructors & Co.|1189100000.0000@under": {
+   "group": "year_delta|Meridian Constructors & Co.|1189100000.0000",
+   "sign": -1,
+   "level": [
+    "down",
+    0.15
+   ],
+   "n": 1,
+   "score_lo": 65.079,
+   "score_hi": 65.0798
+  },
+  "year_delta|National Expressway Development Authority|237500000.0000@over": {
+   "group": "year_delta|National Expressway Development Authority|237500000.0000",
+   "sign": 1,
+   "level": [
+    "down",
+    0.2092
+   ],
+   "n": 1,
+   "score_lo": 65.1364,
+   "score_hi": 65.1372
+  },
+  "year_delta|National Expressway Development Authority|237500000.0000@under": {
+   "group": "year_delta|National Expressway Development Authority|237500000.0000",
+   "sign": -1,
+   "level": [
+    "down",
+    0.2092
+   ],
+   "n": 1,
+   "score_lo": 65.0811,
+   "score_hi": 65.0818
+  },
+  "year_delta|National Special Projects Office|720200000.0000@over": {
+   "group": "year_delta|National Special Projects Office|720200000.0000",
+   "sign": 1,
+   "level": [
+    "down",
+    0.2666
+   ],
+   "n": 1,
+   "score_lo": 65.1344,
+   "score_hi": 65.1352
+  },
+  "year_delta|National Special Projects Office|720200000.0000@under": {
+   "group": "year_delta|National Special Projects Office|720200000.0000",
+   "sign": -1,
+   "level": [
+    "down",
+    0.2666
+   ],
+   "n": 1,
+   "score_lo": 65.0831,
+   "score_hi": 65.0838
+  },
+  "year_delta|Peninsular Petroleum Corporation|314400000.0000@over": {
+   "group": "year_delta|Peninsular Petroleum Corporation|314400000.0000",
+   "sign": 1,
+   "level": [
+    "down",
+    0.3225
+   ],
+   "n": 1,
+   "score_lo": 65.1325,
+   "score_hi": 65.1332
+  },
+  "year_delta|Peninsular Petroleum Corporation|314400000.0000@under": {
+   "group": "year_delta|Peninsular Petroleum Corporation|314400000.0000",
+   "sign": -1,
+   "level": [
+    "down",
+    0.3225
+   ],
+   "n": 1,
+   "score_lo": 65.0851,
+   "score_hi": 65.0858
+  },
+  "year_delta|Public Health Engineering Dept, Gujarat|110700000.0000@over": {
+   "group": "year_delta|Public Health Engineering Dept, Gujarat|110700000.0000",
+   "sign": 1,
+   "level": [
+    "down",
+    0.3768
+   ],
+   "n": 1,
+   "score_lo": 65.1306,
+   "score_hi": 65.1313
+  },
+  "year_delta|Public Health Engineering Dept, Gujarat|110700000.0000@under": {
+   "group": "year_delta|Public Health Engineering Dept, Gujarat|110700000.0000",
+   "sign": -1,
+   "level": [
+    "down",
+    0.3768
+   ],
+   "n": 1,
+   "score_lo": 65.087,
+   "score_hi": 65.0876
+  },
+  "year_delta|Public Health Engineering Dept, Odisha|159600000.0000@over": {
+   "group": "year_delta|Public Health Engineering Dept, Odisha|159600000.0000",
+   "sign": 1,
+   "level": [
+    "down",
+    0.4296
+   ],
+   "n": 1,
+   "score_lo": 65.1288,
+   "score_hi": 65.1294
+  },
+  "year_delta|Public Health Engineering Dept, Odisha|159600000.0000@under": {
+   "group": "year_delta|Public Health Engineering Dept, Odisha|159600000.0000",
+   "sign": -1,
+   "level": [
+    "down",
+    0.4296
+   ],
+   "n": 1,
+   "score_lo": 65.0889,
+   "score_hi": 65.0894
+  },
+  "year_delta|Public Health Engineering Dept, Odisha|582600000.0000@over": {
+   "group": "year_delta|Public Health Engineering Dept, Odisha|582600000.0000",
+   "sign": 1,
+   "level": [
+    "down",
+    0.4809
+   ],
+   "n": 1,
+   "score_lo": 65.127,
+   "score_hi": 65.1276
+  },
+  "year_delta|Public Health Engineering Dept, Odisha|582600000.0000@under": {
+   "group": "year_delta|Public Health Engineering Dept, Odisha|582600000.0000",
+   "sign": -1,
+   "level": [
+    "down",
+    0.4809
+   ],
+   "n": 1,
+   "score_lo": 65.0907,
+   "score_hi": 65.0912
+  },
+  "year_delta|Public Works Department, Govt of Gujarat|197200000.0000@over": {
+   "group": "year_delta|Public Works Department, Govt of Gujarat|197200000.0000",
+   "sign": 1,
+   "level": [
+    "down",
+    0.5307
+   ],
+   "n": 1,
+   "score_lo": 65.1253,
+   "score_hi": 65.1258
+  },
+  "year_delta|Public Works Department, Govt of Gujarat|197200000.0000@under": {
+   "group": "year_delta|Public Works Department, Govt of Gujarat|197200000.0000",
+   "sign": -1,
+   "level": [
+    "down",
+    0.5307
+   ],
+   "n": 1,
+   "score_lo": 65.0925,
+   "score_hi": 65.0929
+  },
+  "year_delta|Subarnarekha Valley Corporation|1255700000.0000@over": {
+   "group": "year_delta|Subarnarekha Valley Corporation|1255700000.0000",
+   "sign": 1,
+   "level": [
+    "down",
+    0.5791
+   ],
+   "n": 1,
+   "score_lo": 65.1236,
+   "score_hi": 65.1241
+  },
+  "year_delta|Subarnarekha Valley Corporation|1255700000.0000@under": {
+   "group": "year_delta|Subarnarekha Valley Corporation|1255700000.0000",
+   "sign": -1,
+   "level": [
+    "down",
+    0.5791
+   ],
+   "n": 1,
+   "score_lo": 65.0942,
+   "score_hi": 65.0946
+  },
+  "year_delta|Suvarna Projects Limited|436000000.0000@over": {
+   "group": "year_delta|Suvarna Projects Limited|436000000.0000",
+   "sign": 1,
+   "level": [
+    "down",
+    0.6262
+   ],
+   "n": 1,
+   "score_lo": 65.122,
+   "score_hi": 65.1224
+  },
+  "year_delta|Suvarna Projects Limited|436000000.0000@under": {
+   "group": "year_delta|Suvarna Projects Limited|436000000.0000",
+   "sign": -1,
+   "level": [
+    "down",
+    0.6262
+   ],
+   "n": 1,
+   "score_lo": 65.0959,
+   "score_hi": 65.0962
+  },
+  "year_delta|Suvarna Projects Limited|783700000.0000@over": {
+   "group": "year_delta|Suvarna Projects Limited|783700000.0000",
+   "sign": 1,
+   "level": [
+    "down",
+    0.6719
+   ],
+   "n": 1,
+   "score_lo": 65.1204,
+   "score_hi": 65.1208
+  },
+  "year_delta|Suvarna Projects Limited|783700000.0000@under": {
+   "group": "year_delta|Suvarna Projects Limited|783700000.0000",
+   "sign": -1,
+   "level": [
+    "down",
+    0.6719
+   ],
+   "n": 1,
+   "score_lo": 65.0975,
+   "score_hi": 65.0978
+  },
+  "year_delta|Tamil Nadu Municipal Corporation|1196800000.0000@over": {
+   "group": "year_delta|Tamil Nadu Municipal Corporation|1196800000.0000",
+   "sign": 1,
+   "level": [
+    "down",
+    0.7164
+   ],
+   "n": 1,
+   "score_lo": 65.1189,
+   "score_hi": 65.1192
+  },
+  "year_delta|Tamil Nadu Municipal Corporation|1196800000.0000@under": {
+   "group": "year_delta|Tamil Nadu Municipal Corporation|1196800000.0000",
+   "sign": -1,
+   "level": [
+    "down",
+    0.7164
+   ],
+   "n": 1,
+   "score_lo": 65.0991,
+   "score_hi": 65.0993
+  },
+  "year_delta|Trishakti Power Generation Corporation|1521400000.0000@over": {
+   "group": "year_delta|Trishakti Power Generation Corporation|1521400000.0000",
+   "sign": 1,
+   "level": [
+    "down",
+    0.7596
+   ],
+   "n": 1,
+   "score_lo": 65.1174,
+   "score_hi": 65.1177
+  },
+  "year_delta|Trishakti Power Generation Corporation|1521400000.0000@under": {
+   "group": "year_delta|Trishakti Power Generation Corporation|1521400000.0000",
+   "sign": -1,
+   "level": [
+    "down",
+    0.7596
+   ],
+   "n": 1,
+   "score_lo": 65.1006,
+   "score_hi": 65.1008
+  },
+  "year_delta|Trishakti Power Generation Corporation|534500000.0000@over": {
+   "group": "year_delta|Trishakti Power Generation Corporation|534500000.0000",
+   "sign": 1,
+   "level": [
+    "up",
+    0.15
+   ],
+   "n": 1,
+   "score_lo": 65.0683,
+   "score_hi": 65.0695
+  },
+  "year_delta|Trishakti Power Generation Corporation|534500000.0000@under": {
+   "group": "year_delta|Trishakti Power Generation Corporation|534500000.0000",
+   "sign": -1,
+   "level": [
+    "up",
+    0.15
+   ],
+   "n": 1,
+   "score_lo": 65.1488,
+   "score_hi": 65.15
+  }
+ }
+}
