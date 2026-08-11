@@ -38,6 +38,9 @@ def norm_amt(text):
     s = re.sub(r"[’‘]", "'", str(text)).lower()
     s = s.replace(",", "").replace("&", " and ")
     s = re.sub(r"[^a-z0-9. -]+", " ", s)
+    # "70cr" has no word boundary between the digit and the unit, so \bcr\b never matches and
+    # the amount goes missing entirely. Split digit-letter runs before parsing.
+    s = re.sub(r"(\d)\s*([a-z])", r"\1 \2", s)
     return re.sub(r"\s+", " ", s)
 
 
@@ -201,7 +204,13 @@ def parameters(q, shape, facts):
     if p["client"] is None and p["manager"]:
         # "the client linked to X's portfolio", "X's principal account", "her top client"
         p["client"] = facts.primary_client_of(p["manager"])
-        p["client_from"] = "manager's largest client"
+        p["client_from"] = "engineer's primary client"
+    elif (shape == "mean_minus_median" and p["manager"] and not explicit
+          and facts.resolve_client(text) is None):
+        # the work was matched obliquely ("the Uttar Pradesh residential quarters package"), and
+        # for this shape the gold follows the engineer's primary client, not that work's client
+        p["client"] = facts.primary_client_of(p["manager"]) or p["client"]
+        p["client_from"] = "engineer's primary client (oblique work)"
     p["managers"] = facts.resolve_managers_all(text)
 
     if shape in ("exclusion_aggregate",):

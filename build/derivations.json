@@ -114,7 +114,7 @@
   "value": 2,
   "source": "computed",
   "derivation": "Farhan Rao: 2 works",
-  "client": "Trishakti Power Generation Corporation",
+  "client": "Irrigation & Waterways Dept, Govt of Uttar Pradesh",
   "manager": "Farhan Rao",
   "work": null,
   "question": "PMP; Farhan Rao, could you please confirm the total number of distinct work categories he has successfully led to completion?"
@@ -294,7 +294,7 @@
   "value": 507900000,
   "source": "computed",
   "derivation": "Sunita Joshi: 2/6 works after 2021-03-10",
-  "client": "National Expressway Development Authority",
+  "client": "Suvarna Projects Limited",
   "manager": "Sunita Joshi",
   "work": null,
   "question": "Sunita Joshi\u2019s PMP issued 2021-03-10\u2014what\u2019s the combined value of the projects she led that completed after that date, since we need it to lock the bid submissi"
@@ -378,7 +378,7 @@
   "value": 128700000,
   "source": "computed",
   "derivation": "Suresh Desai: 2/5 works after 2021-03-10",
-  "client": "Meridian Constructors & Co.",
+  "client": "Gujarat Municipal Corporation",
   "manager": "Suresh Desai",
   "work": null,
   "question": "Could you please calculate the aggregate value of the works Suresh Desai led that reached completion after his PMP was issued on 2021-03-10?"
@@ -546,7 +546,7 @@
   "value": 2,
   "source": "computed",
   "derivation": "Rohit Singh: 3 works",
-  "client": "Peninsular Petroleum Corporation",
+  "client": "Jal Nigam, Gujarat",
   "manager": "Rohit Singh",
   "work": null,
   "question": "PMP; Rohit Singh, please advise on the count of separate work categories he has concluded."
@@ -582,7 +582,7 @@
   "value": 430100000,
   "source": "computed",
   "derivation": "Kavita Reddy: 2/5 works after 2021-03-10",
-  "client": "Trishakti Power Generation Corporation",
+  "client": "Irrigation & Waterways Dept, Govt of West Bengal",
   "manager": "Kavita Reddy",
   "work": null,
   "question": "I\u2019m trying to check my memory on Kavita Reddy\u2019s PMP from 2021-03-10\u2014was the combined value of the projects she led that finished after that date exactly what I\u2019"
@@ -906,7 +906,7 @@
   "value": 5,
   "source": "computed",
   "derivation": "Suresh Desai: 5 works",
-  "client": "Meridian Constructors & Co.",
+  "client": "Gujarat Municipal Corporation",
   "manager": "Suresh Desai",
   "work": null,
   "question": "PMP; Suresh Desai, please confirm the exact count of distinct work categories he has personally directed from initiation through to final delivery."
@@ -1110,7 +1110,7 @@
   "value": 769000000,
   "source": "computed",
   "derivation": "Naveen Roy: 2/5 works after 2021-03-10",
-  "client": "National Special Projects Office",
+  "client": "Irrigation & Waterways Dept, Govt of Uttar Pradesh",
   "manager": "Naveen Roy",
   "work": null,
   "question": "Cross-checking Naveen Roy\u2019s PMP issued 2021-03-10 against the project entries\u2014what is the sum of the values for the works he led that finished after that date?"
@@ -1287,10 +1287,10 @@
   "qid": "HV-IC-0178",
   "shape": "mean_minus_median",
   "answer_type": "money",
-  "value": 73950000,
+  "value": 157033333,
   "source": "computed",
-  "derivation": "Public Works Department, Govt of Maharashtra: mean 334,699,999 - median 260,750,000 over 6 works",
-  "client": "Public Works Department, Govt of Maharashtra",
+  "derivation": "Maharashtra Municipal Corporation: mean 217,833,333 - median 60,800,000 over 3 works",
+  "client": "Maharashtra Municipal Corporation",
   "manager": "Sanjay Joshi",
   "work": null,
   "question": "sanjay joshi's pmp: what's the rupee mean-median gap for his client's works, negative if mean is lower?"
@@ -1314,7 +1314,7 @@
   "value": 5,
   "source": "computed",
   "derivation": "Lakshmi Ghosh: 5 works",
-  "client": "Trishakti Power Generation Corporation",
+  "client": "Maharashtra Municipal Corporation",
   "manager": "Lakshmi Ghosh",
   "work": null,
   "question": "PMP; Lakshmi Ghosh, what is the verified count of separate work categories she has successfully closed out?"
@@ -1362,7 +1362,7 @@
   "value": 201600000,
   "source": "computed",
   "derivation": "Lakshmi Ghosh: 2/5 works after 2021-03-10",
-  "client": "Trishakti Power Generation Corporation",
+  "client": "Maharashtra Municipal Corporation",
   "manager": "Lakshmi Ghosh",
   "work": null,
   "question": "That first total I saw for Lakshmi Ghosh\u2019s PMP issued 2021-03-10 clearly includes earlier completions, so what\u2019s the actual combined value of just the works she"
@@ -1453,11 +1453,11 @@
  },
  {
   "qid": "HV-IC-0196",
-  "shape": "hop_aggregate",
+  "shape": "gap_to_threshold",
   "answer_type": "money",
-  "value": 688500000,
+  "value": 11500000,
   "source": "computed",
-  "derivation": "Public Works Department, Govt of Gujarat: sum of 3 works",
+  "derivation": "Public Works Department, Govt of Gujarat: 700,000,000 - 688,500,000",
   "client": "Public Works Department, Govt of Gujarat",
   "manager": "Priya Gupta",
   "work": "Drainage Works \u2014 Gujarat Pkg-135",
@@ -1674,7 +1674,7 @@
   "value": 6,
   "source": "computed",
   "derivation": "Sunita Joshi: 6 works",
-  "client": "National Expressway Development Authority",
+  "client": "Suvarna Projects Limited",
   "manager": "Sunita Joshi",
   "work": null,
   "question": "PMP; Sunita Joshi, that quick count I\u2019m looking at doesn\u2019t quite add up\u2014could you confirm the actual number of distinct work categories she\u2019s personally led to "
@@ -1998,7 +1998,7 @@
   "value": 410800000,
   "source": "computed",
   "derivation": "Neha Chopra: 3/9 works after 2021-03-10",
-  "client": "Arunodaya Infrastructure",
+  "client": "Lakshya Engineering & Construction",
   "manager": "Neha Chopra",
   "work": null,
   "question": "Neha Chopra's PMP issued 2021-03-10 is the reference\u2014what is the combined value of the works she led that completed after that date, cross-checked against the c"
@@ -2310,7 +2310,7 @@
   "value": 296300000,
   "source": "computed",
   "derivation": "Meera Banerjee: 2/6 works after 2021-03-10",
-  "client": "Mahanadi Steel Corporation",
+  "client": "Tamil Nadu Municipal Corporation",
   "manager": "Meera Banerjee",
   "work": null,
   "question": "I\u2019m still learning how we track these, but when I look at Meera Banerjee\u2019s PMP issued on March 10th, 2021, what\u2019s the combined value of just the works she led t"
@@ -2559,10 +2559,10 @@
   "qid": "HV-IC-0333",
   "shape": "mean_minus_median",
   "answer_type": "money",
-  "value": 368533333,
+  "value": 0,
   "source": "computed",
-  "derivation": "National Special Projects Office: mean 783,183,333 - median 414,650,000 over 6 works",
-  "client": "National Special Projects Office",
+  "derivation": "Irrigation & Waterways Dept, Govt of Uttar Pradesh: mean 85,650,000 - median 85,650,000 over 2 works",
+  "client": "Irrigation & Waterways Dept, Govt of Uttar Pradesh",
   "manager": "Naveen Roy",
   "work": null,
   "question": "pmp; naveen roy. need rupee gap between average and median values for that client's work, negative if average lower?"
@@ -2727,10 +2727,10 @@
   "qid": "HV-IC-0349",
   "shape": "mean_minus_median",
   "answer_type": "money",
-  "value": 240294737,
+  "value": 40288889,
   "source": "computed",
-  "derivation": "Trishakti Power Generation Corporation: mean 450,694,736 - median 210,400,000 over 19 works",
-  "client": "Trishakti Power Generation Corporation",
+  "derivation": "Suvarna Projects Limited: mean 260,188,888 - median 219,900,000 over 9 works",
+  "client": "Suvarna Projects Limited",
   "manager": "Sunita Joshi",
   "work": "Residential Quarters \u2014 Uttar Pradesh Pkg-25",
   "question": "Hey, I\u2019m just grabbing Sunita Joshi\u2019s PMP for the Uttar Pradesh residential quarters package, and since I\u2019m still learning how we track client portfolios, could"
@@ -2754,7 +2754,7 @@
   "value": 898500000,
   "source": "computed",
   "derivation": "Rahul Menon: 3/8 works after 2021-03-10",
-  "client": "Irrigation & Waterways Dept, Govt of West Bengal",
+  "client": "Trishakti Power Generation Corporation",
   "manager": "Rahul Menon",
   "work": null,
   "question": "PMP issued 2021-03-10 for Rahul Menon\u2014what\u2019s the combined value of only the works he led that finished after that date, since the bid pack needs the post-certif"
@@ -2898,7 +2898,7 @@
   "value": 5,
   "source": "computed",
   "derivation": "Tanvir Menon: 6 works",
-  "client": "Mega Infrastructure Authority",
+  "client": "Subarnarekha Valley Corporation",
   "manager": "Tanvir Menon",
   "work": null,
   "question": "PMP; Tanvir Menon, what\u2019s the exact count of distinct work categories he\u2019s personally led to completion before we lock the submission?"

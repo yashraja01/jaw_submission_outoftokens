@@ -231,15 +231,21 @@ class Facts:
         return None
 
     def primary_client_of(self, manager):
-        """The engineer's 'main/principal/primary account': their largest client by value."""
-        if not manager:
+        """The engineer's 'main/principal/primary account'.
+
+        Two tiers, recovered from the leaderboard: the client the engineer has the MOST works
+        with; and when every client ties at one work, the client with the FEWEST works in the
+        whole corpus. Largest-by-value — the obvious reading — is wrong for the tie case.
+        """
+        if not manager or not manager["works"]:
             return None
-        agg = {}
+        cnt, val = {}, {}
         for w in manager["works"]:
-            agg[w["client_key"]] = agg.get(w["client_key"], 0) + w["value"]
-        if not agg:
-            return None
-        return self.clients[max(agg, key=agg.get)]
+            cnt[w["client_key"]] = cnt.get(w["client_key"], 0) + 1
+            val[w["client_key"]] = val.get(w["client_key"], 0) + w["value"]
+        if max(cnt.values()) == 1:
+            return self.clients[min(cnt, key=lambda k: (len(self.clients[k]["works"]), k))]
+        return self.clients[max(cnt, key=lambda k: (cnt[k], val[k]))]
 
     def resolve_managers_all(self, q):
         """Every distinct manager named in the question (for the two-engineer shapes)."""
