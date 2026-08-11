@@ -205,12 +205,9 @@ def parameters(q, shape, facts):
         # "the client linked to X's portfolio", "X's principal account", "her top client"
         p["client"] = facts.primary_client_of(p["manager"])
         p["client_from"] = "engineer's primary client"
-    elif (shape == "mean_minus_median" and p["manager"] and not explicit
-          and facts.resolve_client(text) is None):
-        # the work was matched obliquely ("the Uttar Pradesh residential quarters package"), and
-        # for this shape the gold follows the engineer's primary client, not that work's client
-        p["client"] = facts.primary_client_of(p["manager"]) or p["client"]
-        p["client_from"] = "engineer's primary client (oblique work)"
+    # NOTE: an earlier version let the engineer's primary client override an obliquely-matched
+    # work here. The leaderboard disproved it — HV-IC-0349's gold is the work's client — so a
+    # matched work always wins, however it was matched.
     p["managers"] = facts.resolve_managers_all(text)
 
     if shape in ("exclusion_aggregate",):

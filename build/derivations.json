@@ -2727,10 +2727,10 @@
   "qid": "HV-IC-0349",
   "shape": "mean_minus_median",
   "answer_type": "money",
-  "value": 40288889,
+  "value": 240294737,
   "source": "computed",
-  "derivation": "Suvarna Projects Limited: mean 260,188,888 - median 219,900,000 over 9 works",
-  "client": "Suvarna Projects Limited",
+  "derivation": "Trishakti Power Generation Corporation: mean 450,694,736 - median 210,400,000 over 19 works",
+  "client": "Trishakti Power Generation Corporation",
   "manager": "Sunita Joshi",
   "work": "Residential Quarters \u2014 Uttar Pradesh Pkg-25",
   "question": "Hey, I\u2019m just grabbing Sunita Joshi\u2019s PMP for the Uttar Pradesh residential quarters package, and since I\u2019m still learning how we track client portfolios, could"
