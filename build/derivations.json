@@ -3075,10 +3075,10 @@
   "qid": "HV-IC-0398",
   "shape": "receivables_balance",
   "answer_type": "money",
-  "value": 34124708,
+  "value": 83695139,
   "source": "computed",
-  "derivation": "Public Works Department, Govt of West Bengal: invoiced 347,767,752 - received 313,643,044",
-  "client": "Public Works Department, Govt of West Bengal",
+  "derivation": "Public Health Engineering Dept, West Bengal: invoiced 974,532,497 - received 890,837,358",
+  "client": "Public Health Engineering Dept, West Bengal",
   "manager": null,
   "work": null,
   "question": "Public Health Engineering Dept, West Bengal, could you please calculate the total remaining balance across all charged amounts for this account?"

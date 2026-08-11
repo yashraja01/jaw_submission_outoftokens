@@ -86,6 +86,14 @@ class Facts:
         self.bu_by_person = {c["name_key"]: c["business_unit"] for c in self.cvs}
 
         self.invoices = [dict(r) for r in self.db.execute("SELECT * FROM invoice")]
+        # A client can appear in the ageing book with no completed work — "Public Health
+        # Engineering Dept, West Bengal" is exactly that. Building the client table from works
+        # alone made it unresolvable, so its receivables question silently fell through to
+        # "Public Works Department, Govt of West Bengal".
+        for i in self.invoices:
+            if i["client_key"] not in self.clients:
+                self.clients[i["client_key"]] = {"key": i["client_key"],
+                                                 "name": i["client_name"], "works": []}
         self.inv_by_client = {}
         for i in self.invoices:
             b = self.inv_by_client.setdefault(i["client_key"], {"invoiced": Decimal(0),

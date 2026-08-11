@@ -29,7 +29,9 @@ def shape_fallbacks(facts):
     guess typically scores 0.4-0.7. Fallbacks are therefore part of the scoring strategy.
     """
     out = {}
-    clients = list(facts.clients.values())
+    # a client may exist in the ageing book with no completed works; those cannot contribute to
+    # any work-based median
+    clients = [c for c in facts.clients.values() if c["works"]]
     managers = list(facts.managers.values())
 
     def med(vals):
