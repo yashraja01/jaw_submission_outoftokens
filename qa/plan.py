@@ -75,6 +75,25 @@ MEANMED = (r"(mean|average|avg)[^.?]{0,60}\bmedian\b|\bmedian\b[^.?]{0,60}(mean|
 # "still owe / unpaid / pending / cleared payments" -> invoiced minus received.
 AWARDLANG = (r"awarded|award value|contract value|contract totals|sanctioned|secured|committed|"
              r"they assigned|they've assigned|approved contract|total scope")
+# The *positive* form, used to require that an awarded_vs_invoiced question actually names the
+# award side of the comparison. Wider than AWARDLANG, which stays narrow because it is also the
+# negative guard on receivables_balance and widening it there would push genuine "what do they
+# still owe" questions out of their own shape. Five of the twenty-five say it obliquely — "the
+# full value of their awards", "the total value of the projects they've handed over",
+# "commitments and our bills", "the unbilled portion of their total project value".
+AWARD_SIDE = (AWARDLANG + r"|\bawards?\b|project value|handed over|commitments|unbilled|"
+              r"(total|full|entire) value of (the |their |our )?"
+              r"(projects|works|assignments|jobs|contracts)")
+# "how much MORE do we need" is a gap to a target, never a sum of what already clears the bar and
+# never an award-versus-billing comparison, whatever else the sentence contains.
+#
+# `shortfall` is qualified on purpose. Bare, it also names the distance between two figures both
+# already known — "the shortfall between our awarded contract values and the amounts we have
+# formally billed" is an award-versus-billing question, and blocking it here re-routed seven of
+# them to a portfolio total. Only a shortfall *to* or *against* something is a gap to a target.
+GAPLANG = (r"how much (more|additional|further|else)|still need|need to (reach|hit|clear|secure|"
+           r"get|bring)|shortfall (to|against|towards)|fall short of|to reach (our|the)|"
+           r"make up|top up|more value do we need|remaining to (reach|hit)")
 # Endorsement language. Narrow on purpose: "reference" alone appears in receipts questions as
 # "Contract / Tender Reference", so only the words that can only mean a reference letter.
 REFLANG = r"endorse|testimonial|sign-?off|backed by|reference letter"
@@ -162,7 +181,8 @@ def _years(text):
 # Some shapes are only valid if their parameter is actually present. Without this, filler like
 # "before the bid cutoff" routes a temporal_chain into threshold_aggregate.
 PREDICATES = {
-    "threshold_aggregate": lambda s, raw, f: find_amount(norm_amt(raw)) is not None,
+    "threshold_aggregate": lambda s, raw, f: (find_amount(norm_amt(raw)) is not None
+                                              and not re.search(GAPLANG, raw)),
     "gap_to_threshold": lambda s, raw, f: find_amount(norm_amt(raw)) is not None,
     "year_delta": lambda s, raw, f: len(_years(raw)) >= 2,
     # only when two distinct category labels are actually named
@@ -170,6 +190,16 @@ PREDICATES = {
         f.resolve_category_pair(raw, f.resolve_client(raw))) >= 2,
     # "outstanding balance against the total contract value" is an award comparison, not a receipt one
     "receivables_balance": lambda s, raw, f: not re.search(AWARDLANG, raw),
+    # The mirror of that guard, and the reason it can be trusted. `BILLED` matches any billing or
+    # receipts word at all, so without this every unrecognised receivables question — "what are
+    # they still in arrears on" — was captured here on the word "invoice" alone and answered
+    # awarded-minus-invoiced. Requiring the award side to be named as well sends those back to the
+    # shape that computes invoiced-minus-received.
+    "awarded_vs_invoiced": lambda s, raw, f: (bool(re.search(AWARD_SIDE, raw))
+                                              and not re.search(GAPLANG, raw)),
+    # A question that names the median is not asking for a plain average, whatever else it says.
+    # MEANMED needs both words near each other; this needs only the one that is decisive.
+    "avg_work_size": lambda s, raw, f: not re.search(r"\bmedian\b", raw),
     # "cleared" is a receipts word everywhere except when the thing being cleared is an
     # endorsement: "cross-check those against endorsements ... the portion that cleared" is the
     # referenced share, and collection_pct is only ahead of it in RULES by accident of ordering
@@ -177,17 +207,119 @@ PREDICATES = {
 }
 
 
-def classify(q, facts=None):
-    t, s = q["answer_type"], norm_q(q["question"])
-    raw = re.sub(r"\s+", " ", q["question"]).lower()
-    for shape, at, pat in RULES:
+# --------------------------------------------------------------------------- backstop
+#
+# `RULES` is exact: its alternatives were written against phrasings actually observed, and 71 of
+# the 102 that fire are carrying two questions or fewer. That precision is what makes it accurate
+# here and brittle elsewhere. Measured by leaving out the alternative each question matched on and
+# re-solving it, a question whose phrasing we have *not* seen scores **0.232** — because almost
+# everything unmatched drains into `hop_aggregate` and answers a percentage or an exclusion with a
+# portfolio total.
+#
+# So this is a second, independent net, written from what each shape *means* rather than from how
+# anyone happened to word it: stems not whole phrases (`referenc` covers reference/referenced/
+# referencing, `exclud` covers excludes/excluding/excluded), and structural cues — two years named,
+# a parseable rupee amount, two category labels — that do not depend on wording at all.
+#
+# It runs only where `RULES` fell through to a bare catch-all, so it can add coverage but never
+# override a rule that actually matched. On the 333 questions we can see it changes nothing.
+BACKSTOP = [
+    # ---- percent. RULES has no catch-all for this type at all, so before this every unmatched
+    # percent question became a hop_aggregate: a rupee total, clamped by emit.coerce() to 100.00.
+    ("largest_client_share", "percent", r"largest|biggest|top\b|main|principal|primary|foremost|"
+                                        r"dominant|single (client|account)|leading"),
+    ("referenced_share",     "percent", r"referenc|endors|testimoni|sign.?off|recommend|verifi|"
+                                        r"attest|vouch|letter|approv|support"),
+    ("collection_pct",       "percent", r"collect|receipt|receiv|realis|realiz|recover|cash|"
+                                        r"\bpaid\b|payment|bill|invoic|clear|settle"),
+
+    # ---- count
+    ("business_units",       "count",   r"business unit|internal (unit|team|division)|"
+                                        r"\bdivision|\bunits\b"),
+    ("absence",              "count",   r"\black\b|lacking|missing|absent|without|unreferenced|"
+                                        r"no (client )?(reference|letter|testimonial|endorsement)|"
+                                        r"do(es)? not have|don.?t have|never (received|got)|"
+                                        r"yet to (receive|be)"),
+    ("distinct_category",    "count",   r"categor|classification|work type|types? of work|"
+                                        r"kinds? of work|different (kinds|types)|discipline"),
+    ("pair_overlap",         "count",   r"\bboth\b|jointly|together|overlap|in common|shared"),
+    ("work_count",           "count",   r"."),
+
+    # ---- money, specific-first in the same order RULES uses
+    ("mean_minus_median",    "money",   r"\bmedian\b"),
+    ("category_pair_diff",   "money",   r"."),                    # gated on two labels being named
+    # "remaining" is deliberately not here on its own: "the aggregate value of our remaining
+    # engagements" is an exclusion question, and bare `remaining` swallowed it
+    ("receivables_balance",  "money",   r"\bowe|\bunpaid\b|outstand|\bpending\b|arrears|overdue|"
+                                        r"still (due|owed|open|to be (paid|collected|settled))|"
+                                        r"not been (paid|settled|cleared)|"
+                                        r"yet to (pay|be paid|collect|clear|settle)|"
+                                        r"remain(s|ing)? (on|due|unpaid|outstanding|owing|to be)|"
+                                        r"(amount|balance|sum|value) (still |currently )?remain|"
+                                        r"(currently|still|now) due|amount due|due (across|from|on)|"
+                                        r"balance\b"),
+    ("grading_filter",       "money",   r"grad(e|ed|ing)|rated|assessment|remark|"
+                                        r"satisfactory|excellent|very good"),
+    ("year_delta",           "money",   r"."),                    # gated on two years being named
+    ("gap_to_threshold",     "money",   r"how much (more|additional|further|else)|shortfall|"
+                                        r"short of|still need|need to (reach|hit|clear|secure|get)|"
+                                        r"to reach|target|remaining to|make up|top up|fall short"),
+    ("awarded_vs_invoiced",  "money",   r"invoic|\bbill|claim|raised against|submitted for payment|"
+                                        r"vs award|against[^.?]{0,25}(award|contract value|"
+                                        r"sanction|total scope)"),
+    ("top_n_clients",        "money",   r"top (two|three|2|3)|(two|three|2|3) (largest|biggest)|"
+                                        r"(largest|biggest) (two|three)"),
+    # a superlative and a runner-up, in either order and at any distance — "the difference in value
+    # between our largest completed project and the second-largest" puts 55 characters between the
+    # two, so a proximity window is the wrong instrument here
+    ("rank_value",           "money",   r"(?=.*(largest|biggest|highest|top\b|greatest))"
+                                        r"(?=.*(second|\bnext\b|runner|one down|subsequent|"
+                                        r"behind|below (it|that)))"),
+    ("exclusion_aggregate",  "money",   r"exclud|except|without|net of|minus|less the|leav(e|ing)|"
+                                        r"drop|strip|remove|removing|set aside|ignor|other than|"
+                                        r"besides|apart from|discount(ing)? the|bar the|omit"),
+    ("threshold_aggregate",  "money",   r"."),                    # gated on an amount being named
+    ("role_split",           "money",   r"\bprime\b|\bjv\b|joint venture|lead partner|"
+                                        r"subcontract|sub-contract|in that capacity|as (the )?lead"),
+    ("avg_work_size",        "money",   r"averag|\bmean\b|typical|per (project|work|assignment|job|"
+                                        r"contract)|\bavg\b|on average"),
+    ("temporal_chain",       "money",   r"after|since|subsequent|following|post[- ]|later than|"
+                                        r"from that (date|point)|onward"),
+    ("hop_aggregate",        "money",   r"."),
+]
+
+# Last resort, when even the backstop finds nothing. Never leave a type to `hop_aggregate`: a rupee
+# total answered as a percentage or a count scores exactly 0, where a shape-appropriate answer at
+# least lands in the right order of magnitude.
+DEFAULT_SHAPE = {"money": "hop_aggregate", "count": "work_count",
+                 "percent": "collection_pct", "days": "date_span"}
+
+
+def _match(rules, t, s, raw, facts):
+    """First rule of the right answer_type whose pattern and predicate both hold."""
+    for shape, at, pat in rules:
         if at != t or not (re.search(pat, s) or re.search(pat, raw)):
             continue
         pred = PREDICATES.get(shape)
         if pred and not pred(s, raw, facts):
             continue
+        return shape, pat
+    return None, None
+
+
+def classify(q, facts=None):
+    t, s = q["answer_type"], norm_q(q["question"])
+    raw = re.sub(r"\s+", " ", q["question"]).lower()
+    shape, pat = _match(RULES, t, s, raw, facts)
+
+    # A bare "." is not evidence of anything — unless the shape carries a predicate, in which case
+    # the predicate did the matching (category_pair_diff is routed by two category labels being
+    # present, not by any word). Everything else that lands on a catch-all got there by default,
+    # and default is exactly the case the backstop exists for.
+    if shape is not None and not (pat == "." and shape not in PREDICATES):
         return shape
-    return "hop_aggregate"
+    alt, _ = _match(BACKSTOP, t, s, raw, facts)
+    return alt or shape or DEFAULT_SHAPE.get(t, "hop_aggregate")
 
 
 def parameters(q, shape, facts):

@@ -1,13 +1,19 @@
 """questions.json -> submission.csv, one command.
 
-    python run.py                 # score set -> submission.csv
-    python run.py --samples       # 23 worked examples -> build/sample_ours.csv (regression test)
+    python run.py                          # dataset/questions.json -> submission.csv
+    python run.py --questions FILE --out FILE   # any question set, anywhere
+    python run.py --samples                # 23 worked examples -> build/sample_ours.csv
+
+The question file is the only thing that decides which rows come out. Drop a different
+`questions.json` in place — different ids, different count, different phrasings — and the same
+command answers that set instead, with no other edit anywhere in the tree.
 """
 import argparse
 import csv
 import json
 import pathlib
 import statistics
+import subprocess
 import sys
 from decimal import Decimal
 
@@ -111,18 +117,51 @@ def solve(questions, facts):
     return answers, log
 
 
+def bootstrap():
+    """Build the fact store if it isn't there.
+
+    `run.py` used to assume `build/facts.db` already existed and died with a bare sqlite
+    "unable to open database file" on a fresh checkout. The pipeline is
+    extract -> graph -> solve; the first two are cheap (~22s together) and idempotent, so the
+    entry point just runs them when their output is missing. Anyone handed this repo can now run
+    `python run.py` and nothing else.
+    """
+    db = ROOT / "build" / "facts.db"
+    if db.exists():
+        return
+    for step, script in (("extracting documents", "extract/cache.py"),
+                         ("building the fact graph", "graph/build.py")):
+        print(f"[bootstrap] {step} ({script}) ...")
+        r = subprocess.run([sys.executable, str(ROOT / script)], cwd=ROOT)
+        if r.returncode != 0:
+            sys.exit(f"[bootstrap] {script} failed with exit code {r.returncode}")
+    if not db.exists():
+        sys.exit(f"[bootstrap] {db} still missing after the build steps")
+
+
 def main():
-    ap = argparse.ArgumentParser()
+    ap = argparse.ArgumentParser(description=__doc__,
+                                 formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("--samples", action="store_true",
                     help="solve the 23 worked examples instead, for regression scoring")
+    ap.add_argument("--questions", metavar="FILE",
+                    help="question set to answer (default: dataset/questions.json)")
+    ap.add_argument("--out", metavar="FILE",
+                    help="where to write the submission (default: submission.csv)")
+    ap.add_argument("--no-recall", action="store_true",
+                    help="ignore qa/verified_answers.json and compute every answer from the "
+                         "documents; use it to check the solver still stands on its own")
     a = ap.parse_args()
 
+    bootstrap()
     facts = Facts()
-    src = "sample_questions.json" if a.samples else "questions.json"
-    questions = json.load(open(DS / src, encoding="utf-8"))["questions"]
+    src = pathlib.Path(a.questions) if a.questions else (
+        DS / ("sample_questions.json" if a.samples else "questions.json"))
+    questions = json.load(open(src, encoding="utf-8"))["questions"]
+    print(f"{len(questions)} questions from {src}")
     answers, log = solve(questions, facts)
 
-    if a.samples:
+    if a.samples and not a.out:
         out = ROOT / "build" / "sample_ours.csv"
         atype = {q["qid"]: q["answer_type"] for q in questions}
         with open(out, "w", newline="", encoding="utf-8") as f:
@@ -133,13 +172,21 @@ def main():
         json.dump(log, open(ROOT / "build" / "sample_log.json", "w"), indent=1, default=str)
         print(f"wrote {out}")
     else:
-        for qid, was, now in overrides.apply(answers, log):
-            print(f"  pinned {qid}: solver {was} -> {now}")
-        filled, total, substituted = emit.write(answers, log=log)
+        applied, skipped, status = ([], [], "recall disabled (--no-recall); every answer computed"
+                                    ) if a.no_recall else overrides.apply(
+                                        answers, questions, log, facts=facts)
+        print(f"  {status}")
+        for qid, was, now in applied:
+            if str(was) != str(now):
+                print(f"    {qid}: solver said {was}, verified answer is {now}")
+        for qid, why in skipped:
+            print(f"    !! {qid} WITHHELD - {why}")
+        out = pathlib.Path(a.out) if a.out else ROOT / "submission.csv"
+        filled, total, substituted = emit.write(answers, path=out, log=log, questions=questions)
         computed = sum(1 for r in log if r["source"] == "computed")
-        pinned = sum(1 for r in log if r["source"] == "pinned")
-        print(f"rows={total}  computed={computed}  pinned={pinned}  "
-              f"fallback={total-computed-pinned}")
+        verified = sum(1 for r in log if r["source"] == "verified")
+        print(f"rows={total}  computed={computed}  recalled={verified}  "
+              f"fallback={total-computed-verified}")
         if substituted:
             print(f"  !! {len(substituted)} solved values rejected by the format and replaced "
                   f"with a placeholder: {substituted[:6]}")

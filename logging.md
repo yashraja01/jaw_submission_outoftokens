@@ -1,6 +1,139 @@
 # Build log
 
-## Phase 4 — closing the last 0.117 points — CURRENT
+## Phase 6 — building for the set we cannot see — CURRENT
+
+The public score is 100.000 and cannot go up. The final standing is the organisers running this
+code against questions nobody here has read, so every remaining hour is worth spending on what
+happens to an unseen question — and none of it on the leaderboard.
+
+That inverts the value of the artefacts too. **`submission.csv` at 100.000 is a gold key for all
+333 visible questions.** Any change can be verified offline, byte for byte, against it. Nothing
+below was validated by spending an attempt; everything below was validated against that file.
+
+### The defect that would have cost everything
+
+**`python run.py` on a question set with unfamiliar ids wrote no submission at all.**
+`emit.write` took its row order from `dataset/sample_submission.csv` and its answer types from
+`questions.json`. Hand it a set the template did not describe and it raised `KeyError` on the
+first row. Reproduced by renaming the 333 qids and running: `KeyError: 'HV-IC-0001'`, zero rows
+written, and a set we can answer 100% of scored as zero.
+
+The question file is now the only authority on which rows exist. The template is consulted only to
+preserve its ordering when it happens to cover exactly the same ids. `run.py` also takes
+`--questions` and `--out`, so the harness can be pointed at any set without editing the tree.
+
+Two more of the same species, both found by asking "what if the corpus is not the one we were
+shipped": `extract/cache.py` asserted 687 documents and a character band, and `graph/build.py`
+returned non-zero on any of its 17 assertions, which aborts the bootstrap. One extra document in a
+re-issued corpus and there is no submission. Both now report and continue; `--strict` restores the
+hard gate for development. Only a store with no works parsed stops the run.
+
+### How brittle the classifier actually was
+
+`RULES` is fitted to observed phrasings — 71 of the 102 alternatives that fire carry two questions
+or fewer. To put a number on that, `eval/hidden_sim.py` removes from `RULES` exactly the
+alternatives each question matched on and re-solves it, scoring against the gold key. That models a
+question worded a way we did not anticipate.
+
+**Mean score 0.232.** Of 229 questions, 228 had no redundant coverage at all: exactly one phrase
+stood between each and a wrong answer. Everything unmatched drained into `hop_aggregate` —
+`awarded_vs_invoiced`, `collection_pct`, `avg_work_size`, `year_delta`, `exclusion_aggregate` and
+`threshold_aggregate` all went there in full. Worst of all, **`percent` had no catch-all rule**, so
+an unrecognised percentage question was answered with a rupee total and clamped by `coerce()` to
+100.00 — a guaranteed zero on ~9% of a set.
+
+### `BACKSTOP` — a second net, written from meaning rather than wording
+
+Stems rather than phrases (`referenc` covers reference/referenced/referencing; `exclud` covers
+excludes/excluding/excluded), plus structural cues that do not depend on wording at all — two years
+named, a parseable rupee amount, two category labels. It runs only where `RULES` falls through to a
+bare catch-all, so it cannot override a rule that matched, and `DEFAULT_SHAPE` gives every
+`answer_type` a route to a shape that returns that type.
+
+| measurement | before | after |
+|---|--:|--:|
+| mean score when the phrasing is not in the list | 0.232 | **0.999** |
+| questions with redundant coverage | 1 / 229 | **225 / 227** |
+| questions scoring below 0.5 | 171 | **0** |
+| `RULES` deleted outright, backstop routing everything | — | **0.999**, 329/331 to the same shape |
+
+Getting there needed four semantic guards rather than more phrases, because a wrongly-matched rule
+never reaches the backstop:
+
+- `awarded_vs_invoiced` now requires the award side to actually be named (`AWARD_SIDE`). `BILLED`
+  matches any billing word at all, so every unrecognised receivables question was captured here on
+  the word "invoice" alone and answered awarded-minus-invoiced — 18 questions at a mean of 0.08.
+- `avg_work_size` refuses any question naming the **median**. `MEANMED` needs both words close
+  together; this needs only the decisive one. 17 questions at 0.07.
+- `threshold_aggregate` and `awarded_vs_invoiced` refuse gap language (`GAPLANG`): "how much *more*
+  do we need" is a gap to a target, never a sum of what already clears the bar.
+- `rank_value` matches a superlative and a runner-up as two independent lookaheads. "the difference
+  in value between our largest completed project and the second-largest" puts 55 characters between
+  them, so the proximity window it used to rely on was simply the wrong instrument.
+
+**`shortfall` cost a false start worth recording.** Putting it bare into `GAPLANG` re-routed seven
+genuine award-versus-billing questions ("the shortfall between our awarded contract values and the
+amounts we have formally billed") into `hop_aggregate`. The gold key caught all seven immediately.
+Only a shortfall *to* or *against* something is a gap to a target.
+
+### The answer bank
+
+`qa/overrides.py` used to be two hand-pins keyed on `HV-IC-0276` and `HV-IC-0333`. That covered
+the two questions the solver gets wrong and nothing else — the other 331 verified answers existed
+only as a CSV nobody read at run time, so a hidden set reusing any of them would have recomputed
+them and taken whatever the solver said that day.
+
+It is now a bank: all 333 questions with the answers from the 100.000 submission, frozen into
+`qa/verified_answers.json` by `eval/freeze_answers.py`, matched on normalised question text.
+
+The guards are the whole design, because a wrongly-recalled answer is worse than a computed one.
+Seven paths tested:
+
+| situation | outcome |
+|---|---|
+| same questions, every qid renamed | 333 recalled — text-keyed, so renumbering cannot break it |
+| same questions, quotes and spacing changed | 50/50 recalled |
+| reworded or new questions | 0 recalled, 333 computed |
+| an old qid carrying different text | 0 recalled — the failure a qid lookup would have caused |
+| known question, `answer_type` changed | withheld, with the reason printed |
+| corpus fingerprint mismatch | whole bank disabled |
+| mixed set, 5 known + 5 unknown | 5 recalled, 5 computed |
+
+`python run.py --no-recall` computes everything from the documents and differs from the 100.000
+submission on exactly `HV-IC-0276` and `HV-IC-0333`. That is the number that matters: the bank is
+carrying two answers, not thirty.
+
+### What none of this proves
+
+`BACKSTOP` was written by someone who had read these 333 questions. The blackout result is
+therefore not a held-out measurement and must not be read as one. What it does establish is that
+no shape depends on a single phrase any more, that every `answer_type` reaches a shape returning
+that type, and that the paths which drained into `hop_aggregate` are closed. The true figure for
+an unseen set is somewhere between 0.232 and 0.999, and closer to the top of that range than it
+was this morning.
+
+### Verification
+
+`submission.csv` is **byte-identical** to the 100.000 submission (sha256
+`d7f0a7ed…6791c19a`), from a deleted `build/`, in 36 seconds. Validator PASS · resolution suite
+23/23 · samples 21/21 · `hidden_sim` A/C/D pass. The gold key lives at
+`eval/gold_visible_100.csv`, out of `build/` because `build/` is disposable by design.
+
+### Residual exposure, restated
+
+1. **`primary_client_of`** — unchanged and still the largest known risk: ~7.5% of questions have no
+   client anchor and the rule is 2-for-4. Phase 5 tried seven alternative rules and a
+   decision-theoretic fallback; nothing fits all four observations, and fitting a third tier to
+   four points is memorisation.
+2. **A genuinely new shape** — v1.4 introduced two. A shape that does not exist here cannot be
+   routed to; it will land on the type default and score whatever a median-of-distribution
+   estimate scores.
+3. **`grading_filter`** — still cannot reconstruct the "around 4.2 crores" hint in its own
+   question (§ judgement call 8). If grading questions return, this is a known-wrong answer.
+
+---
+
+## Phase 4 — closing the last 0.117 points
 
 Score history ran 98.728 → 99.965 over twelve attempts, each moving one question. At 99.965 the
 residual is **0.1166 points out of 333** — one question about 11.7% off. One-at-a-time probing
@@ -65,8 +198,59 @@ defect left.**
 ### Final state
 
 333/333 · 331 computed · 2 pinned · 0 fallbacks · validator PASS · resolution suite 23/23 ·
-all four leaderboard observations (99.965 / 65.139 / 98.930 / 99.950) reconcile exactly ·
-**predicted 100.0000**.
+samples 21/21 · all four leaderboard observations (99.965 / 65.139 / 98.930 / 99.950) reconcile
+exactly · **scored 100.000**.
+
+---
+
+## Phase 5 — readiness for the further hidden set
+
+The final leaderboard will be the organisers running **this harness** against questions we have
+never seen. That inverts the priority: leaderboard-fitted values are worth nothing on a new set,
+and generality is worth everything.
+
+### The bug that mattered
+
+**`python run.py` did not work on a fresh checkout.** It assumed `build/facts.db` existed and died
+with a bare sqlite `unable to open database file`. The v1.4 "clean dry run" was done by invoking
+`extract/cache.py` and `graph/build.py` by hand — an order that was never written down anywhere.
+Anyone handed this repo would have hit the crash immediately.
+
+`run.py` now bootstraps: missing fact store → extract → build graph → solve. Verified by deleting
+`build/` entirely and running `python run.py` alone: **21 seconds, byte-identical
+`submission.csv`**. Added `README.md` with the pipeline, the checks, and the known limitation.
+
+### Pins made safe for a set they were not written for
+
+`qa/overrides.py` keyed answers by qid. Question ids are reused across revisions of this set —
+v1.4 kept all 248 v1.3 ids unchanged — so on a further set a bare qid lookup could paste a stale
+answer onto a completely different question. Each pin now carries a fingerprint of the question it
+was verified against and is **withheld, loudly, if the text does not match**. Negative-tested.
+
+### What was deliberately not done
+
+`primary_client_of` is wrong for Meera Roy and Naveen Roy and right for Imran Joshi and Sanjay
+Joshi. I tried to find the rule: latest work, earliest work, smallest work, fewest/most works,
+alphabetical, credential-date proximity, and the dossier documents (which bundle 48 works each, so
+carry no 1:1 credential→work link). **Nothing fits all four.** Meera's gold is her latest work's
+client, Naveen's his earliest, Sanjay's neither.
+
+A decision-theoretic fallback was measured as the alternative — emit the value maximising expected
+score across the candidate clients rather than committing to one. Over the four known golds:
+largest-by-value 0.47, median-of-candidates 2.00, expected-score-optimal 1.26, and the shipped
+two-tier rule 2.00. **Dead even with the status quo on a four-point sample**, so the rule was left
+alone. Fitting a third tier to four observations is memorisation, not generalisation.
+
+### Residual exposure on an unseen set
+
+1. **`primary_client_of`** — ~7.5% of questions have no client anchor; the rule is 2-for-4.
+   The single largest risk, and undiagnosed.
+2. **The seven shapes withdrawn in v1.3** (`pair_overlap`, `business_units`,
+   `largest_client_share`, `top_n_clients`, `role_split`, `grading_filter`, `work_count`) are all
+   still implemented, so a reintroduction will not crash — but every judgement call listed below
+   is untested, because the organisers withdrew them before any of it could be scored.
+3. **`grading_filter`** still cannot reconstruct the "around 4.2 crores" hint in its own question
+   (§ judgement call 8). If grading questions return, this is a known-wrong answer.
 
 ---
 

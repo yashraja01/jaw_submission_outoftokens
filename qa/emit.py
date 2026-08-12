@@ -2,6 +2,13 @@
 
 Any qid the solver could not answer falls back to a type-appropriate placeholder — never blank,
 never 0, because both score exactly zero under the continuous scorer.
+
+**The question file is the only authority on which rows exist.** This module used to take its row
+order from `dataset/sample_submission.csv` and its answer types from `questions.json`. Handed a
+question set whose ids it had not seen, it raised `KeyError` on the first row and wrote nothing —
+so the harness scored 0 on any set the template did not already describe. Order now comes from the
+questions themselves; the template is consulted only to preserve its ordering when it happens to
+cover exactly the same ids.
 """
 import csv, json, math, pathlib
 from decimal import Decimal, ROUND_HALF_UP
@@ -44,14 +51,36 @@ def coerce(value, atype):
     return None
 
 
-def write(answers, path=ROOT / "submission.csv", log=None):
-    qs = json.load(open(DS / "questions.json", encoding="utf-8"))["questions"]
-    order = [r["question_id"] for r in csv.DictReader(open(DS / "sample_submission.csv"))]
-    atype = {q["qid"]: q["answer_type"] for q in qs}
+def submission_order(questions):
+    """The qids to emit, in the order to emit them.
+
+    Row order does not affect scoring, but matching the shipped template makes a diff against it
+    readable. So: the template's order when it describes exactly this set, and the question file's
+    own order otherwise — which is the case for any set we have not seen before.
+    """
+    order = [q["qid"] for q in questions]
+    tmpl_path = DS / "sample_submission.csv"
+    if tmpl_path.exists():
+        try:
+            tmpl = [r["question_id"] for r in csv.DictReader(open(tmpl_path, encoding="utf-8"))]
+        except (OSError, csv.Error, KeyError):
+            return order
+        if set(tmpl) == set(order) and len(tmpl) == len(order):
+            return tmpl
+    return order
+
+
+def write(answers, path=ROOT / "submission.csv", log=None, questions=None):
+    if questions is None:
+        questions = json.load(open(DS / "questions.json", encoding="utf-8"))["questions"]
+    order = submission_order(questions)
+    atype = {q["qid"]: q.get("answer_type") for q in questions}
 
     rows, filled, substituted = [], 0, []
     for qid in order:
-        t = atype[qid]
+        # an unrecognised answer_type is treated as money: it is 80% of every set seen so far, and
+        # a wrong-but-numeric row scores better than a missing one
+        t = atype.get(qid) if atype.get(qid) in FALLBACK else "money"
         s = coerce(answers.get(qid), t)
         if s is None:
             # the solver produced a value the format rejected — always worth surfacing, it once
