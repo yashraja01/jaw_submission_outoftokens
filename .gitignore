@@ -1,7 +1,6 @@
-documents/
-*.sqlite
-*.db
-cache/
-.venv/
 __pycache__/
 *.pyc
+build/
+!build/.gitkeep
+.venv/
+dataset/

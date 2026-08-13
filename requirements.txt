@@ -1,0 +1,4 @@
+# Everything run.sh needs. No model weights: the only generative model this pipeline uses is the
+# endpoint the organisers provide, reached over plain stdlib HTTP.
+PyMuPDF>=1.23,<2          # PDF text layer, with sorted extraction for column-aligned certificates
+openpyxl>=3.1,<4          # XLSX workbooks: receivables ageing, BOQ, trial balance, asset register
